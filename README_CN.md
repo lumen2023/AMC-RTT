@@ -3,9 +3,7 @@
 AMC-RTT 是一个面向 redundancy-aware multimodal generation 的理论、实现、
 迁移与证据包。核心原则很直接：
 
-```text
 别让有限多模态 decoder 把建模能力、采样预算和梯度预算反复花在同一个未来上。
-```
 
 ## 高分成果锚点
 
@@ -66,6 +64,52 @@ $$
 详细推导与权威文献锚点见
 [28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md](28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md)。
 
+## 证明骨架
+
+正面论证不是口号，而是带明确假设的局部结果链：
+
+1. 有限 $K$ 覆盖：
+
+$$
+\mathbb{E}[U_K]
+=
+\sum_{m=1}^{M}\left[1-(1-p_m)^K\right];
+$$
+
+2. 相关梯度有效样本数：
+
+$$
+r_{\mathrm{eff}}
+=
+\frac{r}{1+(r-1)\rho_g};
+$$
+
+3. 局部信息体积：
+
+$$
+\log(1+\lambda r a^2)
+<
+r\log(1+\lambda a^2)
+\qquad(r>1);
+$$
+
+4. normalized/clipped update 下的 hard-direction 份额：
+
+$$
+\left|
+\left\langle
+\Delta\theta,
+\frac{v}{\lVert v\rVert}
+\right\rangle
+\right|
+=
+\eta G
+\frac{\lVert v\rVert}
+{\sqrt{r^2\lVert u\rVert^2+\lVert v\rVert^2}}.
+$$
+
+前三者是数学机制；task-score improvement 仍是经验证明义务。这个边界是有意保留的。
+
 ## Decoder 迁移
 
 AMC-RTT 在接口层是 decoder-agnostic，在优化层是 decoder-aware：
@@ -109,9 +153,7 @@ support-preserving、sample-efficiency-aware 的 regularizer。
 
 ## 当前状态
 
-```text
-MECHANISM_SUPPORTED__CAPACITY_EFFICIENCY_PROOF_ACTIVE
-```
+当前状态：`MECHANISM_SUPPORTED__CAPACITY_EFFICIENCY_PROOF_ACTIVE`。
 
 Drive-JEPA 高分锚点与机制证据已经让 AMC-RTT 具备积极迁移的基础。本包的证明程序
 定义了从机制证据推进到 capacity-efficiency 与 task-score 证据的高效路径。

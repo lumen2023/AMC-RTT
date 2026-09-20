@@ -9,21 +9,71 @@ stabilizer, not the core AMC definition.
 
 Given predicted proposals and teacher trajectories:
 
-```text
-ADE(m,i) = mean_t || teacher_m[t,:2] - proposal_i[t,:2] ||_2
-soft_min_m = -temp_min * logsumexp_i(-ADE(m,i) / temp_min)
-C_soft = mean_m sigmoid((threshold_m - soft_min_m) / temp_sigmoid)
-```
+$$
+\operatorname{ADE}(m,i)
+=
+\operatorname{mean}_t
+\left\|
+\operatorname{teacher}_m[t,:2]
+-
+\operatorname{proposal}_i[t,:2]
+\right\|_2,
+$$
+
+$$
+\operatorname{softmin}_m
+=
+-T_{\min}
+\log\sum_i
+\exp\!\left(
+-\frac{\operatorname{ADE}(m,i)}{T_{\min}}
+\right),
+$$
+
+$$
+C_{\mathrm{soft}}
+=
+\operatorname{mean}_m
+\sigma\!\left(
+\frac{\operatorname{threshold}_m-\operatorname{softmin}_m}
+{T_{\sigma}}
+\right).
+$$
 
 The Drive-JEPA default threshold in A3.7 was coverage@2m.
 
 ## Loss
 
-```text
-L_total = L_original + lambda * L_AMC + beta * L_coverage
-L_AMC = (log K_eff_pred - stopgrad(log K_eff_teacher))^2
-L_coverage = relu(stopgrad(C_soft_baseline) - C_soft_pred)^2
-```
+$$
+L_{\mathrm{total}}
+=
+L_{\mathrm{original}}
++
+\lambda L_{\mathrm{AMC}}
++
+\beta L_{\mathrm{coverage}},
+$$
+
+$$
+L_{\mathrm{AMC}}
+=
+\left[
+\log K_{\mathrm{eff,pred}}
+-
+\operatorname{stopgrad}(\log K_{\mathrm{eff,teacher}})
+\right]^2,
+$$
+
+$$
+L_{\mathrm{coverage}}
+=
+\operatorname{ReLU}
+\left[
+\operatorname{stopgrad}(C_{\mathrm{soft,baseline}})
+-
+C_{\mathrm{soft,pred}}
+\right]^2.
+$$
 
 The hinge only penalizes predicted coverage dropping below the baseline
 surrogate.
@@ -75,4 +125,3 @@ task-performance improvement
 strict per-scene coverage monotonicity
 proposal cardinality reduction
 ```
-

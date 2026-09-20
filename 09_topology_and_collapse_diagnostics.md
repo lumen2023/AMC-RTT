@@ -30,20 +30,36 @@ collapse risk index (CRI)
 
 Topology concentration:
 
-```text
-w_ij = S_ij^2
-A = sum_{i<j} w_ij
-B = sum_{i<j} w_ij^2
-E_eff = A^2 / B
-rho = E_eff / C(K,2)
-```
+$$
+w_{ij}=S_{ij}^2,
+\qquad
+A=\sum_{i<j}w_{ij},
+\qquad
+B=\sum_{i<j}w_{ij}^2,
+$$
+
+$$
+E_{\mathrm{eff}}
+=
+\frac{A^2}{B},
+\qquad
+\rho
+=
+\frac{E_{\mathrm{eff}}}{\binom{K}{2}}.
+$$
 
 Row-local concentration:
 
-```text
-row_mass_i = sum_{j != i} w_ij
-row_neff_i = row_mass_i^2 / sum_{j != i} w_ij^2
-```
+$$
+\operatorname{row\_mass}_i
+=
+\sum_{j\ne i}w_{ij},
+\qquad
+\operatorname{row\_neff}_i
+=
+\frac{\operatorname{row\_mass}_i^2}
+{\sum_{j\ne i}w_{ij}^2}.
+$$
 
 ## Selective Consolidation Versus Diffuse Smoothing
 
@@ -83,4 +99,3 @@ contraction mass relative to AMC-v1 in read-only simulation.
 
 Never report `K_eff` alone as evidence of capacity efficiency or diversity
 improvement.
-

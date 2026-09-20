@@ -60,10 +60,8 @@ Delta R2 = -0.0168
 
 `K_eff` decrease is not performance improvement:
 
-```text
-K_eff only controls total affinity mass
-topology and task score must be checked separately
-```
+$K_{\mathrm{eff}}$ only controls total affinity mass; topology and task score
+must be checked separately.
 
 Planning quality improvement is not supported:
 
@@ -75,10 +73,20 @@ A3.7 score drops slightly despite stable coverage
 
 The soft relation target:
 
-```text
-pi_i(m) = exp(-ADE(tau_i,p_m)/T) / sum_l exp(-ADE(tau_i,p_l)/T)
-Q_ij = sum_m pi_i(m) pi_j(m)
-```
+$$
+\pi_i(m)
+=
+\frac{
+\exp\!\left[-\operatorname{ADE}(\tau_i,p_m)/T\right]
+}{
+\sum_\ell
+\exp\!\left[-\operatorname{ADE}(\tau_i,p_\ell)/T\right]
+},
+\qquad
+Q_{ij}
+=
+\sum_m\pi_i(m)\pi_j(m).
+$$
 
 is a deterministic function of teacher-ADE vectors. Features derived from the
 same vectors, such as hard assignment, margin, entropy, nearest ADE, or
@@ -90,4 +98,3 @@ Do not count their predictive power as frozen model-side consequence support.
 
 Never convert a `DIAGNOSTIC_ONLY` pass into a method claim without a matched
 training or task-validation gate.
-

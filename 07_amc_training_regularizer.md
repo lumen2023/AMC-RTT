@@ -7,32 +7,45 @@ teacher candidate set.
 
 ## Student
 
-```text
-Z_pred = F_frozen(c, Y_pred)
-S_pred = similarity(Z_pred)
-K_pred = K_eff(S_pred)
-```
+$$
+Z_{\mathrm{pred}}=F_{\mathrm{frozen}}(c,Y_{\mathrm{pred}}),
+\qquad
+S_{\mathrm{pred}}=\operatorname{similarity}(Z_{\mathrm{pred}}),
+\qquad
+K_{\mathrm{pred}}=K_{\mathrm{eff}}(S_{\mathrm{pred}}).
+$$
 
 ## Teacher
 
-```text
-Z_teacher = F_frozen(c, T_teacher)
-S_teacher = similarity(Z_teacher)
-K_teacher = K_eff(S_teacher)
-```
+$$
+Z_{\mathrm{teacher}}=F_{\mathrm{frozen}}(c,T_{\mathrm{teacher}}),
+\qquad
+S_{\mathrm{teacher}}=\operatorname{similarity}(Z_{\mathrm{teacher}}),
+\qquad
+K_{\mathrm{teacher}}=K_{\mathrm{eff}}(S_{\mathrm{teacher}}).
+$$
 
 Teacher values are stop-gradient targets:
 
-```text
-stopgrad(log K_teacher)
-```
+$$
+\operatorname{stopgrad}\!\left(\log K_{\mathrm{teacher}}\right).
+$$
 
 ## Loss
 
-```text
-L_AMC = (log K_pred - stopgrad(log K_teacher))^2
-L_total = L_task + lambda * L_AMC
-```
+$$
+L_{\mathrm{AMC}}
+=
+\left[
+\log K_{\mathrm{pred}}
+-
+\operatorname{stopgrad}(\log K_{\mathrm{teacher}})
+\right]^2,
+\qquad
+L_{\mathrm{total}}
+=
+L_{\mathrm{task}}+\lambda L_{\mathrm{AMC}}.
+$$
 
 The teacher source is a pluggable interface:
 
@@ -76,9 +89,12 @@ score: 0.9582 -> 0.9525
 
 Small `lambda` does not imply small optimization influence. Track:
 
-```text
-rho = || lambda * grad L_AMC || / || grad L_task ||
-```
+$$
+\rho
+=
+\frac{\lVert \lambda\nabla L_{\mathrm{AMC}}\rVert}
+{\lVert\nabla L_{\mathrm{task}}\rVert}.
+$$
 
 or the corresponding auxiliary/base ratio when coverage terms are included.
 
@@ -97,4 +113,3 @@ proposal cardinality reduction
 planning quality improvement
 mode-preserving compression solved
 ```
-

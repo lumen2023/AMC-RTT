@@ -151,6 +151,60 @@ engineering anchor for pursuing the full chain.
 
 当前 Drive-JEPA 证据已经支持机制侧，并为完整链条提供了强工程锚点。
 
+## Proof Backbone / 证明骨架
+
+The forward argument is a proof program, not a slogan. Its mathematical core is:
+
+正面论证是一条证明程序，不是一句口号。数学核心包括：
+
+1. finite-$K$ coverage / 有限 $K$ 覆盖：
+
+$$
+\mathbb{E}[U_K]
+=
+\sum_{m=1}^{M}\left[1-(1-p_m)^K\right].
+$$
+
+2. correlated-gradient effective sample size / 相关梯度有效样本数：
+
+$$
+r_{\mathrm{eff}}
+=
+\frac{r}{1+(r-1)\rho_g}.
+$$
+
+3. local information volume / 局部信息体积：
+
+$$
+\log(1+\lambda r a^2)
+<
+r\log(1+\lambda a^2)
+\qquad(r>1,\lambda a^2>0).
+$$
+
+4. normalized/clipped hard-direction share / normalized 或 clipped update 下的
+   hard-direction 份额：
+
+$$
+\left|
+\left\langle
+\Delta\theta,
+\frac{v}{\lVert v\rVert}
+\right\rangle
+\right|
+=
+\eta G
+\frac{\lVert v\rVert}
+{\sqrt{r^2\lVert u\rVert^2+\lVert v\rVert^2}}.
+$$
+
+The task-score step is intentionally kept as an empirical gate: the package
+claims a rigorous mechanism, then requires matched experiments before upgrading
+to task improvement.
+
+task-score 步骤被有意保留为经验门控：本包先给出严格机制，再要求 matched
+experiment 通过后才能升级为 task improvement。
+
 ## Mathematical Pictures / 数学图解
 
 The figures below are intentionally simple and deterministic SVGs. They are for
@@ -357,40 +411,39 @@ Thus the strongest useful claim is:
 
 因此，最有利且可论证的 claim 是：
 
-```text
 If redundant hypotheses create correlated gradients or repeated local
 information directions, then selective de-redundancy can increase effective
-optimization capacity.
+optimization capacity. If that released capacity is reallocated toward
+hard/rare task-relevant directions, then task improvement becomes a testable
+and plausible consequence.
 
-If that released capacity is reallocated toward hard/rare task-relevant
-directions, then task improvement becomes a testable and plausible consequence.
-```
-
-```text
 如果冗余 hypotheses 造成相关梯度或重复的信息方向，那么选择性去冗余可以提升
-有效优化容量。
-
-如果释放出的容量进一步被分配到困难/稀有且任务相关的方向，那么 task improvement
-就是可检验且有机制支撑的结果。
-```
+有效优化容量。如果释放出的容量进一步被分配到困难/稀有且任务相关的方向，那么
+task improvement 就是可检验且有机制支撑的结果。
 
 Promotion target / 升级目标：
 
-```text
-gradient redundancy down
-AND gradient effective rank or logdet up
-AND hard-scene update share up
-AND task score up
-=> CAPACITY_EFFICIENCY_SUPPORTED
-```
+$$
+\text{gradient redundancy}\downarrow
+\ \land\
+\left[
+\operatorname{erank}(G_{\mathrm{grad}})\uparrow
+\ \lor\
+\log\det(I+\lambda F)\uparrow
+\right]
+\ \land\
+\text{hard-scene update share}\uparrow
+\ \land\
+\text{task score}\uparrow
+\Rightarrow
+\texttt{CAPACITY\_EFFICIENCY\_SUPPORTED}.
+$$
 
 Current research status while the proof program advances:
 
 证明程序推进期间的当前研究状态：
 
-```text
-MECHANISM_SUPPORTED__CAPACITY_EFFICIENCY_PROOF_ACTIVE
-```
+`MECHANISM_SUPPORTED__CAPACITY_EFFICIENCY_PROOF_ACTIVE`
 
 This is the forward-looking status: the Drive-JEPA high-score anchor and the
 mechanism evidence are strong enough to justify active transfer, while the proof

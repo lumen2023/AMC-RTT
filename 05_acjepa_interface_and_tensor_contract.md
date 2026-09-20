@@ -97,14 +97,27 @@ Tensor meanings:
 
 The implemented A3.2 distance flattens tokens and channels per horizon:
 
-```text
-flat = pred.float().flatten(2)      # [K,H,P*D]
-d_h(i,j) = mean squared distance at horizon h
-d(i,j) = mean_h d_h(i,j)
-S_ij = exp(-d(i,j) / tau^2)
-diag(S) = 1
-S = 0.5 * (S + S^T)
-```
+Flatten the latent as `flat = pred.float().flatten(2)`, giving shape
+`[K,H,P*D]`. Then compute:
+
+$$
+d_h(i,j)
+=
+\operatorname{mean}\operatorname{squared\ distance}
+\text{ at horizon }h,
+\qquad
+d(i,j)=\operatorname{mean}_h d_h(i,j),
+$$
+
+$$
+S_{ij}
+=
+\exp\!\left(-\frac{d(i,j)}{\tau^2}\right),
+\qquad
+\operatorname{diag}(S)=1,
+\qquad
+S=\frac{1}{2}(S+S^\top).
+$$
 
 When `tau` is estimated in A3.2 smoke, it is the detached median off-diagonal
 L2 distance. Later AMC training uses the frozen tau from the A3.4 provenance.
@@ -130,4 +143,3 @@ def encode_acjepa(context_z0, proposals, dataset, ac_model, tau, rollout_steps):
 Boundary: this adapter is supported for the Drive-JEPA C0 AC-JEPA path. It is
 not evidence that AC-JEPA multi-horizon support alone recovers the teacher
 relation target after A15-A17.
-

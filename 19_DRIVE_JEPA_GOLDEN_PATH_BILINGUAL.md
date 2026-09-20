@@ -126,9 +126,12 @@ Train-split normalization is:
 
 train-split normalization 是：
 
-```text
-actions_norm = (actions - mean) / std
-```
+$$
+\operatorname{actions}_{\mathrm{norm}}
+=
+\frac{\operatorname{actions}-\operatorname{mean}}
+{\operatorname{std}}.
+$$
 
 Source:
 
@@ -219,13 +222,17 @@ Pairwise latent distance:
 
 pairwise latent distance：
 
-```text
-pairwise_mse_by_horizon(latent)
--> mean over H
--> S_ij = exp(-mse_ij / tau^2)
--> diagonal set to 1
--> symmetric affinity
-```
+`pairwise_mse_by_horizon(latent)` first averages over rollout horizons, then:
+
+$$
+S_{ij}
+=
+\exp\!\left(-\frac{\operatorname{mse}_{ij}}{\tau^2}\right),
+\qquad
+\operatorname{diag}(S)=1,
+\qquad
+S=\frac{1}{2}(S+S^\top).
+$$
 
 Source:
 
@@ -239,9 +246,11 @@ The effective rank is:
 
 有效秩为：
 
-```text
-K_eff = (tr S)^2 / tr(S^2)
-```
+$$
+K_{\mathrm{eff}}
+=
+\frac{(\operatorname{tr}S)^2}{\operatorname{tr}(S^2)}.
+$$
 
 The A3.4 tau provenance is passed into A3.5 and reused for student and teacher
 readouts; it must not be tuned on held-out evaluation data.
@@ -255,11 +264,21 @@ The A3.5 student loss is:
 
 A3.5 student loss：
 
-```text
-base_loss = agent.compute_loss(...)
-L_AMC = (log K_eff_pred - stopgrad(log K_eff_teacher))^2
-L_total = base_loss + lambda(t) * L_AMC
-```
+$$
+L_{\mathrm{AMC}}
+=
+\left[
+\log K_{\mathrm{eff,pred}}
+-
+\operatorname{stopgrad}(\log K_{\mathrm{eff,teacher}})
+\right]^2,
+\qquad
+L_{\mathrm{total}}
+=
+L_{\mathrm{base}}+\lambda(t)L_{\mathrm{AMC}}.
+$$
+
+Here `L_base` is produced by `agent.compute_loss(...)`.
 
 Source:
 
@@ -390,4 +409,3 @@ Not supported:
 - planning improvement；
 - direct reuse of this loss for stochastic DM/FM samples.
 - 将此 loss 直接复用到 stochastic DM/FM samples。
-

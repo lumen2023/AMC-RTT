@@ -41,11 +41,11 @@ TA-AMC raises a predeclared local information proxy:
 
 TA-AMC 提升预注册的局部信息 proxy：
 
-```text
-erank(G_grad)
-or
-log det(I + lambda F_hat)
-```
+$$
+\operatorname{erank}(G_{\mathrm{grad}})
+\quad\text{or}\quad
+\log\det(I+\lambda \widehat{F}).
+$$
 
 ### Measurements / 测量
 
@@ -118,12 +118,18 @@ easy-scene task performance。
 
 ### Measurements / 测量
 
-```text
-<Delta theta, g_hard / ||g_hard||>
-hard-scene update share
-task score by difficulty
-coverage by difficulty
-```
+$$
+\left\langle
+\Delta\theta,
+\frac{g_{\mathrm{hard}}}{\lVert g_{\mathrm{hard}}\rVert}
+\right\rangle .
+$$
+
+Also measure hard-scene update share, task score by difficulty, and coverage by
+difficulty.
+
+同时测量 hard-scene update share、task score by difficulty 与 coverage by
+difficulty。
 
 Compare:
 
@@ -197,4 +203,3 @@ The story is weakened or falsified if:
 - 匹配 compute 与 optimizer state 后效果消失；
 - the effect is caused by teacher leakage or post hoc difficulty labels.
 - 效果由 teacher leakage 或事后 difficulty labels 造成。
-

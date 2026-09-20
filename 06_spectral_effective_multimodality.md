@@ -6,24 +6,26 @@ Status: `SUPPORTED_WITH_TOPOLOGY_LIMITATION`
 
 Given pairwise distances:
 
-```text
-d_ij >= 0
-```
+$$
+d_{ij}\ge 0.
+$$
 
 construct:
 
-```text
-S_ij = exp(-(d_ij / tau)^2)
-S_ii = 1
-S = 0.5 * (S + S^T)
-```
+$$
+S_{ij}=\exp\!\left[-\left(\frac{d_{ij}}{\tau}\right)^2\right],
+\qquad
+S_{ii}=1,
+\qquad
+S=\frac{1}{2}(S+S^\top).
+$$
 
 In the AC-JEPA implementation, `d_ij^2` is the mean per-horizon latent MSE and
 the code writes:
 
-```text
-S_ij = exp(-mse_ij / tau^2)
-```
+$$
+S_{ij}=\exp\!\left(-\frac{\operatorname{mse}_{ij}}{\tau^2}\right).
+$$
 
 `tau` must be calibrated on training/calibration data or inherited from frozen
 experiment provenance. Avoid tuning `tau` on held-out evaluation data.
@@ -32,53 +34,62 @@ experiment provenance. Avoid tuning `tau` on held-out evaluation data.
 
 The spectral effective multimodality is the participation-ratio effective rank:
 
-```text
-K_eff(S) = (tr S)^2 / tr(S^2)
-```
+$$
+K_{\mathrm{eff}}(S)
+=
+\frac{(\operatorname{tr}S)^2}{\operatorname{tr}(S^2)}.
+$$
 
 Since `diag(S)=1`:
 
-```text
-tr S = K
-tr(S^2) = K + 2 * sum_{i<j} S_ij^2
-```
+$$
+\operatorname{tr}S=K,
+\qquad
+\operatorname{tr}(S^2)
+=
+K+2\sum_{i<j}S_{ij}^2.
+$$
 
 so:
 
-```text
-K_eff = K^2 / (K + 2 * sum_{i<j} S_ij^2)
-```
+$$
+K_{\mathrm{eff}}
+=
+\frac{K^2}{K+2\sum_{i<j}S_{ij}^2}.
+$$
 
 ## Sanity Cases
 
 Identical candidates:
 
-```text
-S_ij = 1 for all i,j
-K_eff = 1
-```
+$$
+S_{ij}=1\ \text{for all }i,j
+\quad\Rightarrow\quad
+K_{\mathrm{eff}}=1.
+$$
 
 Independent candidates:
 
-```text
-S = I
-K_eff = K
-```
+$$
+S=I
+\quad\Rightarrow\quad
+K_{\mathrm{eff}}=K.
+$$
 
 Ideal `M` equal-size blocks with within-block similarity near one and
 cross-block similarity near zero:
 
-```text
-K_eff approximately M
-```
+$$
+K_{\mathrm{eff}}\approx M.
+$$
 
 ## Important Limitation
 
 `K_eff` controls total squared affinity mass:
 
-```text
-sum_{i<j} S_ij^2
-```
+$$
+\sum_{i<j}S_{ij}^2.
+$$
 
 It does not uniquely determine redundancy topology. A few strong local
 redundant neighborhoods and many moderate cross-pair similarities can produce
@@ -97,4 +108,3 @@ Always report `K_eff` with:
 - row effective neighbor count;
 - same/different teacher contraction mass when teacher labels are available;
 - coverage and task score.
-

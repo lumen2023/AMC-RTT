@@ -3,10 +3,8 @@
 AMC-RTT is a theory, implementation, transfer, and evidence package for
 redundancy-aware multimodal generation. Its central principle is simple:
 
-```text
 Do not let a finite multimodal decoder spend its modeling, sampling, and
 optimization budget repeatedly representing the same future.
-```
 
 ## High-Score Anchor
 
@@ -67,6 +65,54 @@ $$
 Detailed derivations and literature anchors are in
 [28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md](28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md).
 
+## Proof Backbone
+
+The positive argument is not a slogan. It is a chain of local results with
+explicit assumptions:
+
+1. finite-$K$ coverage:
+
+$$
+\mathbb{E}[U_K]
+=
+\sum_{m=1}^{M}\left[1-(1-p_m)^K\right];
+$$
+
+2. correlated-gradient effective sample size:
+
+$$
+r_{\mathrm{eff}}
+=
+\frac{r}{1+(r-1)\rho_g};
+$$
+
+3. local information volume:
+
+$$
+\log(1+\lambda r a^2)
+<
+r\log(1+\lambda a^2)
+\qquad(r>1);
+$$
+
+4. normalized/clipped hard-direction share:
+
+$$
+\left|
+\left\langle
+\Delta\theta,
+\frac{v}{\lVert v\rVert}
+\right\rangle
+\right|
+=
+\eta G
+\frac{\lVert v\rVert}
+{\sqrt{r^2\lVert u\rVert^2+\lVert v\rVert^2}}.
+$$
+
+The first three are mathematical mechanisms; the task-score step remains an
+empirical proof obligation. That boundary is intentional.
+
 ## Decoder Transfer
 
 AMC-RTT is decoder-agnostic at the interface level and decoder-aware at the
@@ -111,9 +157,7 @@ The editable FigureSpec sources are in [figures/specs](figures/specs).
 
 ## Current Status
 
-```text
-MECHANISM_SUPPORTED__CAPACITY_EFFICIENCY_PROOF_ACTIVE
-```
+Current status: `MECHANISM_SUPPORTED__CAPACITY_EFFICIENCY_PROOF_ACTIVE`.
 
 The Drive-JEPA high-score anchor and mechanism evidence make AMC-RTT ready for
 active transfer. The proof program defines the efficient path from mechanism

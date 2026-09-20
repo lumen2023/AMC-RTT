@@ -19,17 +19,15 @@ Use inline math for symbols, for example `$K_{\mathrm{eff}}$`.
 
 符号使用 inline math，例如 `$K_{\mathrm{eff}}$`。
 
-Use display math for equations:
+Use display math for equations, written directly in Markdown:
 
 成行公式使用 display math：
 
-```md
 $$
 \mathbb{E}[U_K]
 =
 \sum_{m=1}^{M}\left[1-(1-p_m)^K\right].
 $$
-```
 
 Use fenced code blocks only for commands, paths, status tags, or ASCII
 pipelines. Do not put mathematical claims inside fenced code blocks if the file
@@ -49,6 +47,40 @@ claim 不应放进 fenced code block。
 | complex-scene update share | reducing repeated easy gradients increases hard-direction share under normalized/clipped updates | conditional theorem | clipped/normalized update analysis; multitask gradient work |
 | fixed-slot Jacobian rank | duplicate slot sensitivities lower output degrees of freedom | proposition | effective rank; set uniqueness analogy from DETR |
 | decoder transfer | interface transfers, while loss semantics are decoder-aware | theorem plus protocol | Drive-JEPA, Diffusion Policy, Flow Matching, VQ-BeT |
+
+## Search-Verified Literature Discipline / 检索核验纪律
+
+The literature role in this package is deliberately narrow. A paper can anchor
+a mathematical object, a decoder family, or an optimization phenomenon; it does
+not by itself prove AMC-RTT. Every AMC-RTT-specific claim below is therefore
+written as one of three objects:
+
+1. an algebraic theorem under explicit assumptions;
+2. a local proposition whose boundary is stated beside it;
+3. an empirical proof obligation that must be measured before the claim is
+   upgraded.
+
+本包对文献的使用是克制的：论文可以锚定数学对象、decoder family 或优化现象，
+但不能自动证明 AMC-RTT。因此下面所有 AMC-RTT 专属结论只按三类表达：
+
+1. 明确假设下的代数定理；
+2. 带边界条件的局部命题；
+3. 必须实测后才能升级的经验证明义务。
+
+Public anchors checked for this revision include Drive-JEPA for the motivating
+driving planner, DETR for set prediction with uniqueness pressure, Diffusion
+Policy for multimodal action diffusion, Flow Matching for vector-field
+probability transport, VQ-BeT for latent-action capacity, GradNorm and PCGrad
+for shared-gradient balancing/conflict, Roy--Vetterli effective rank,
+Marshall--Olkin--Arnold majorization, Kish design effect / effective sample
+size, and D-optimal/logdet design references.
+
+本次修订核验的公开锚点包括：Drive-JEPA 的驾驶 planner 背景，DETR 的 set
+prediction 与唯一性压力，Diffusion Policy 的多模态动作 diffusion，Flow
+Matching 的 vector-field probability transport，VQ-BeT 的 latent-action
+capacity，GradNorm 与 PCGrad 的共享梯度平衡/冲突，Roy--Vetterli effective
+rank，Marshall--Olkin--Arnold majorization，Kish design effect / effective
+sample size，以及 D-optimal/logdet design 参考。
 
 ## 1. Finite-$K$ Coverage Theorem / 有限 $K$ 覆盖定理
 

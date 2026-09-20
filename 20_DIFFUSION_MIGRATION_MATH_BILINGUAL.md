@@ -37,39 +37,44 @@ For a forward process:
 
 对于 forward process：
 
-```text
-x_t = alpha_t x_0 + sigma_t epsilon
-```
+$$
+x_t = \alpha_t x_0 + \sigma_t \epsilon.
+$$
 
 under epsilon prediction:
 
 在 epsilon prediction 下：
 
-```text
-x0_hat_theta(x_t,t,c)
- = [x_t - sigma_t epsilon_theta(x_t,t,c)] / alpha_t
-```
+$$
+\hat{x}_{0,\theta}(x_t,t,c)
+=
+\frac{x_t-\sigma_t\epsilon_\theta(x_t,t,c)}{\alpha_t}.
+$$
 
 For `K` independent noises under one condition:
 
 同一 condition 下使用 `K` 个独立噪声：
 
-```text
-epsilon^(1), ..., epsilon^(K)
--> x0_hat^(1), ..., x0_hat^(K)
--> canonical [B,K,H,A]
-```
+$$
+\epsilon^{(1)},\ldots,\epsilon^{(K)}
+\mapsto
+\hat{x}_0^{(1)},\ldots,\hat{x}_0^{(K)}
+\mapsto
+A\in\mathbb{R}^{B\times K\times H\times D_a}.
+$$
 
 If `L_R` is applied to clean-action estimates:
 
 如果 redundancy loss 作用于 clean-action estimates：
 
-```text
-d L_R / d theta
- = sum_k [d L_R / d x0_hat^(k)]
-       * [-sigma_t / alpha_t]
-       * [d epsilon_theta^(k) / d theta]
-```
+$$
+\frac{\partial L_R}{\partial \theta}
+=
+\sum_{k=1}^{K}
+\frac{\partial L_R}{\partial \hat{x}_0^{(k)}}
+\left(-\frac{\sigma_t}{\alpha_t}\right)
+\frac{\partial \epsilon_\theta^{(k)}}{\partial \theta}.
+$$
 
 This is a pathwise gradient only under the schedule and parameterization
 assumptions above.
@@ -123,9 +128,9 @@ Backpropagate through:
 
 通过以下完整路径反传：
 
-```text
-x_T -> x_{T-1} -> ... -> x_0
-```
+$$
+x_T \to x_{T-1}\to\cdots\to x_0.
+$$
 
 Costs include `O(T)` activation memory, Jacobian products, possible
 exploding/vanishing gradients, and stochastic-path variance.
@@ -140,9 +145,11 @@ Attractive pairwise redundancy loss can increase concentration in
 
 pairwise attraction 可能增加 `p_theta(mode)` 的集中程度。根据定理 1：
 
-```text
-E[U_K] = sum_m [1 - (1-p_m)^K]
-```
+$$
+\mathbb{E}[U_K]
+=
+\sum_m \left[1-(1-p_m)^K\right].
+$$
 
 concentration can lower finite-K unique semantic coverage. Thus a lower
 latent-distance or lower `K_eff` score may indicate mode collapse rather than
@@ -181,4 +188,3 @@ TRANSFER_HYPOTHESIS:
 NOT_SUPPORTED:
     unchanged Drive-JEPA AMC-v1 loss is automatically valid for diffusion.
 ```
-

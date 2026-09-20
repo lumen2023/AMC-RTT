@@ -8,18 +8,21 @@ Flow Matching uses a learned vector field:
 
 Flow Matching 学习 vector field：
 
-```text
-dx_t / dt = v_theta(x_t,t,c)
-```
+$$
+\frac{d x_t}{dt}
+=
+v_\theta(x_t,t,c).
+$$
 
 For `K` base samples:
 
 对于 `K` 个 base samples：
 
-```text
-x_0^(k) ~ p0
-x_1^(k) = Phi_theta(x_0^(k), c)
-```
+$$
+x_0^{(k)}\sim p_0,
+\qquad
+x_1^{(k)}=\Phi_\theta(x_0^{(k)},c).
+$$
 
 where `Phi_theta` is the numerical ODE flow map.
 
@@ -39,19 +42,23 @@ Let:
 
 令：
 
-```text
-S_t = d x_t / d theta
-```
+$$
+S_t
+=
+\frac{\partial x_t}{\partial \theta}.
+$$
 
 Differentiating the ODE:
 
 对 ODE 求导：
 
-```text
-d S_t / dt
- = [d v_theta / d x] S_t
-   + d v_theta / d theta
-```
+$$
+\frac{d S_t}{dt}
+=
+\frac{\partial v_\theta}{\partial x}S_t
++
+\frac{\partial v_\theta}{\partial \theta}.
+$$
 
 Therefore a terminal redundancy loss affects the entire velocity field through
 the ODE dynamics, not just a final decoder head.
@@ -103,18 +110,21 @@ For a linear path:
 
 对于 linear path：
 
-```text
-x_t = (1-t)x_0 + t x_1
-u_t = x_1 - x_0
-```
+$$
+x_t=(1-t)x_0+t x_1,
+\qquad
+u_t=x_1-x_0.
+$$
 
 if the implementation predicts `u_t` with the same orientation, one can form:
 
 如果实现以相同 orientation 预测 `u_t`，可以构造：
 
-```text
-x1_hat = x_t + (1-t) v_theta(x_t,t,c)
-```
+$$
+\hat{x}_1
+=
+x_t+(1-t)v_\theta(x_t,t,c).
+$$
 
 This proxy is valid only for the stated path orientation and parameterization.
 Some implementations reverse the time endpoints; the adapter must read the
@@ -162,4 +172,3 @@ TRANSFER_HYPOTHESIS:
 NOT_SUPPORTED:
     fixed-slot capacity language or unchanged AMC-v1 loss transfers automatically.
 ```
-

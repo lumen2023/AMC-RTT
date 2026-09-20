@@ -18,10 +18,17 @@ frozen-latent relation 的增量信息，但 A2.8 表明 relation information �
 
 The soft target:
 
-```text
-pi_i(m) = softmax_m(-ADE(tau_i,p_m)/T)
-Q_ij = sum_m pi_i(m) pi_j(m)
-```
+$$
+\pi_i(m)
+=
+\operatorname{softmax}_m\!\left(
+-\frac{\operatorname{ADE}(\tau_i,p_m)}{T}
+\right),
+\qquad
+Q_{ij}
+=
+\sum_m \pi_i(m)\pi_j(m).
+$$
 
 is constructed from teacher-ADE vectors. Hard teacher assignment, margin,
 entropy, nearest ADE, and second-nearest ADE can predict `Q` by construction.
@@ -34,9 +41,11 @@ self-dependency，不是独立 representation support。
 
 ### F3: `K_eff` Is Treated As Topology / 把 `K_eff` 当成 topology
 
-```text
-K_eff = K^2 / [K + 2 sum_{i<j} S_ij^2]
-```
+$$
+K_{\mathrm{eff}}
+=
+\frac{K^2}{K+2\sum_{i<j}S_{ij}^2}.
+$$
 
 controls total affinity mass but not its allocation across edges. Report edge
 participation, row effective neighbors, and cross-mode mass with `K_eff`.
@@ -59,9 +68,11 @@ Attraction among diffusion/FM samples can concentrate probability mass and lower
 
 Diffusion/FM sample attraction 可能集中概率质量并降低：
 
-```text
-E[U_K] = sum_m [1-(1-p_m)^K]
-```
+$$
+\mathbb{E}[U_K]
+=
+\sum_m\left[1-(1-p_m)^K\right].
+$$
 
 ### F6: Proxy/Endpoint Mismatch / proxy 与 endpoint 不一致
 
@@ -156,4 +167,3 @@ Stop the migration or pilot if:
 - proxy relation 不满足 endpoint agreement；
 - task score gate is missing but a task-improvement claim is attempted.
 - 缺少 task score gate 却试图声称 task improvement。
-

@@ -66,16 +66,21 @@ gradient 可能改变整个 vector field。
 
 ## Counterexample To Universal Loss Reuse / 通用 loss 复用反例
 
-Take two semantic modes with probabilities `p=(0.9,0.1)` and `K=8`. If a
-regularizer makes the distribution more concentrated toward `p'=(1,0)`, then:
+Take two semantic modes with probabilities $p=(0.9,0.1)$ and $K=8$. If a
+regularizer makes the distribution more concentrated toward $p'=(1,0)$, then:
 
-考虑两个 semantic modes，概率 `p=(0.9,0.1)`，`K=8`。如果 regularizer 把
-分布进一步集中到 `p'=(1,0)`：
+考虑两个 semantic modes，概率 $p=(0.9,0.1)$，$K=8$。如果 regularizer 把
+分布进一步集中到 $p'=(1,0)$：
 
-```text
-E[U_8](p)  = [1-(0.1)^8] + [1-(0.9)^8]
-E[U_8](p') = 1
-```
+$$
+\mathbb{E}[U_8](p)
+=
+\left[1-(0.1)^8\right]
++
+\left[1-(0.9)^8\right],
+\qquad
+\mathbb{E}[U_8](p')=1.
+$$
 
 The second mode becomes impossible, even though pairwise sample similarity may
 look “cleaner”. Thus a lower redundancy statistic can be worse semantic sample
@@ -101,12 +106,15 @@ No theorem in this package proves:
 
 本包没有任何定理证明：
 
-```text
-redundancy reduction -> capacity efficiency -> task improvement
-```
+$$
+\text{redundancy reduction}
+\Rightarrow
+\text{capacity efficiency}
+\Rightarrow
+\text{task improvement}.
+$$
 
 The package provides conditions, mechanisms, counterexamples, and experiments
 that can either support or falsify those arrows.
 
 本包提供条件、机制、反例与实验，使这些箭头能够被支持或证伪。
-
