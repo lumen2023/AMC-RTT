@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 390" width="980" height="390" font-family="Arial, DejaVu Sans, sans-serif">
+  <rect width="980" height="390" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DBEAFE"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DCFCE7"/>
+    </marker>
+    <marker id="arrow-c2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEF9C3"/>
+    </marker>
+    <marker id="arrow-c3" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#F3E8FF"/>
+    </marker>
+  </defs>
+  <path d="M 222.5,122.0 L 280.0,122.0" stroke="#2563EB" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 470.0,122.0 L 505.0,122.0" stroke="#CA8A04" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 735.0,122.0 L 730.0,122.0" stroke="#9333EA" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 312.5,265.0 L 417.5,265.0" stroke="#64748B" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="325.0" y="247.0" width="80.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="365.0" y="259.0" font-size="10" fill="#777777" text-anchor="middle">low affinity</text>
+  <path d="M 562.5,265.0 L 667.5,265.0" stroke="#64748B" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="575.0" y="247.0" width="80.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="615.0" y="259.0" font-size="10" fill="#777777" text-anchor="middle">low affinity</text>
+  <rect x="47.5" y="89.0" width="175.0" height="66.0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" rx="8"/>
+  <text x="135.0" y="119.0" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">K_generated = 8</text>
+  <text x="135.0" y="134.1" font-size="10" fill="#888888" text-anchor="middle">eight decoded proposals</text>
+  <rect x="280.0" y="89.0" width="190.0" height="66.0" fill="#FEF9C3" stroke="#CA8A04" stroke-width="2" rx="8"/>
+  <text x="375.0" y="119.0" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">similar pairs</text>
+  <text x="375.0" y="134.1" font-size="10" fill="#888888" text-anchor="middle">same consequence region</text>
+  <rect x="505.0" y="89.0" width="230.0" height="66.0" fill="#F3E8FF" stroke="#9333EA" stroke-width="2" rx="8"/>
+  <text x="620.0" y="119.0" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">S_ij = exp(-d_ij^2 / tau^2)</text>
+  <text x="620.0" y="134.1" font-size="10" fill="#888888" text-anchor="middle">pairwise consequence affinity</text>
+  <rect x="730.0" y="86.0" width="220.0" height="72.0" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <text x="840.0" y="119.0" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">K_eff = (tr S)^2 / tr(S^2)</text>
+  <text x="840.0" y="134.1" font-size="10" fill="#888888" text-anchor="middle">effective multimodality</text>
+  <ellipse cx="240.0" cy="265.0" rx="72.5" ry="30.0" fill="#E0F2FE" stroke="#0284C7" stroke-width="2"/>
+  <text x="240.0" y="262.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Mode A</text>
+  <text x="240.0" y="277.1" font-size="10" fill="#888888" text-anchor="middle">3 redundant slots</text>
+  <ellipse cx="490.0" cy="265.0" rx="72.5" ry="30.0" fill="#ECFDF5" stroke="#059669" stroke-width="2"/>
+  <text x="490.0" y="262.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Mode B</text>
+  <text x="490.0" y="277.1" font-size="10" fill="#888888" text-anchor="middle">3 redundant slots</text>
+  <ellipse cx="740.0" cy="265.0" rx="72.5" ry="30.0" fill="#FEF3C7" stroke="#D97706" stroke-width="2"/>
+  <text x="740.0" y="262.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Mode C</text>
+  <text x="740.0" y="277.1" font-size="10" fill="#888888" text-anchor="middle">2 redundant slots</text>
+  <text x="490.0" y="350.0" font-size="14" fill="#334155" text-anchor="middle">Eight generated candidates can express only about three effective futures when slots duplicate consequences.</text>
+</svg>

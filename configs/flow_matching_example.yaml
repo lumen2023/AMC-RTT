@@ -1,0 +1,41 @@
+# AMC-RTT flow-matching decoder example configuration.
+# Documentation-only template for transfer validation.
+
+decoder:
+  type: flow_matching
+  mode: differentiable_endpoint_integration
+  num_candidates: 16
+  candidate_tensor: endpoint_trajectory
+  shape: [B, K, T, D_y]
+
+flow_matching:
+  keep_original_objective: true
+  original_loss: flow_matching_vector_field_loss
+  endpoint_integration:
+    differentiable_solver: true
+  short_solver_proxy:
+    enabled: false
+    status: experimental_only
+
+task_adapter:
+  type: user_defined
+  required_method: to_actions_or_task_representation
+
+frozen_consequence_encoder:
+  type: user_defined
+  frozen_parameters: true
+  preserve_input_gradient: true
+
+similarity:
+  metric: latent_pairwise_mse
+  kernel: exp_neg_distance_squared
+  tau_source: calibration_split
+
+regularizer:
+  type: amc_v1
+  total_loss: L_flow_matching + lambda * L_AMC
+
+validation:
+  required_levels: [0, 1, 2, 3, 4]
+  forbid_general_claim_before_level4: true
+

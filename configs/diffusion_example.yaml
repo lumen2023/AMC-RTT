@@ -1,0 +1,41 @@
+# AMC-RTT diffusion decoder example configuration.
+# Documentation-only template for transfer validation.
+
+decoder:
+  type: diffusion
+  mode: faithful_endpoint
+  num_candidates: 16
+  candidate_tensor: clean_trajectory
+  shape: [B, K, T, D_y]
+
+diffusion:
+  keep_original_objective: true
+  original_loss: diffusion_denoising_loss
+  endpoint_mode:
+    differentiable_denoising_chain: true
+  proxy_mode:
+    enabled: false
+    status: transfer_hypothesis_only
+
+task_adapter:
+  type: user_defined
+  required_method: to_actions_or_task_representation
+
+frozen_consequence_encoder:
+  type: user_defined
+  frozen_parameters: true
+  preserve_input_gradient: true
+
+similarity:
+  metric: latent_pairwise_mse
+  kernel: exp_neg_distance_squared
+  tau_source: calibration_split
+
+regularizer:
+  type: amc_v1
+  total_loss: L_diffusion + lambda * L_AMC
+
+validation:
+  required_levels: [0, 1, 2, 3, 4]
+  forbid_general_claim_before_level4: true
+

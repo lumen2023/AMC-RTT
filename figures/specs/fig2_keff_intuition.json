@@ -1,0 +1,113 @@
+{
+  "title": "K generated versus K effective intuition",
+  "canvas": {"width": 980, "height": 390},
+  "style": {
+    "font_family": "Arial, DejaVu Sans, sans-serif",
+    "font_size": 13,
+    "bg_color": "#FFFFFF",
+    "palette": ["#DBEAFE", "#DCFCE7", "#FEF9C3", "#F3E8FF"]
+  },
+  "nodes": [
+    {
+      "id": "k_generated",
+      "label": "K_generated = 8",
+      "sublabel": "eight decoded proposals",
+      "x": 135,
+      "y": 122,
+      "width": 175,
+      "height": 66,
+      "shape": "rounded",
+      "fill": "#DBEAFE",
+      "stroke": "#2563EB"
+    },
+    {
+      "id": "redundant_pairs",
+      "label": "similar pairs",
+      "sublabel": "same consequence region",
+      "x": 375,
+      "y": 122,
+      "width": 190,
+      "height": 66,
+      "shape": "rounded",
+      "fill": "#FEF9C3",
+      "stroke": "#CA8A04"
+    },
+    {
+      "id": "similarity",
+      "label": "S_ij = exp(-d_ij^2 / tau^2)",
+      "sublabel": "pairwise consequence affinity",
+      "x": 620,
+      "y": 122,
+      "width": 230,
+      "height": 66,
+      "shape": "rounded",
+      "fill": "#F3E8FF",
+      "stroke": "#9333EA"
+    },
+    {
+      "id": "keff",
+      "label": "K_eff = (tr S)^2 / tr(S^2)",
+      "sublabel": "effective multimodality",
+      "x": 840,
+      "y": 122,
+      "width": 220,
+      "height": 72,
+      "shape": "rounded",
+      "fill": "#DCFCE7",
+      "stroke": "#16A34A"
+    },
+    {
+      "id": "mode_a",
+      "label": "Mode A",
+      "sublabel": "3 redundant slots",
+      "x": 240,
+      "y": 265,
+      "width": 145,
+      "height": 60,
+      "shape": "ellipse",
+      "fill": "#E0F2FE",
+      "stroke": "#0284C7"
+    },
+    {
+      "id": "mode_b",
+      "label": "Mode B",
+      "sublabel": "3 redundant slots",
+      "x": 490,
+      "y": 265,
+      "width": 145,
+      "height": 60,
+      "shape": "ellipse",
+      "fill": "#ECFDF5",
+      "stroke": "#059669"
+    },
+    {
+      "id": "mode_c",
+      "label": "Mode C",
+      "sublabel": "2 redundant slots",
+      "x": 740,
+      "y": 265,
+      "width": 145,
+      "height": 60,
+      "shape": "ellipse",
+      "fill": "#FEF3C7",
+      "stroke": "#D97706"
+    }
+  ],
+  "edges": [
+    {"from": "k_generated", "to": "redundant_pairs", "color": "#2563EB"},
+    {"from": "redundant_pairs", "to": "similarity", "color": "#CA8A04"},
+    {"from": "similarity", "to": "keff", "color": "#9333EA"},
+    {"from": "mode_a", "to": "mode_b", "label": "low affinity", "style": "dashed", "color": "#64748B"},
+    {"from": "mode_b", "to": "mode_c", "label": "low affinity", "style": "dashed", "color": "#64748B"}
+  ],
+  "labels": [
+    {
+      "text": "Eight generated candidates can express only about three effective futures when slots duplicate consequences.",
+      "x": 490,
+      "y": 350,
+      "font_size": 14,
+      "color": "#334155",
+      "anchor": "middle"
+    }
+  ]
+}

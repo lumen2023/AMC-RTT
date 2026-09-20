@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 360" width="980" height="360" font-family="Arial, DejaVu Sans, sans-serif">
+  <rect width="980" height="360" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#E0F2FE"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#ECFDF5"/>
+    </marker>
+    <marker id="arrow-c2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEF3C7"/>
+    </marker>
+    <marker id="arrow-c3" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEE2E2"/>
+    </marker>
+  </defs>
+  <rect x="23.0" y="67.0" width="764.0" height="240.0" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1" rx="8"/>
+  <text x="31.0" y="83.0" font-size="11" fill="#999999" font-weight="bold">Engineering evidence</text>
+  <path d="M 215.0,130.0 L 265.0,130.0" stroke="#2563EB" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="209.0" y="112.0" width="62.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="240.0" y="124.0" font-size="10" fill="#777777" text-anchor="middle">builds on</text>
+  <path d="M 475.0,130.0 L 535.0,130.0" stroke="#059669" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="450.0" y="112.0" width="110.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="505.0" y="124.0" font-size="10" fill="#777777" text-anchor="middle">validated package</text>
+  <path d="M 370.0,219.0 L 370.0,167.0" stroke="#16A34A" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="321.0" y="175.0" width="98.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="370.0" y="187.0" font-size="10" fill="#777777" text-anchor="middle">practical route</text>
+  <path d="M 718.9,171.0 L 799.5,219.0" stroke="#DC2626" stroke-width="2" fill="none" marker-end="url(#arrow-default)" stroke-dasharray="8,4"/>
+  <rect x="707.2" y="177.0" width="104.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="759.2" y="189.0" font-size="10" fill="#777777" text-anchor="middle">do not overclaim</text>
+  <rect x="45.0" y="95.0" width="170.0" height="70.0" fill="#E0F2FE" stroke="#0284C7" stroke-width="2" rx="8"/>
+  <text x="130.0" y="127.0" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Drive-JEPA base</text>
+  <text x="130.0" y="142.1" font-size="10" fill="#888888" text-anchor="middle">V-JEPA ViT-L/16 + planner</text>
+  <rect x="265.0" y="93.0" width="210.0" height="74.0" fill="#ECFDF5" stroke="#059669" stroke-width="2" rx="8"/>
+  <text x="370.0" y="127.0" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">AMC / de-redundancy</text>
+  <text x="370.0" y="142.1" font-size="10" fill="#888888" text-anchor="middle">Drive-JEPA-based implementation</text>
+  <rect x="260.0" y="219.0" width="220.0" height="66.0" fill="#F0FDF4" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <text x="370.0" y="249.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">1x RTX 3090 path</text>
+  <text x="370.0" y="264.1" font-size="10" fill="#888888" text-anchor="middle">local fine-tune / fixcache evidence</text>
+  <rect x="535.0" y="89.0" width="230.0" height="82.0" fill="#FEF3C7" stroke="#D97706" stroke-width="2" rx="8"/>
+  <text x="650.0" y="126.8" font-size="15" fill="#333333" text-anchor="middle" font-weight="bold">NAVSIM v1 PDMS</text>
+  <text x="650.0" y="143.8" font-size="12" fill="#888888" text-anchor="middle">0.9394437 = 93.944 ~= 93.95</text>
+  <rect x="750.0" y="219.0" width="210.0" height="66.0" fill="#FEE2E2" stroke="#DC2626" stroke-width="2" rx="8"/>
+  <text x="855.0" y="249.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Claim boundary</text>
+  <text x="855.0" y="264.1" font-size="10" fill="#888888" text-anchor="middle">engineering anchor, not universal proof</text>
+  <text x="490.0" y="330.0" font-size="14" fill="#334155" text-anchor="middle">High-score anchor for migration: start from the working Drive-JEPA-based path, then respect the theory gates.</text>
+</svg>

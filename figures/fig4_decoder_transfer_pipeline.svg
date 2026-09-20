@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 430" width="1040" height="430" font-family="Arial, DejaVu Sans, sans-serif">
+  <rect width="1040" height="430" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DBEAFE"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#DCFCE7"/>
+    </marker>
+    <marker id="arrow-c2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#FEF3C7"/>
+    </marker>
+    <marker id="arrow-c3" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#F3E8FF"/>
+    </marker>
+  </defs>
+  <path d="M 202.5,145.0 L 222.5,145.0" stroke="#2563EB" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 417.5,145.0 L 437.5,145.0" stroke="#0284C7" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 632.5,145.0 L 655.0,145.0" stroke="#D97706" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 655.0,180.5 Q 516.2,191.9 395.0,260.7" stroke="#16A34A" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="492.6" y="188.3" width="56.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="520.6" y="200.3" font-size="10" fill="#777777" text-anchor="middle">pairwise</text>
+  <path d="M 395.0,290.0 L 450.0,290.0" stroke="#9333EA" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="388.5" y="272.0" width="68.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="422.5" y="284.0" font-size="10" fill="#777777" text-anchor="middle">statistics</text>
+  <path d="M 670.0,290.0 L 717.5,290.0" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="662.8" y="272.0" width="62.0" height="16" fill="#FFFFFF" rx="3" opacity="0.85"/>
+  <text x="693.8" y="284.0" font-size="10" fill="#777777" text-anchor="middle">authorize</text>
+  <rect x="27.5" y="112.0" width="175.0" height="66.0" fill="#DBEAFE" stroke="#2563EB" stroke-width="2" rx="8"/>
+  <text x="115.0" y="142.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Decode K candidates</text>
+  <text x="115.0" y="157.1" font-size="10" fill="#888888" text-anchor="middle">slots / samples / codes</text>
+  <rect x="222.5" y="112.0" width="195.0" height="66.0" fill="#E0F2FE" stroke="#0284C7" stroke-width="2" rx="8"/>
+  <text x="320.0" y="142.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Canonicalize</text>
+  <text x="320.0" y="157.1" font-size="10" fill="#888888" text-anchor="middle">[B,K,...], no cross-scene mix</text>
+  <rect x="437.5" y="112.0" width="195.0" height="66.0" fill="#FEF3C7" stroke="#D97706" stroke-width="2" rx="8"/>
+  <text x="535.0" y="142.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Task adapter</text>
+  <text x="535.0" y="157.1" font-size="10" fill="#888888" text-anchor="middle">trajectory -&gt; action / task rep</text>
+  <rect x="655.0" y="109.0" width="230.0" height="72.0" fill="#DCFCE7" stroke="#16A34A" stroke-width="2" rx="8"/>
+  <text x="770.0" y="142.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Frozen consequence encoder</text>
+  <text x="770.0" y="157.1" font-size="10" fill="#888888" text-anchor="middle">candidate gradients, zero encoder grads</text>
+  <rect x="205.0" y="257.0" width="190.0" height="66.0" fill="#F3E8FF" stroke="#9333EA" stroke-width="2" rx="8"/>
+  <text x="300.0" y="287.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Relation S[B,K,K]</text>
+  <text x="300.0" y="302.1" font-size="10" fill="#888888" text-anchor="middle">distance, affinity, topology</text>
+  <rect x="450.0" y="257.0" width="220.0" height="66.0" fill="#F8FAFC" stroke="#475569" stroke-width="2" rx="8"/>
+  <text x="560.0" y="287.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Decoder-aware policy</text>
+  <text x="560.0" y="302.1" font-size="10" fill="#888888" text-anchor="middle">loss sign depends on K semantics</text>
+  <rect x="717.5" y="257.0" width="215.0" height="66.0" fill="#ECFDF5" stroke="#059669" stroke-width="2" rx="8"/>
+  <text x="825.0" y="287.1" font-size="13" fill="#333333" text-anchor="middle" font-weight="bold">Level 0-4 gates</text>
+  <text x="825.0" y="302.1" font-size="10" fill="#888888" text-anchor="middle">audit -&gt; smoke -&gt; tiny -&gt; matched eval</text>
+  <text x="520.0" y="385.0" font-size="14" fill="#334155" text-anchor="middle">Portable interface, decoder-specific optimization: Drive-JEPA persistent slots differ from diffusion/FM stochastic samples.</text>
+</svg>

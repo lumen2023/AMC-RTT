@@ -1,0 +1,114 @@
+{
+  "title": "Decoder-agnostic migration pipeline",
+  "canvas": {"width": 1040, "height": 430},
+  "style": {
+    "font_family": "Arial, DejaVu Sans, sans-serif",
+    "font_size": 13,
+    "bg_color": "#FFFFFF",
+    "palette": ["#DBEAFE", "#DCFCE7", "#FEF3C7", "#F3E8FF"]
+  },
+  "nodes": [
+    {
+      "id": "decoder",
+      "label": "Decode K candidates",
+      "sublabel": "slots / samples / codes",
+      "x": 115,
+      "y": 145,
+      "width": 175,
+      "height": 66,
+      "shape": "rounded",
+      "fill": "#DBEAFE",
+      "stroke": "#2563EB"
+    },
+    {
+      "id": "canonical",
+      "label": "Canonicalize",
+      "sublabel": "[B,K,...], no cross-scene mix",
+      "x": 320,
+      "y": 145,
+      "width": 195,
+      "height": 66,
+      "shape": "rounded",
+      "fill": "#E0F2FE",
+      "stroke": "#0284C7"
+    },
+    {
+      "id": "adapter",
+      "label": "Task adapter",
+      "sublabel": "trajectory -> action / task rep",
+      "x": 535,
+      "y": 145,
+      "width": 195,
+      "height": 66,
+      "shape": "rounded",
+      "fill": "#FEF3C7",
+      "stroke": "#D97706"
+    },
+    {
+      "id": "frozen",
+      "label": "Frozen consequence encoder",
+      "sublabel": "candidate gradients, zero encoder grads",
+      "x": 770,
+      "y": 145,
+      "width": 230,
+      "height": 72,
+      "shape": "rounded",
+      "fill": "#DCFCE7",
+      "stroke": "#16A34A"
+    },
+    {
+      "id": "relation",
+      "label": "Relation S[B,K,K]",
+      "sublabel": "distance, affinity, topology",
+      "x": 300,
+      "y": 290,
+      "width": 190,
+      "height": 66,
+      "shape": "rounded",
+      "fill": "#F3E8FF",
+      "stroke": "#9333EA"
+    },
+    {
+      "id": "policy",
+      "label": "Decoder-aware policy",
+      "sublabel": "loss sign depends on K semantics",
+      "x": 560,
+      "y": 290,
+      "width": 220,
+      "height": 66,
+      "shape": "rounded",
+      "fill": "#F8FAFC",
+      "stroke": "#475569"
+    },
+    {
+      "id": "gates",
+      "label": "Level 0-4 gates",
+      "sublabel": "audit -> smoke -> tiny -> matched eval",
+      "x": 825,
+      "y": 290,
+      "width": 215,
+      "height": 66,
+      "shape": "rounded",
+      "fill": "#ECFDF5",
+      "stroke": "#059669"
+    }
+  ],
+  "edges": [
+    {"from": "decoder", "to": "canonical", "color": "#2563EB"},
+    {"from": "canonical", "to": "adapter", "color": "#0284C7"},
+    {"from": "adapter", "to": "frozen", "color": "#D97706"},
+    {"from": "frozen", "to": "relation", "label": "pairwise", "curve": true, "color": "#16A34A"},
+    {"from": "relation", "to": "policy", "label": "statistics", "color": "#9333EA"},
+    {"from": "policy", "to": "gates", "label": "authorize", "color": "#475569"}
+  ],
+  "labels": [
+    {
+      "text": "Portable interface, decoder-specific optimization: Drive-JEPA persistent slots differ from diffusion/FM stochastic samples.",
+      "x": 520,
+      "y": 385,
+      "font_size": 14,
+      "color": "#334155",
+      "anchor": "middle"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "title": "Drive-JEPA high-score de-redundancy anchor",
+  "canvas": {"width": 980, "height": 360},
+  "style": {
+    "font_family": "Arial, DejaVu Sans, sans-serif",
+    "font_size": 13,
+    "bg_color": "#FFFFFF",
+    "palette": ["#E0F2FE", "#ECFDF5", "#FEF3C7", "#FEE2E2"]
+  },
+  "nodes": [
+    {
+      "id": "drive_jepa",
+      "label": "Drive-JEPA base",
+      "sublabel": "V-JEPA ViT-L/16 + planner",
+      "x": 130,
+      "y": 130,
+      "width": 170,
+      "height": 70,
+      "shape": "rounded",
+      "fill": "#E0F2FE",
+      "stroke": "#0284C7"
+    },
+    {
+      "id": "amc_drive",
+      "label": "AMC / de-redundancy",
+      "sublabel": "Drive-JEPA-based implementation",
+      "x": 370,
+      "y": 130,
+      "width": 210,
+      "height": 74,
+      "shape": "rounded",
+      "fill": "#ECFDF5",
+      "stroke": "#059669"
+    },
+    {
+      "id": "low_budget",
+      "label": "1x RTX 3090 path",
+      "sublabel": "local fine-tune / fixcache evidence",
+      "x": 370,
+      "y": 252,
+      "width": 220,
+      "height": 66,
+      "shape": "rounded",
+      "fill": "#F0FDF4",
+      "stroke": "#16A34A"
+    },
+    {
+      "id": "score",
+      "label": "NAVSIM v1 PDMS",
+      "sublabel": "0.9394437 = 93.944 ~= 93.95",
+      "x": 650,
+      "y": 130,
+      "width": 230,
+      "height": 82,
+      "shape": "rounded",
+      "fill": "#FEF3C7",
+      "stroke": "#D97706",
+      "font_size": 15
+    },
+    {
+      "id": "boundary",
+      "label": "Claim boundary",
+      "sublabel": "engineering anchor, not universal proof",
+      "x": 855,
+      "y": 252,
+      "width": 210,
+      "height": 66,
+      "shape": "rounded",
+      "fill": "#FEE2E2",
+      "stroke": "#DC2626"
+    }
+  ],
+  "edges": [
+    {
+      "from": "drive_jepa",
+      "to": "amc_drive",
+      "label": "builds on",
+      "color": "#2563EB",
+      "thickness": 2
+    },
+    {
+      "from": "amc_drive",
+      "to": "score",
+      "label": "validated package",
+      "color": "#059669",
+      "thickness": 2
+    },
+    {
+      "from": "low_budget",
+      "to": "amc_drive",
+      "label": "practical route",
+      "color": "#16A34A",
+      "style": "dashed"
+    },
+    {
+      "from": "score",
+      "to": "boundary",
+      "label": "do not overclaim",
+      "color": "#DC2626",
+      "style": "dashed"
+    }
+  ],
+  "groups": [
+    {
+      "id": "evidence",
+      "label": "Engineering evidence",
+      "node_ids": ["drive_jepa", "amc_drive", "low_budget", "score"],
+      "fill": "#F8FAFC",
+      "stroke": "#CBD5E1",
+      "padding": 22
+    }
+  ],
+  "labels": [
+    {
+      "text": "High-score anchor for migration: start from the working Drive-JEPA-based path, then respect the theory gates.",
+      "x": 490,
+      "y": 330,
+      "font_size": 14,
+      "color": "#334155",
+      "anchor": "middle"
+    }
+  ]
+}

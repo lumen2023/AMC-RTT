@@ -1,0 +1,42 @@
+# AMC-RTT Drive-JEPA example configuration.
+# Documentation-only template. It is not consumed by existing project code.
+
+decoder:
+  type: proposal
+  candidate_tensor: proposals
+  shape: [B, 32, 8, 3]
+
+task_adapter:
+  type: drive_jepa_se2_actions
+  action_shape: [B, 32, 8, 3]
+  normalization: train_split_action_stats
+  stride_steps: 1
+
+frozen_consequence_encoder:
+  type: ac_jepa_c0
+  frozen_parameters: true
+  input_context: z0
+  rollout_steps: 2
+  latent_shape: [K, H, 512, 256]
+
+similarity:
+  metric: per_horizon_latent_mse
+  kernel: exp_neg_mse_over_tau_squared
+  tau_source: frozen_a3_4_provenance
+
+regularizer:
+  type: amc_v1
+  loss: squared_log_keff_gap
+  lambda_schedule: cosine_ramp
+
+guards:
+  require_frozen_encoder_param_grads_zero: true
+  require_candidate_grad_nonzero: true
+  report_grad_ratio: true
+  report_coverage: true
+  report_topology: true
+
+claim_boundary:
+  proposal_count_reduction: unsupported
+  planning_improvement: unsupported
+
