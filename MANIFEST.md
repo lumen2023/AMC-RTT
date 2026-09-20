@@ -7,8 +7,10 @@ This manifest records purpose, claim level, evidence source, and migration role.
 | file | purpose / 目的 | claim level | source/evidence / 来源 | migration role / 迁移角色 |
 | --- | --- | --- | --- | --- |
 | `README.md` | package entry and claim boundary / 包入口与 claim boundary | governance | A2-A20, current guard | orientation |
+| `README_v1.md` | A32-updated v1 entry / A32 后 v1 入口 | governance + contract | A18-A32, tests_v1 | orientation |
 | `README_EN.md` | English GitHub-facing entry / 英文入口 | governance | README, evidence anchor | orientation |
 | `README_CN.md` | Chinese GitHub-facing entry / 中文入口 | governance | README, evidence anchor | orientation |
+| `AUTONOMOUS_STATE.yaml` | long-horizon research state / 长时域科研状态 | autonomy control | A18-A32, tests_v1 | all |
 | `evidence/DRIVE_JEPA_93_95_ANCHOR.md` | standalone 93.95 evidence anchor / 独立高分证据锚点 | engineering evidence | AMC-Drive score summary, NAVSIM main results, source hooks | motivation |
 | `NON_DESTRUCTIVE_GUARD.md` | write/runtime safety / 写入与运行安全 | governance | repository instructions | all |
 | `00_problem_and_universal_interface.md` | universal problem and tensors / 通用问题与 tensor | design | decoder abstraction | all |
@@ -40,6 +42,16 @@ This manifest records purpose, claim level, evidence source, and migration role.
 | `26_ICLR_EXPERIMENT_PROGRAM_BILINGUAL.md` | staged experiment plan | no training authorization | protocol design | all |
 | `27_CAPACITY_EFFICIENCY_PROOF_PROGRAM_BILINGUAL.md` | H1-H5 causal program | future proof obligation | theory + A18-A20 | all |
 | `28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md` | positive derivation companion and literature anchors / 正面推导与文献锚点 | theorem/proposition/literature | derivations + primary papers | all |
+| `v1_core/*.py` | generator-agnostic consequence-topology core and adapters | implementation contract | A18-A32 math | static/DM/FM |
+| `tests_v1/*.py` | math and adapter contract tests | verification | synthetic exact identities | static/DM/FM |
+| `docs_v1/EVIDENCE_TO_DESIGN.md` | latest evidence-to-design map | mainline governance | A18-A32 | all |
+| `docs_v1/THEORY_v1.md` | v1 pair-moment and topology derivations | theorem/proposition | tested identities | all |
+| `docs_v1/DM_FM_ADAPTATION.md` | clean-endpoint adapter theory | transfer contract | Diffusion/FM papers + tests | DM/FM |
+| `docs_v1/NEXT_DECISIONS_AND_EXPERIMENTS.md` | next experiment gates | experiment plan | A30-A32 + tests | all |
+| `docs_v1/THREE_HOUR_AUTONOMOUS_CODEX_DIRECTIVE.md` | 3h autonomous research instruction | autonomy protocol | mainline state machine | all |
+| `UPSTREAM_LOCK_BEFORE.json` | pre-edit upstream hash lock | isolation proof | tracked files outside package | governance |
+| `UPSTREAM_LOCK_AFTER.json` | post-edit upstream hash lock | isolation proof | tracked files outside package | governance |
+| `UPSTREAM_IMMUTABILITY_REPORT.md` | before/after upstream hash comparison | isolation proof | lock files | governance |
 | `interfaces/redundancy_api.py` | hardened standalone API | implementation scaffold | canonical contracts | all |
 | `figures/fig1_high_score_anchor.svg` | Drive-JEPA-based 93.95 achievement anchor | engineering evidence visualization | AMC-Drive score summary, NAVSIM main results | motivation |
 | `figures/fig2_keff_intuition.svg` | `K_generated` vs `K_eff` intuition | mathematical visualization | `S`, `K_eff` equations | all |

@@ -1,0 +1,53 @@
+status: V1_CORE_CONTRACT_PASS__STATIC_REPLAY_NEXT
+main_hypothesis: >
+  Multimodal generators may differ in how hypotheses are produced, but
+  redundancy should be measured and regularized in frozen consequence space over
+  clean hypothesis sets, not in the generator's native noise/score/velocity
+  parameterization.
+current_best_method: >
+  Generator-agnostic consequence-topology regularization with pair moments
+  mu1/mu2, reference effective capacity, and topology concentration rho.
+evidence_supported:
+  - A18: scalar K_eff controls total squared affinity mass and can diffuse over many edges.
+  - A19: topology-concentrated fields improve read-only contraction selectivity.
+  - A20: deployable non-oracle topology-aware objective design exists.
+  - A26: selected topology-activated cohort shows conditional matched-development mechanism signal.
+  - A30: all-layer fold reconnects final-layer gradients for small batches.
+  - v1_core: synthetic math and adapter tests pass.
+evidence_rejected:
+  - A31/A32: repaired Drive-JEPA final-layer all-pair optimizer-gradient redundancy is not supported.
+  - A32: WTA sparse winner credit dominates direct trajectory gradients.
+  - A22: density-normalized teacher-conditioned upper hinge is stopped due estimand mismatch.
+active_branches:
+  - name: STATIC_REPLAY_FIRST
+    status: recommended_next
+    purpose: Verify v1_core parity with legacy Drive-JEPA topology records.
+  - name: DM_FM_CONTRACT_AFTER_REPLAY
+    status: pending
+    purpose: Verify clean-endpoint adapters on real or toy DM/FM.
+killed_branches:
+  - name: OPTIMIZER_CREDIT_REDUNDANCY_MAINLINE
+    reason: A31/A32 show sparse WTA winner credit dominates final-layer trajectory gradients.
+  - name: A22_SEMANTIC_UPPER_GUARD_DEFAULT_CORE
+    reason: A22.10 result-to-claim review found objective-estimand mismatch.
+remaining_time: "3h_directive_available"
+last_gate: "tests_v1: 8 passed"
+next_action: >
+  Run Drive-JEPA static replay parity for K_eff, rho, and topology gradients
+  using persisted read-only records; do not train before parity.
+write_boundary: "AMC-RTT_v1.0/** only"
+stop_conditions:
+  - ISOLATION_VIOLATION
+  - data_corruption_risk
+  - AC_JEPA_unexpectedly_trainable
+  - unlocalized_NaN
+  - static_replay_parity_fail
+  - time_budget_exhausted
+claim_boundary:
+  supported_now: "generator-independent math contract and synthetic adapter correctness"
+  not_claimed_now:
+    - planning improvement
+    - proposal cardinality reduction
+    - independent confirmation
+    - DM/FM task improvement
+    - K_eff reduction equals capacity improvement

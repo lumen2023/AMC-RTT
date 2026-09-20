@@ -20,6 +20,47 @@ logic remain untouched while making the AMC-RTT route easy to migrate.
 本目录与现有项目代码隔离。它是自包含的文档、接口与证据层：既保持当前
 Drive-JEPA 逻辑不被触碰，又让 AMC-RTT 路线更容易迁移。
 
+## v1 Upgrade After A32 / A32 后 v1 升级
+
+The newest A30-A32 evidence updates the mainline. AMC-RTT v1 is now framed as:
+
+最新 A30-A32 证据更新了主线。AMC-RTT v1 当前定位为：
+
+$$
+\boxed{
+\textbf{Generator-Agnostic Consequence-Topology Regularization}
+}
+$$
+
+The important correction is:
+
+关键纠偏是：
+
+$$
+\boxed{
+\text{base WTA supervision specializes sparse winners, while AMC-RTT regularizes
+the full hypothesis-set consequence topology.}
+}
+$$
+
+This v1 layer is documented in:
+
+v1 层入口如下：
+
+- [README_v1.md](README_v1.md)
+- [docs_v1/EVIDENCE_TO_DESIGN.md](docs_v1/EVIDENCE_TO_DESIGN.md)
+- [docs_v1/THEORY_v1.md](docs_v1/THEORY_v1.md)
+- [docs_v1/DM_FM_ADAPTATION.md](docs_v1/DM_FM_ADAPTATION.md)
+- [docs_v1/NEXT_DECISIONS_AND_EXPERIMENTS.md](docs_v1/NEXT_DECISIONS_AND_EXPERIMENTS.md)
+- [docs_v1/THREE_HOUR_AUTONOMOUS_CODEX_DIRECTIVE.md](docs_v1/THREE_HOUR_AUTONOMOUS_CODEX_DIRECTIVE.md)
+
+Synthetic v1 contract tests:
+
+```text
+pytest -q tests_v1
+8 passed
+```
+
 ## Achievement Snapshot / 高分成果快照
 
 **Important engineering anchor:** the Drive-JEPA-based de-redundancy line has

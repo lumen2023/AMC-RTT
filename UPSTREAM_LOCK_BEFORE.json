@@ -1,0 +1,3467 @@
+{
+  "created_at": "2026-09-20T21:15:27+0800",
+  "repo_root": "/home/ac/@Code/Drive-JEPA-official-v2",
+  "scope": "tracked files outside AMC-RTT_v1.0",
+  "file_count": 683,
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 4688,
+      "sha256": "48b33f9f89ef24f8a66f461ea9278e7ecf21b4660c26088989d231e53c578724"
+    },
+    {
+      "path": "LICENSE",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "README.md",
+      "size": 6369,
+      "sha256": "935f9e7a9114a15150169be5c785e5d29b2d23d887360db95ef6d0aa510455ad"
+    },
+    {
+      "path": "assets/.DS_Store",
+      "size": 6148,
+      "sha256": "9b223eb83a8188b4c89c0ef0f84cb36ef82a84bbf88bfa4d1ba0da3e5c8e1ff3"
+    },
+    {
+      "path": "assets/figure_pipeline.png",
+      "size": 388383,
+      "sha256": "2b0bbccaa33a67613f4fdb2fdc54d3adc46548742a50c0b48808e9bb57304ef1"
+    },
+    {
+      "path": "assets/more_mtd_demo.png",
+      "size": 540640,
+      "sha256": "1d0dd89e99bef02b89676b92b12c57488627bd88b8106186c880deeb168697dc"
+    },
+    {
+      "path": "assets/teaser.png",
+      "size": 117110,
+      "sha256": "824ffd3093c044b0b1dda529b0f1b6664ea621e330babfd40726f2728519bbc6"
+    },
+    {
+      "path": "download/LICENSE",
+      "size": 25319,
+      "sha256": "1a218286e733f6d6135fc5698d614cda2be94ea096f6eee280278458e570636a"
+    },
+    {
+      "path": "download/download_maps.sh",
+      "size": 176,
+      "sha256": "650cc45e6a3c7dda51e091a93dd02bbdedc68290c3e855c41e68efe859db2c02"
+    },
+    {
+      "path": "download/download_navtrain.sh",
+      "size": 1063,
+      "sha256": "58d44daf9729f0d82d7ae0656a86c47590aa400f28ecba38921d15c06638df3d"
+    },
+    {
+      "path": "download/download_test.sh",
+      "size": 1039,
+      "sha256": "c3414ce8fbc0a63d2e816ff5d149ff778e9e4486cbd610d914974193b82b4814"
+    },
+    {
+      "path": "navsim_v1/data/8192.npy",
+      "size": 3932288,
+      "sha256": "cc44a31e75a53406db59f026f0358de97931e726f10254542f98d2a87a38ad35"
+    },
+    {
+      "path": "navsim_v1/navsim/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/abstract_agent.py",
+      "size": 3683,
+      "sha256": "b8da9bf2a3af3aee11611285acd7c5607b74dad6a52b7f599e85763561d88c64"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/constant_velocity_agent.py",
+      "size": 1496,
+      "sha256": "e9e5fda76ed918633dfc2e4e378c33bb70e0b9b09f33117fb8edbf8fe8d9054e"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/b2d_config.py",
+      "size": 1335,
+      "sha256": "05ad47759c5da68258614fd07ae091c32ebc33c432107797ac0306dd013d7f8a"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/bev_feature_build.py",
+      "size": 3140,
+      "sha256": "ae960d55ed34f811c9f76d010a01fc75ad495452b9b60971b715c4ae25fd277d"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/bev_refiner.py",
+      "size": 5235,
+      "sha256": "eff9fd20790810f7f92c9f93cb957542da5a2af3af7f7020d4555b5859e5bcd8"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/custom_base_transformer_layer.py",
+      "size": 11111,
+      "sha256": "c2e0c1d7ecac01efa795fa843da6f9cbb8871d385f5dabbf9eb74e33079e49b7"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/decoder.py",
+      "size": 14355,
+      "sha256": "2980e3628524a7dace5e9af7fd7ae5faca9106e21f92e4e0ceb4b11405316158"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/encoder.py",
+      "size": 19308,
+      "sha256": "07ae0ff7eacac7ff374fffbc3a8e03fcc84a3462e59570984aac14112e02cd9c"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/grid_mask.py",
+      "size": 4073,
+      "sha256": "d29eb57fbbccf75ef8eac527ca2566a28671e9e55b33e17d216bae50ab1688c7"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/image_encoder.py",
+      "size": 4905,
+      "sha256": "c92c0d12fcaf6a7554743179a46ebf95deb0cf887f394c2bb46edaa7f0bde168"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/multi_scale_deformable_attn_function.py",
+      "size": 5903,
+      "sha256": "03ad15be08b83fa2cb33defff6c22653b7eb1bab6fe33210cf677fabcc11781b"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/simple_image_encoder.py",
+      "size": 2637,
+      "sha256": "ed2e755ee2e881f68aceaa63632af39daf7cb2fed918ab57052b8caca86d61ae"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/spatial_cross_attention.py",
+      "size": 18959,
+      "sha256": "934561cc06f1c776856b19b9e323414f4ef2922290e01a5751f6b225f0400e31"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/temporal_self_attention.py",
+      "size": 12207,
+      "sha256": "5600f2ad4d56b96d645ada698d80766b360c48eb9e4b832ff1e7d2e7f204745e"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/transform3d.py",
+      "size": 14795,
+      "sha256": "4f739d8d0d490efce9ea1e142bbe4f6c461ed3fca0aff256be6b1a8c123b6a0f"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/bevformer/transformer_decoder.py",
+      "size": 2484,
+      "sha256": "2ba11bb5936fdcbe9d133929b2e62cb0cac6c0d9abb55cf6e5d9ab30c78e2591"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/drive_jepa_agent.py",
+      "size": 17288,
+      "sha256": "4e584206d1fa5670f739499ca7280637badce72d698b250979d003e0ce9d832a"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/drive_jepa_config.py",
+      "size": 4834,
+      "sha256": "b982c825383bfbab78fb17bbc7d845b06a0cbb1dc927500e63a8b99b8c91c70f"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/drive_jepa_features.py",
+      "size": 16083,
+      "sha256": "02887403759473deefa74de3ba283cf0f38c39b45a952556eda935b67c78d9c4"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/drive_jepa_model.py",
+      "size": 3295,
+      "sha256": "c177902d41dc7bc6066484a80e253e213207e99e0907c224c162afef5f5cf1b1"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/score_module/compute_b2d_score.py",
+      "size": 13376,
+      "sha256": "d624aa8fd0132b5ca181d96cc4ca8d53a26d103991f158a2fda4db9c8754fe9d"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/score_module/compute_navsim_score.py",
+      "size": 5397,
+      "sha256": "7cce5f5e12cb4f4fc52f88ef424f9958c4e8b5e858bd0ad15b375fcf678566ef"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/score_module/map_head.py",
+      "size": 2239,
+      "sha256": "bf4eba2b3c58c4feef16376e6d07611b278f56e9a01460359b0a83c6c9c79eda"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/score_module/scorer.py",
+      "size": 2707,
+      "sha256": "99d507dbb28d4aea3432ebb7a75590794dc23169605ff81cc4daa52f06c14049"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/score_module/train_pdm_scorer.py",
+      "size": 24219,
+      "sha256": "82809d98f045ad2d516eb179d5c7f80c67714a8153117365ae4bf907ab0eca0b"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_based/traj_refiner.py",
+      "size": 1196,
+      "sha256": "a2eaa917ed72849e99c6073e3e644ca6e28fb4e7556637157e7335df3647993f"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_free/drive_jepa_agent.py",
+      "size": 6555,
+      "sha256": "cf3d93da54aa0a478b2fca12e50fc2d90fddfc611ffc5e861051a5ba101aa710"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_free/drive_jepa_features.py",
+      "size": 5176,
+      "sha256": "b0000a69977209bf8f71b2f6c1bcb90464ca97d32414362cade9a32ec34d5c6f"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/drive_jepa_perception_free/drive_jepa_model.py",
+      "size": 5634,
+      "sha256": "7a02015d0b92ca15297bc31cda11a00465e1911f21e561514cf529797068f3d5"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/ego_status_mlp_agent.py",
+      "size": 5086,
+      "sha256": "81fcf8902ee7f684f2db450adf98a51ed23c2f8829665402eb4ac7e1973f5551"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/human_agent.py",
+      "size": 1398,
+      "sha256": "d9c91272351243086ddf8deb7f8741103f0ed51640014835e35f578c8ca6888e"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/b2d_config.py",
+      "size": 1329,
+      "sha256": "31f2d25fbfabab724d4b8f047fcc659b302cb972f3c439eee038ef7b4620d7b0"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/bev_feature_build.py",
+      "size": 3168,
+      "sha256": "70e2777ca8b106869fce15708891df3a380dd7895c0b5a81e0a66e2c810bf328"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/bev_refiner.py",
+      "size": 5168,
+      "sha256": "353190ecab63aaa76b76b7da7e29066ea82451b739869a958af00ccc6cda6f0c"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/custom_base_transformer_layer.py",
+      "size": 11111,
+      "sha256": "c2e0c1d7ecac01efa795fa843da6f9cbb8871d385f5dabbf9eb74e33079e49b7"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/decoder.py",
+      "size": 13972,
+      "sha256": "5420e8968736e1df5148b2f4e6eddde8a9c12dc3ed04fb9361afe0ac06400c43"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/encoder.py",
+      "size": 19308,
+      "sha256": "07ae0ff7eacac7ff374fffbc3a8e03fcc84a3462e59570984aac14112e02cd9c"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/grid_mask.py",
+      "size": 4073,
+      "sha256": "d29eb57fbbccf75ef8eac527ca2566a28671e9e55b33e17d216bae50ab1688c7"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/image_encoder.py",
+      "size": 4097,
+      "sha256": "03c16f4eb65f8c5713ad1c6a127a10aa6cbb58310a5a39193a0dfa3469edc42f"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/multi_scale_deformable_attn_function.py",
+      "size": 5903,
+      "sha256": "03ad15be08b83fa2cb33defff6c22653b7eb1bab6fe33210cf677fabcc11781b"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/spatial_cross_attention.py",
+      "size": 18807,
+      "sha256": "a7417023f2631b60cdf458ce8ac9980eace41026f718b1ec0a96714a44e9df20"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/temporal_self_attention.py",
+      "size": 11825,
+      "sha256": "35211a33bd28f7764a5f6a24b6e7b124ec231b5ac11fe0011472d7e2c5579259"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/transform3d.py",
+      "size": 14795,
+      "sha256": "4f739d8d0d490efce9ea1e142bbe4f6c461ed3fca0aff256be6b1a8c123b6a0f"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/bevformer/transformer_decoder.py",
+      "size": 2484,
+      "sha256": "2ba11bb5936fdcbe9d133929b2e62cb0cac6c0d9abb55cf6e5d9ab30c78e2591"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/navsim_config.py",
+      "size": 4384,
+      "sha256": "3338fbd75c7c8a0c0976d705282d9b0daee14e9b1abcecbcca655c7ed476d07f"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/pad_agent.py",
+      "size": 15922,
+      "sha256": "7a20e2fbda40a5699373be7a462abb5ae337f654c4ccd19255a0f8569c52f798"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/pad_features.py",
+      "size": 15050,
+      "sha256": "fb17aa4225d4ebe3fedf0aaadbd73e13d0ead2609c5b7d1e1876651f0225dc5a"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/pad_model.py",
+      "size": 2961,
+      "sha256": "2061b833b813549c9b88e014cd5574b72a14eedb61cb89b8adf3bb3ed924cee3"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/score_module/compute_b2d_score.py",
+      "size": 18589,
+      "sha256": "26d9fcc09dcaafdd823c88fe36acd00f52a9e0bab0ae03ae9d4b33cbf4d3d0b6"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/score_module/compute_navsim_score.py",
+      "size": 5402,
+      "sha256": "ca63ef3a68008125839c616f54d00323d14a843889ce9ed702d8ea58f94935b7"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/score_module/map_head.py",
+      "size": 2239,
+      "sha256": "bf4eba2b3c58c4feef16376e6d07611b278f56e9a01460359b0a83c6c9c79eda"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/score_module/scorer.py",
+      "size": 2707,
+      "sha256": "99d507dbb28d4aea3432ebb7a75590794dc23169605ff81cc4daa52f06c14049"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/score_module/train_pdm_scorer.py",
+      "size": 24158,
+      "sha256": "0a93befe3a6d3d31c043de4963c0360f2b1064e46e630d1b48125d4bbefa2f79"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/pad/traj_refiner.py",
+      "size": 1131,
+      "sha256": "7d05e7e3ef480256ffe88f1931be2255ff7cd1d1de682d452bdc8db927da7561"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/transfuser/transfuser_agent.py",
+      "size": 3368,
+      "sha256": "1e9a13f4da7e83927cc96904cb2e2a13ad4dca39029fc5898c5d86520418c962"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/transfuser/transfuser_backbone.py",
+      "size": 19522,
+      "sha256": "ffbbaf2cdf038174cdd71d679864a508bce65b54b43ca6da6c26da957e9565fe"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/transfuser/transfuser_callback.py",
+      "size": 9782,
+      "sha256": "bb533d072bc4856d3343c1adecd3fe1000ff6a02a13bc4524daabf77de8d1cad"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/transfuser/transfuser_config.py",
+      "size": 3632,
+      "sha256": "14e0e0c7a63e944223e777d0aca782812b6e2df06640bcfffc7424058c39723c"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/transfuser/transfuser_features.py",
+      "size": 15757,
+      "sha256": "b2752e1213581c5f19eb96a4a72966b005d3a8f8e98e7b6570b3bf481fbc7f53"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/transfuser/transfuser_loss.py",
+      "size": 5535,
+      "sha256": "afa4dd458035430f41d7b4995a6248fd745b92cc82576b93b8965ff112204e22"
+    },
+    {
+      "path": "navsim_v1/navsim/agents/transfuser/transfuser_model.py",
+      "size": 6487,
+      "sha256": "3a86d9c772d3055700c7b91574870e35d4563abdcc50da1342e69c5e342e7d5f"
+    },
+    {
+      "path": "navsim_v1/navsim/common/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/common/dataclasses.py",
+      "size": 21222,
+      "sha256": "2d44fd85ae552c6d238a4370a51ba2b192f3b159c56fc1d42360b96a7253f6f6"
+    },
+    {
+      "path": "navsim_v1/navsim/common/dataloader.py",
+      "size": 7956,
+      "sha256": "f9c1af29cd08d3da7b8b892db0e1d6676b0ab3aab0447c36a474b4a8c08e0696"
+    },
+    {
+      "path": "navsim_v1/navsim/common/enums.py",
+      "size": 3582,
+      "sha256": "810e96dae26aea1c98c2412b7ca22da73aab1b3f0a83b7d06ee28ffe688c7bc9"
+    },
+    {
+      "path": "navsim_v1/navsim/common/utils.py",
+      "size": 1015,
+      "sha256": "a2ae70a67411bf27f4c193bf54ce23d176fb8f8767c15d1c31a6e86c2b565733"
+    },
+    {
+      "path": "navsim_v1/navsim/evaluate/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/evaluate/pdm_score.py",
+      "size": 7616,
+      "sha256": "f09171768a80801b8e3384c8a9360344249edfa266cd5f7fc3e45b1e0dbcef06"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/metric_caching/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/metric_caching/caching.py",
+      "size": 6804,
+      "sha256": "382f3617e3f02ade7fd502e35f974c311c55c01732e5da070b2c27b95bdd376e"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/metric_caching/metric_cache.py",
+      "size": 1253,
+      "sha256": "8e4b99b011e217d0b21853edce0b497de46adaec2260ee0e6073cf88db43f4a7"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/metric_caching/metric_cache_processor.py",
+      "size": 10195,
+      "sha256": "164c6be26ce4b1286d1260886f2124afddc5aae8476692fb43b0120b78ff4895"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/metric_caching/metric_caching_utils.py",
+      "size": 1867,
+      "sha256": "9c7131bb98bb3bb020598df43824f02419570da2c7f6cc4793ecbfe4b83288db"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/metric_caching/train_cache_processor.py",
+      "size": 12563,
+      "sha256": "fca76c5dcdc08819c4b9df2f2aed214852266f453a8a05bdce30c54239d4d89d"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/metric_caching/train_caching.py",
+      "size": 6802,
+      "sha256": "b6ca6ca1877c2bdfdf59b0aaf961e49a599be2e6aa21e41e3fd174c8d6fae468"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/metric_caching/train_metric_chache.py",
+      "size": 1342,
+      "sha256": "28b09b767eab0440390a46a2020f936d854d775111875a467bcdbd404dcffe1b"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/scenario_builder/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/scenario_builder/navsim_scenario.py",
+      "size": 12617,
+      "sha256": "d29c803697dddc9af059f9b742f1310a53ec520ebb2a8916c4d40829e1d574fe"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/scenario_builder/navsim_scenario_utils.py",
+      "size": 6691,
+      "sha256": "68dbe410fd83a398132b20b4a1ff86554938245a2d94dcd43e9bbc3a6bebd6fd"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/builders/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/builders/observation_builder.py",
+      "size": 644,
+      "sha256": "3aab34b73a095669d449426bf645e6cfaaa038411d16f168045395ba4763872c"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/builders/planner_builder.py",
+      "size": 1410,
+      "sha256": "8b65db8f67c3d06471d6d97764729921d112b88ee358ef4f67988fd0fb5ecc58"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/builders/simulation_builder.py",
+      "size": 5858,
+      "sha256": "7269fc955da0269e406c8764c1e3f2f8e18810e552e1e018e4256ef35ec51302"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/builders/worker_pool_builder.py",
+      "size": 1087,
+      "sha256": "b0bfa91ce470240d98f74f6d3f3308f8b5192d98e9a63b93bd36634cc4494814"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/agent/b2d_agent.yaml",
+      "size": 173,
+      "sha256": "ef934f293aa056b1899121c9c73c32e04386c8c9b4979270e079da26e460a2fe"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/agent/constant_velocity_agent.yaml",
+      "size": 86,
+      "sha256": "73ea65006885ce7c70405bed9418b86ff263264ea59cbae0c688ccfba72ea9f4"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/agent/drive_jepa_perception_based_agent.yaml",
+      "size": 445,
+      "sha256": "0d956c445ee246486c41f0e71d9c82bc1e852a6d2be1e7ca0fc5be1e93494c89"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/agent/drive_jepa_perception_free_agent.yaml",
+      "size": 513,
+      "sha256": "4f5797a1fc90d49b92330274ea3bf33122b8d3eaaad317aaa1b8261695d5d177"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/agent/ego_status_mlp_agent.yaml",
+      "size": 304,
+      "sha256": "2c0862ae5e9f7016eca0857576ab65c0981c95141943021edc24f5f918297848"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/agent/human_agent.yaml",
+      "size": 63,
+      "sha256": "d4ce01277be1800b584a2e808e712bd6cecb09b77ca5daff51d3884a9cc4b300"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/agent/navsim_agent.yaml",
+      "size": 374,
+      "sha256": "947ffbc0a8e9c0024ee7b21dea153b1bcd70ca4d9a4327cb7b005db6483fe67a"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/agent/transfuser_agent.yaml",
+      "size": 415,
+      "sha256": "6e1ebffdd9b1216e642f0fb20d16b5a3209c07f4f8dca32825c26e6d634540ab"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/default_common.yaml",
+      "size": 848,
+      "sha256": "ed6727751dda284282b5ae2e90340a56d81e50f7a789b6bdd23251404365e972"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/default_evaluation.yaml",
+      "size": 447,
+      "sha256": "70539348ad2b67904cdb3d8a413bcb772e2b3c57dd2ac1fe09b9ccb71e430294"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/mini.yaml",
+      "size": 56,
+      "sha256": "1eab5cfe0bf3c6b718e6963beb170590d9fc836a795a4a5cfb70131c02b75730"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/navall.yaml",
+      "size": 56,
+      "sha256": "ac42deade3f580ea3bcfa13df2aa42c23a051fdacfc18e1bf182aa608799caef"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/navmini.yaml",
+      "size": 53,
+      "sha256": "77eb20e44d96a7d1a743c899407905fc1714329ebfe6bd02370256401d3515bf"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/navtest.yaml",
+      "size": 53,
+      "sha256": "f72568e6282e413474c91b69acd889ecb9affc36f3571a25cf10a44c8d3d1804"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/navtrain.yaml",
+      "size": 58,
+      "sha256": "fcfc95704d532849c7fe1f1ac2bc9e158305fef93a1d5340637ad4b9f440c8cb"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/private_test_e2e.yaml",
+      "size": 74,
+      "sha256": "853c057e11478f1265416549ff4d65c3d73fddbda0c8d28f77b985c316e7a3e0"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/scene_filter/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/scene_filter/all_scenes.yaml",
+      "size": 781,
+      "sha256": "7b17f2e6b0a6698ef4a463338ff2f6b25084ea1cf1a377db7865b11b50481b87"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/scene_filter/competition_private_tokens.yaml",
+      "size": 3505,
+      "sha256": "4a81b66b72c03874d276a4ccdb7931badf75c73cb6b3975b3e1e2caca1fec4d4"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/scene_filter/navall.yaml",
+      "size": 2714922,
+      "sha256": "ccc0c90718d9b5b2607b59e917ab147d30316b8a424ee03eeb2f4cf0a46e94d0"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/scene_filter/navmini.yaml",
+      "size": 11686,
+      "sha256": "504fb80beec0f4aa7dac509574e44e9245aa44131d35741baab43ae1779e395f"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/scene_filter/navtest.yaml",
+      "size": 285662,
+      "sha256": "61284edf5003c0291f843ce9817c822ba306609a62d54544223adae3fc7fc9cd"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml",
+      "size": 2429445,
+      "sha256": "c37fea567a0cfdbc29076cca893d4f5dd32db59baec18ae214527206d6b64e6f"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/scene_filter/private_test_e2e.yaml",
+      "size": 46189,
+      "sha256": "1d7374a086ead55c0819e237a73cf86694811a881e7b20b4e2c3b91c7d362c57"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/scene_filter/warmup_test_e2e.yaml",
+      "size": 15930,
+      "sha256": "4d41f0bec7eb97e678a237d2d974f3173aa812ff01d983c4874a4d65e4ec03c1"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/test.yaml",
+      "size": 56,
+      "sha256": "097a86187d98269260e713bc7fb9dab3734f377c232856654779f822de7c0ef3"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/trainval.yaml",
+      "size": 60,
+      "sha256": "35a012523da70f30cfad18b94e7fd68876a9165875b439dd1fb4bdf7728286d2"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/train_test_split/warmup_test_e2e.yaml",
+      "size": 61,
+      "sha256": "4cb069682fc35d6b4c08938471bda0f461d6522d2f1815dca21e13687ec10b71"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/worker/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/worker/ray_distributed.yaml",
+      "size": 632,
+      "sha256": "719ea826aa4db3bc231ffc6d2fa8c9bd3b8a85f34a5454d3eeef0c9cf4b0220b"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/worker/ray_distributed_no_torch.yaml",
+      "size": 648,
+      "sha256": "1d39d16d6c23b8ca8f2783aa5da2243dda4ce0c540893d7e97c7cbb4f6202b87"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/worker/sequential.yaml",
+      "size": 93,
+      "sha256": "0cfee6da66aa60af20f4745a6d601067e374ac436822bf28a3a50f1bd1b6044c"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/common/worker/single_machine_thread_pool.yaml",
+      "size": 333,
+      "sha256": "e3b0b355ca7a8c86abc2d3abd7fad57e71a834af7db653b6069e850c367ec9a5"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/metric_caching/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/metric_caching/default_metric_caching.yaml",
+      "size": 690,
+      "sha256": "5091929dc4fd143bd3bca135b19d7c7cc0dcb43cd51dec45f40e0459fe2cd462"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/metric_caching/train_metric_caching.yaml",
+      "size": 670,
+      "sha256": "0395b602f4a875f18fd39df9d3e3e2a0cbbfda2811588a0153f00594384bfbe6"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/pdm_scoring/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/pdm_scoring/default_run_create_submission_pickle.yaml",
+      "size": 698,
+      "sha256": "1ab050bf12f3474aae14faf73a968ab280f87246ac6f697c9d5fe165ccc15cce"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/pdm_scoring/default_run_merge_submission_pickles.yaml",
+      "size": 726,
+      "sha256": "f1e60f3d461363d5a81fec9d402ceaace1d3af771bf707ad0ddc9b5236fb9ed9"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/pdm_scoring/default_run_pdm_score.yaml",
+      "size": 573,
+      "sha256": "48829a0621dd48684dbaa21e78960456aa32ce3e01c5e4cdc6bc256769066ae5"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/pdm_scoring/default_run_pdm_score_from_submission.yaml",
+      "size": 537,
+      "sha256": "66f416448182f06a9f1c7673c548a5d5809cf60a5a2b8116100ecfb066211e05"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/pdm_scoring/default_scoring_parameters.yaml",
+      "size": 1093,
+      "sha256": "66563a99d9d52875cdb93d67e888d32303a9c41560bb785a565bafd9482df428"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/training/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/training/b2d_training.yaml",
+      "size": 2001,
+      "sha256": "09078af34b69474d2ccc35dc67c08aeb18f005e44ae902aa393aafc075ea7221"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/training/default_train_val_test_log_split.yaml",
+      "size": 684165,
+      "sha256": "3c2182f5ed60442710f34d8ce6bab5b4eae9a38ae5ac3f5615e470aa4c6cd150"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/config/training/default_training.yaml",
+      "size": 2150,
+      "sha256": "68cc4253c4a2b817edf56ff8a2b428ed856308ab7f21cd9541e0eeec407e4f26"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/run_b2d_training.py",
+      "size": 5914,
+      "sha256": "81785677f273db37cca56fc92cebbbedf2eb88afe77e2728562b48601fbb17f0"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/run_create_submission_pickle.py",
+      "size": 4334,
+      "sha256": "2da5ae43fbfd839021149725415a910b7e04a4a84188f3ebc77669b6b56e0891"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/run_dataset_caching.py",
+      "size": 3304,
+      "sha256": "f64a13168397aeab9326f4b8d10b711ca525e13883d53c7b722575ee997565e5"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/run_merge_submission_pickles.py",
+      "size": 2159,
+      "sha256": "fd10e988f71898aafd1d42a632032f16e41ec231992cddd8c22b32e697dad12e"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/run_metric_caching.py",
+      "size": 1019,
+      "sha256": "c6d67ccd7db0f65752dc54e76cec002b9ef78701e83d4c64ff3e6231a48cee52"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/run_pdm_score.py",
+      "size": 7060,
+      "sha256": "ab6d226bb8e99630e9b7f63f7bbad605bc6680fe8a9444b853a0349ae90d4bae"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/run_pdm_score_from_submission.py",
+      "size": 3987,
+      "sha256": "ed907ca76f04bae44c71b8e71b9d3a15a9a27e30dcbbe23c11a13b7c0499593b"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/run_train_metric_caching.py",
+      "size": 1023,
+      "sha256": "1e0e3390fc065cc6dbff088f419bf1166887a06b0c4e1a448861a3779b25046f"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/run_training.py",
+      "size": 5904,
+      "sha256": "7380e9ff4e822af768bfcafa43f884067285ac713a70877ccb66fa59fc0bf8f4"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/run_training_no_log.py",
+      "size": 5324,
+      "sha256": "a49a8d3428adf116099e628bf4bd9fd56b6a97aa6f509e961276d9a839958671"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/script/utils.py",
+      "size": 6354,
+      "sha256": "b3f82938dcccc35ca570947fa6fe284a58cd596b7ddaa1702c16fb55c75734ca"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/abstract_pdm_closed_planner.py",
+      "size": 6287,
+      "sha256": "2272e0c838f1fe23275de74f2d087e66ff5966075bf3e1e6f6458ab63c6bf126"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/abstract_pdm_planner.py",
+      "size": 7234,
+      "sha256": "40f5c849de0cb4bc21a8b9b2c249ebf69ab9aa5739faccc0b2c28bb3b3c13899"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/observation/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/observation/pdm_object_manager.py",
+      "size": 8397,
+      "sha256": "c8ef532af2082451694b67adf30eed31ace87f8fab5fdefe2740cc13ff47b780"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/observation/pdm_observation.py",
+      "size": 12513,
+      "sha256": "f0cd40d7394490ed89ecc04f033e2e479dcc08bff292db7c92a4647ad30e64f6"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/observation/pdm_occupancy_map.py",
+      "size": 10417,
+      "sha256": "83aeb24090abcb26e563153cac6a50e7e41894d8353091aa4d3dd04bc88cd702"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/pdm_closed_planner.py",
+      "size": 3077,
+      "sha256": "1c104315d2f6b10688de5f96f9c362875f6a85f53d91dc933ef16c9bacc51c8c"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/proposal/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/proposal/batch_idm_policy.py",
+      "size": 7053,
+      "sha256": "8c2456db3858c8ea44aa26a2e51e1921b3b2cd23aef52053842e86bd84a6f686"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/proposal/pdm_generator.py",
+      "size": 17926,
+      "sha256": "4ca46054e175b35b7b59cf88eefc07912f56e67d518be4cb9ab03b7800213bf5"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/proposal/pdm_proposal.py",
+      "size": 3106,
+      "sha256": "6eceae812bac770c9eec47c0d0099f4497b2095af5fd446675e0de8198f5d47f"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/scoring/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/scoring/pdm_comfort_metrics.py",
+      "size": 13038,
+      "sha256": "b2131da3b66d217b2d5e1d61cdd134b26c958f79b4060f43c0d11525b40f771d"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/scoring/pdm_scorer.py",
+      "size": 23214,
+      "sha256": "02ab075017d4edb1c8bba6476ef1674b84d43dbca0f599df87cfe052b2dd5211"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/scoring/pdm_scorer_utils.py",
+      "size": 2323,
+      "sha256": "110b51aab2005318c0b262ce06a80926d5bdf9588f526ed47294ef8f5d6f30c6"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/simulation/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/simulation/batch_kinematic_bicycle.py",
+      "size": 7387,
+      "sha256": "253beb3c1e7005a8c18a2aa33f43cbf6181829bc6aeda57f74d7bbc91f081ee0"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/simulation/batch_lqr.py",
+      "size": 21576,
+      "sha256": "03c4d1b781edfba61dd2eee4f9308cc197e8db264de3df3936b6ff11e30238e7"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/simulation/batch_lqr_utils.py",
+      "size": 11654,
+      "sha256": "a140e4132c6ec6017041d5185ae6f2aad3dbbe2274fbaaea4fadd05168fa3718"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/simulation/batch_lqr_utils_bak.py",
+      "size": 11888,
+      "sha256": "bf4b49f15979e8744d4d2293abcae4d4f0b20d14463052a0a16abf50461e75be"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/simulation/pdm_simulator.py",
+      "size": 3378,
+      "sha256": "6908be76ade1831ad8386a9927c879477ab83f5629a4013d71125f1ab013bec7"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/simulation_v2/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/simulation_v2/batch_kinematic_bicycle.py",
+      "size": 7387,
+      "sha256": "253beb3c1e7005a8c18a2aa33f43cbf6181829bc6aeda57f74d7bbc91f081ee0"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/simulation_v2/batch_lqr.py",
+      "size": 21516,
+      "sha256": "cdc7375c018704e45b83419fb4a9b437cb26ff5978429b5e0eccaef05599682b"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/simulation_v2/batch_lqr_utils.py",
+      "size": 12112,
+      "sha256": "0b696b9886d7edb4c2c849fbce8978428831fb4ac07b18db7a71e45695c370dd"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/simulation_v2/pdm_simulator.py",
+      "size": 3382,
+      "sha256": "300b223b02f676d6fe49c3b9640d22074b6953d18845e65ece8b91389a67db07"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/utils/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/utils/graph_search/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/utils/graph_search/bfs_roadblock.py",
+      "size": 5335,
+      "sha256": "1004756971d4e203bbcebbcf9bc06e2ef7fbfba12a8bad31d63b87f0ea7816b2"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/utils/graph_search/dijkstra.py",
+      "size": 5978,
+      "sha256": "71a755882ff935bfa458050ad77b145209b80cbf64aa877e842279ac9fc402bf"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/utils/pdm_array_representation.py",
+      "size": 7873,
+      "sha256": "e5102697bf941d2f01ff5fc172416c435f639004884b6959741eea5524614dd3"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/utils/pdm_emergency_brake.py",
+      "size": 5440,
+      "sha256": "f4c2cca47303edad84043f6644e50f73482b944b875df8bb5eae2a2626f167ee"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/utils/pdm_enums.py",
+      "size": 4035,
+      "sha256": "dd3c6ecf0a85395f99c7015dc74d6722551893d37d0f370743eac9eaca2a2618"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/utils/pdm_geometry_utils.py",
+      "size": 3377,
+      "sha256": "b83b8b8e187e31b3b0f392d104998f6fec3b9669eab3de69d22d0e520213af23"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/utils/pdm_path.py",
+      "size": 4041,
+      "sha256": "febeb11b0661b1a2eb2d8ddbc3346fdd8c2b57fe0e03e4dc0c8811c78e24c71c"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/simulation/planner/pdm_planner/utils/route_utils.py",
+      "size": 9426,
+      "sha256": "7045213d1beb743ce9d14ae53fa3d2da36001031742b00acc4c4e1678e5ae6da"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/training/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/training/abstract_feature_target_builder.py",
+      "size": 1423,
+      "sha256": "9eefbb84e66d050e68737cd58ead1b3f341905fed96b18245bec59594a947cad"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/training/agent_lightning_module.py",
+      "size": 5013,
+      "sha256": "e5d3382ebee86967728f41fd53cb43dbf67f14f7f93726b2be0f1fa87a9124bf"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/training/callbacks/time_logging_callback.py",
+      "size": 1821,
+      "sha256": "008c603684661a0e0ea10978a6c8c91208940882d4e6ba71dd8b5a752aff2078"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/training/dataset.py",
+      "size": 11482,
+      "sha256": "12d416191212c443d207d0d0593099b05bc20045381c03210904cdcc989577a4"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/utils/multithreading/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/planning/utils/multithreading/worker_ray_no_torch.py",
+      "size": 6739,
+      "sha256": "84560f9ded8a165980d5d3b33667688ca58f7780a7ff1ac6eebeaf4576db615b"
+    },
+    {
+      "path": "navsim_v1/navsim/visualization/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/navsim/visualization/bev.py",
+      "size": 10560,
+      "sha256": "3ff772cc123eb3e9402175a48a8083cc6c142fb8caaaedeee137beacbb2dbb5a"
+    },
+    {
+      "path": "navsim_v1/navsim/visualization/camera.py",
+      "size": 10729,
+      "sha256": "fcd42a9a755336cc12d421575b2838ebd18ceff82f169afc914af5891b924b7d"
+    },
+    {
+      "path": "navsim_v1/navsim/visualization/config.py",
+      "size": 6668,
+      "sha256": "6ad490fdddc08d46069f5d87aec10f3e226225f42edf393384eb76de84695cf7"
+    },
+    {
+      "path": "navsim_v1/navsim/visualization/lidar.py",
+      "size": 2415,
+      "sha256": "6533d3dcec1c39c600dc4e5ff24e71f61e3e2eb865d3048c73d18e266a692f54"
+    },
+    {
+      "path": "navsim_v1/navsim/visualization/plots.py",
+      "size": 8305,
+      "sha256": "9b541859767dfa05116b41bf751c1640a54ad856aec12fd6c79ad3f1300aaa7e"
+    },
+    {
+      "path": "navsim_v1/scripts/env.sh",
+      "size": 362,
+      "sha256": "0ee2e4f0f56d2fff09c913772bb68224e94cc936baff70a2066c318fa8029a51"
+    },
+    {
+      "path": "navsim_v1/scripts/evaluation/eval_drive_jepa_perception_based.sh",
+      "size": 599,
+      "sha256": "270f959bd9abbcf5cedca373c52f61baa20d715ab8d11396fcf2e87dfac4a4dd"
+    },
+    {
+      "path": "navsim_v1/scripts/evaluation/eval_drive_jepa_perception_free.sh",
+      "size": 804,
+      "sha256": "aa25c82128ed9ab66179696322180c4843819b278651e04a37ecf6080223e2db"
+    },
+    {
+      "path": "navsim_v1/scripts/evaluation/run_cv_pdm_score_evaluation.sh",
+      "size": 156,
+      "sha256": "21843d221bd628eb863abeccc1d9052d7d3b516e3495ee4cb5bddaf10c3bb439"
+    },
+    {
+      "path": "navsim_v1/scripts/evaluation/run_ego_mlp_agent_pdm_score_evaluation.sh",
+      "size": 268,
+      "sha256": "cd6427bf97e4fed6775898d3cf40b06dd2673dc9b194a7891221fff64914e6c0"
+    },
+    {
+      "path": "navsim_v1/scripts/evaluation/run_human_agent_pdm_score_evaluation.sh",
+      "size": 276,
+      "sha256": "68815d8a441fb3d7710cbdee9f1dff26a90e7e1bcaafee0f20a4a5b60bdb204e"
+    },
+    {
+      "path": "navsim_v1/scripts/evaluation/run_metric_caching.sh",
+      "size": 186,
+      "sha256": "0e46d744bd9710e6084140b2f42a63d379f988906bc0974b9bb847c441c36a21"
+    },
+    {
+      "path": "navsim_v1/scripts/evaluation/run_transfuser.sh",
+      "size": 304,
+      "sha256": "e5e0692a35c5734367f12da7b06e982e4a903f6f80292da778d90e271ab28e42"
+    },
+    {
+      "path": "navsim_v1/scripts/submission/run_cv_create_submission_pickle.sh",
+      "size": 403,
+      "sha256": "f99762bc7755d458edd98e2a30aa1aa4807865aa38cd528e79041c9d667da7f7"
+    },
+    {
+      "path": "navsim_v1/scripts/submission/run_merge_submission_pickles.sh",
+      "size": 534,
+      "sha256": "abdee42ade9d26f1870b7baed49b35cc50858a8934cdfb14a3bf1e1c7154e13b"
+    },
+    {
+      "path": "navsim_v1/scripts/training/run_drive_jepa_perception_based_cache.sh",
+      "size": 347,
+      "sha256": "ee4342eca8282822f0ef9e8a3230d1b18f6ace72b733b95550af7b2ff1c58981"
+    },
+    {
+      "path": "navsim_v1/scripts/training/run_drive_jepa_perception_free_cache.sh",
+      "size": 563,
+      "sha256": "9f7db91ceaf7d9da5ba39b1d995dacf5f154f3cca5be6cf7da8a4919113babb9"
+    },
+    {
+      "path": "navsim_v1/scripts/training/run_ego_mlp_agent_training.sh",
+      "size": 203,
+      "sha256": "568c514a9a9557ba6c419f28367d4f853140f7cdf3022b9a561d034bc8ef3865"
+    },
+    {
+      "path": "navsim_v1/scripts/training/run_transfuser_training.sh",
+      "size": 200,
+      "sha256": "1c5e82ea3343f37d8c746262831f2c3dc1835fd0240f83205604a86b6a3ea186"
+    },
+    {
+      "path": "navsim_v1/scripts/training/train_drive_jepa_perception_based.sh",
+      "size": 650,
+      "sha256": "f90f7df9d93ef91335b30f78cea63cc4ada56296b006fff2293b018ddaabcd9d"
+    },
+    {
+      "path": "navsim_v1/scripts/training/train_drive_jepa_perception_free.sh",
+      "size": 1054,
+      "sha256": "6a70bb996f4e22019d38ea87e36cab56cd168a7ec53f9005f1fd5bb2966934e1"
+    },
+    {
+      "path": "navsim_v1/setup.py",
+      "size": 790,
+      "sha256": "559c170ba42b8b347a7b880a6efbb2da6d4095feeaea49136a2fe6971fd301f2"
+    },
+    {
+      "path": "navsim_v1/vjepa2/.flake8",
+      "size": 120,
+      "sha256": "6994c3570677a894b35fb662a4ba037fdaaff4cd79d009efa9ceabe9496d4298"
+    },
+    {
+      "path": "navsim_v1/vjepa2/.github/workflows/base_tests.yaml",
+      "size": 699,
+      "sha256": "4dcc82cb616a07a4fa7cc7b4dc3652f4a118384b0b1507014b3f3406af30cad0"
+    },
+    {
+      "path": "navsim_v1/vjepa2/.github/workflows/linters.yaml",
+      "size": 1067,
+      "sha256": "467a8d835ca6e7009de9cd876e3ad3a8b8b4259831a7ab614fdc3d0489ae2452"
+    },
+    {
+      "path": "navsim_v1/vjepa2/.gitignore",
+      "size": 499,
+      "sha256": "b62cd74962f049fcb320ea2e3eb468212e759f504c6b646e1227b87696356b76"
+    },
+    {
+      "path": "navsim_v1/vjepa2/APACHE-LICENSE",
+      "size": 11349,
+      "sha256": "a41e2fae9915ae56028f8dbd0bf27995f1907613cbcd2d81a61b010ad34e9fe9"
+    },
+    {
+      "path": "navsim_v1/vjepa2/CHANGELOG.md",
+      "size": 74,
+      "sha256": "c4f96cbb008a208acec089b06fd2faf3f7ed53635fee3e3db96ee20ce582eb13"
+    },
+    {
+      "path": "navsim_v1/vjepa2/CODE_OF_CONDUCT.md",
+      "size": 3535,
+      "sha256": "2bc1cbfe9b61779523e8863986f2b78a765cfa1ddc2ddd212de4204986211942"
+    },
+    {
+      "path": "navsim_v1/vjepa2/CONTRIBUTING.md",
+      "size": 1504,
+      "sha256": "0ab5e8db8b182a969643610fa4f915eb0598c3934b13d48a8854498ebc138e6e"
+    },
+    {
+      "path": "navsim_v1/vjepa2/LICENSE",
+      "size": 1087,
+      "sha256": "cf9b17822d1fcd4ff32ccbe14183386fb3adf6f2ff92dc184130823f7fc28173"
+    },
+    {
+      "path": "navsim_v1/vjepa2/README.md",
+      "size": 17245,
+      "sha256": "918d8b5e284648cc4e24eda5f34737907b5006cbb4c6af1c27dcd1ec181a7634"
+    },
+    {
+      "path": "navsim_v1/vjepa2/app/main.py",
+      "size": 2554,
+      "sha256": "9b10e22441060453f6754dc0e64bd91ae9b3c19a3c8714492bd0b4e5b3c96ed6"
+    },
+    {
+      "path": "navsim_v1/vjepa2/app/main_distributed.py",
+      "size": 8823,
+      "sha256": "23987595f343d14473387dca7f22f16cdd94352215da51282d7a480b124a72f0"
+    },
+    {
+      "path": "navsim_v1/vjepa2/app/scaffold.py",
+      "size": 515,
+      "sha256": "a962e73f7dcc70e9c07286c71ffc908189dd96e294d272e3d1adda26050ab8be"
+    },
+    {
+      "path": "navsim_v1/vjepa2/app/vjepa/train.py",
+      "size": 18886,
+      "sha256": "6524e8efcf0483086f93cc213edea784012e53d57c7d7a1faf6fb14a0384d8c2"
+    },
+    {
+      "path": "navsim_v1/vjepa2/app/vjepa/transforms.py",
+      "size": 5220,
+      "sha256": "0b991236a649991a0a44534ca83b98d72e8124ab7c924899ad50624027895f81"
+    },
+    {
+      "path": "navsim_v1/vjepa2/app/vjepa/utils.py",
+      "size": 8008,
+      "sha256": "26021ea1be639188cdaa7c0919e868a77c4ad385c951def096cbb98e6a075a29"
+    },
+    {
+      "path": "navsim_v1/vjepa2/app/vjepa_droid/droid.py",
+      "size": 7790,
+      "sha256": "25f3fe88d6d29af0460155f5e0f2b2d05e005f6201a2090bf351fc3daee1d549"
+    },
+    {
+      "path": "navsim_v1/vjepa2/app/vjepa_droid/train.py",
+      "size": 19263,
+      "sha256": "7fe3fcd71e1953314c35c728939bddd964a952b28d962b156a4cce26e1389147"
+    },
+    {
+      "path": "navsim_v1/vjepa2/app/vjepa_droid/transforms.py",
+      "size": 5231,
+      "sha256": "777f217aedf2171194dc89f875ec6549fc48dbd5a4e15c617006f5aac35aecf9"
+    },
+    {
+      "path": "navsim_v1/vjepa2/app/vjepa_droid/utils.py",
+      "size": 7871,
+      "sha256": "84009c0f9565f38288d5fcd91e9861bc322f75f5bc33922ae01ec1755b1415c7"
+    },
+    {
+      "path": "navsim_v1/vjepa2/assets/flowchart.png",
+      "size": 141578,
+      "sha256": "4ccdc6940de06998cd4a692eb683d306d4e68b97be6f7576e6c142ec85cb232d"
+    },
+    {
+      "path": "navsim_v1/vjepa2/assets/vjepa2-abstract-new.png",
+      "size": 27862,
+      "sha256": "9d092de5fd7e2bab74e2b531cfe80424d3d69f1c1606652ffec61196673cdb82"
+    },
+    {
+      "path": "navsim_v1/vjepa2/assets/vjepa2-ac-abstract-new.png",
+      "size": 25180,
+      "sha256": "30b48d9bab36759ba0d708c0812e439bed07de255c7bf6c74f3a29a0880dafb7"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitg-384/coin.yaml",
+      "size": 3737,
+      "sha256": "e09259d8d916f51d5c431249f560942c6fd3cf2ca2c250f196125315514053ec"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitg-384/diving48.yaml",
+      "size": 1600,
+      "sha256": "239d2895d8a6ceb2be357c5c8e0bfdf3fbcd9729a84b265fbf3508ce17d76f0a"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitg-384/ek100.yaml",
+      "size": 4628,
+      "sha256": "81277c4dfaba5520c09be6a6a293b9cedf3e45b52d844cf5633b92f71e8fa68e"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitg-384/in1k.yaml",
+      "size": 3738,
+      "sha256": "88cd768c48e9cb5489aa1142c4e18dc73776166d879471d3f9230faba231d089"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitg-384/jester.yaml",
+      "size": 1594,
+      "sha256": "69b66af058532daec895826a53535b8977e711e4242d7035f6fb5374265c6ac0"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitg-384/k400.yaml",
+      "size": 3752,
+      "sha256": "daaf40c51f595efdd3988c38e90e657f68bcbc81c9459b76ccf6a3d6f6730c22"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitg-384/ssv2.yaml",
+      "size": 3748,
+      "sha256": "6bf7b5c5c37d437170690a78ee1bc79d690c06b48bccfc948fda6332f36db7e7"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitl/coin.yaml",
+      "size": 3719,
+      "sha256": "72639ce47724ecd68204a15296bf965bd44180e6a1958bcce5c7ebec186187ff"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitl/diving48.yaml",
+      "size": 1579,
+      "sha256": "91264152edc8cc45cdc6d22f03c86360e3a4bb4c73fb1895783746cdfcc5815a"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitl/ek100.yaml",
+      "size": 4607,
+      "sha256": "b7f2128340b472493c3674aed5391469e51c9e36c8429bbcef8621b26f07c667"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitl/in1k.yaml",
+      "size": 3762,
+      "sha256": "4b687c0fa3419cd433b78cf3e5accb3af0c2de114e700f78cea7792a1e549234"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitl/jester.yaml",
+      "size": 1573,
+      "sha256": "98e57a1bcf6302ed5060a3352d66c35548faf5f04a0ee71a2f2da9713d3cb2c9"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitl/k400.yaml",
+      "size": 3730,
+      "sha256": "ebe5de86e34775300539634fca6b8e63a60478fa6d1cc6f06c8925fffd224581"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/eval/vitl/ssv2.yaml",
+      "size": 3730,
+      "sha256": "3b55f6346dd9474d13ce9101bc9d4195e0dd4ea49acc87fd29468816691b7e0d"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/inference/vitg-384/diving48.yaml",
+      "size": 1326,
+      "sha256": "bbe783c9af140ea365fbed4b5727e6a206b98b8a824955d2c6537817ccd40279"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/inference/vitg-384/ek100.yaml",
+      "size": 1842,
+      "sha256": "fc1eb8ca868527990f917b548819c870158716a10490b52f68e142dd6b03925c"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/inference/vitg-384/ssv2.yaml",
+      "size": 1263,
+      "sha256": "292ebdeac1e36a4ac45b3dacdd46a3f4960b626551605eedd3e98720dfc5ffbd"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/inference/vitl/diving48.yaml",
+      "size": 1305,
+      "sha256": "adf01ba8926be3c1e8674be36f732365ebde1e836be69e46c9f92fb0c388ae32"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/inference/vitl/ek100.yaml",
+      "size": 1821,
+      "sha256": "3b32fb3c1bb03d8ed6ad1b8b5b761736146404160abaf272cd432f66917eebb1"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/inference/vitl/ssv2.yaml",
+      "size": 1245,
+      "sha256": "f9de6aab964167ba520a9e8e3888000a4e0e6aea080c1d78ccdb87b521cb4dc4"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/train/vitg16/cooldown-256px-64f.yaml",
+      "size": 1737,
+      "sha256": "95466ad448ef9b192768b765703ff67a0ee22416874d670733b37f47a192f014"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/train/vitg16/cooldown-384px-64f.yaml",
+      "size": 1739,
+      "sha256": "fa2f184d0c89e92a5041256d23496185cd8d4c6d0f995d0f093b60fd612c711a"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/train/vitg16/droid-256px-8f.yaml",
+      "size": 1310,
+      "sha256": "d3b70052d1b431b4a74822b31735103f70e9c06b9398e06dbf71a5b4d8689918"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/train/vitg16/pretrain-256px-16f.yaml",
+      "size": 1638,
+      "sha256": "70e70e3d454c3995676b6e3e9246d97e3f0038f4841c776df4ed8f9674ca6807"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/train/vith16/cooldown-256px-64f.yaml",
+      "size": 1730,
+      "sha256": "93483067cc30c48abb39342280233fffef567d7adc908d43fd78ebf5ae3c2c11"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/train/vith16/pretrain-256px-16f.yaml",
+      "size": 1627,
+      "sha256": "19813ae3b8af260e4bde69849707fa6f626d82340d7b0d45d4218f97fdcf7036"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/train/vitl16/cooldown-256px-64f.yaml",
+      "size": 1731,
+      "sha256": "2fd99a75504990c3bd48b510991e5e5d4772210e5fd917ac8f8708a0b71c86f1"
+    },
+    {
+      "path": "navsim_v1/vjepa2/configs/train/vitl16/pretrain-256px-16f.yaml",
+      "size": 1628,
+      "sha256": "45d3528ae0e0b08a2da40a54958eff4ecd86321f58cde26d93d84faf9799b48b"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/action_anticipation_frozen/dataloader.py",
+      "size": 6954,
+      "sha256": "84bf76fe2b4c8e4389796f45614a8b08441701ab09a4bcf406dfe16ea85d7b95"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/action_anticipation_frozen/epickitchens.py",
+      "size": 10279,
+      "sha256": "9f232719e8046f0b9830de18df44c2178ffd3b194ea8fcde6d6a1ffee504e4ce"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/action_anticipation_frozen/eval.py",
+      "size": 28347,
+      "sha256": "76a2e58bd976b6b58d81d7d47eebdb382571e44847c99d8adef5b7073e5ca068"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/action_anticipation_frozen/losses.py",
+      "size": 1421,
+      "sha256": "0989c2b76b115e3dbde6f68c5b0f1ef86bd1b0b692cceba80f4c52edd24fa545"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/action_anticipation_frozen/metrics.py",
+      "size": 2035,
+      "sha256": "69c6891c45c66526112f5ed6cbb48b259683643d6126325e96df767c2e5ed4c2"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/action_anticipation_frozen/modelcustom/vit_encoder_predictor_concat_ar.py",
+      "size": 7424,
+      "sha256": "e192295dd6dca9ab6b130c1d3994dc83eda2744ae97d0c9655889c1eed358b0c"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/action_anticipation_frozen/models.py",
+      "size": 4126,
+      "sha256": "bbadbc0eb8890d2f207eb107c3e939b0538ac932dfe8335b86eaba8fabbf8a9b"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/action_anticipation_frozen/utils.py",
+      "size": 3175,
+      "sha256": "cb0156f0dd1ba94499b6e17558d3471fd3f8e989cc5481132987a201bb32d382"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/hub/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/hub/preprocessor.py",
+      "size": 510,
+      "sha256": "1f0776605ef69689a99ac79527b391712680e96c0d95735035355ae0e0aea58b"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/image_classification_frozen/eval.py",
+      "size": 15755,
+      "sha256": "7497519d6c52f7b1278ff4b5cab72deba7d953362c7d204bd6406ca879fe8f02"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/image_classification_frozen/modelcustom/vit_encoder.py",
+      "size": 3195,
+      "sha256": "326db83c0293230fe0b8cad270ebee14091f4a50d8de515bed39db342cdb49a4"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/image_classification_frozen/models.py",
+      "size": 1221,
+      "sha256": "7ffa9bbf0f320c75d88ac54820590d923a3d1d63d6d28af42843e2f45c681117"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/main.py",
+      "size": 3668,
+      "sha256": "87fc782564de170a7f1e55fea8f7c4d6295f8ccef658bbda45c11866feb63b0d"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/main_distributed.py",
+      "size": 7462,
+      "sha256": "230c3c992755711ee0669840b2fdefc591bff99a7a6cd053ba7d06110a35e6d5"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/scaffold.py",
+      "size": 634,
+      "sha256": "30576671b09447ef91348c59e5c91170a7230b0174660b62d34c1b8af7205d19"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/video_classification_frozen/eval.py",
+      "size": 18485,
+      "sha256": "07b226b0ba936317e5bfb69408238c055fcca423ebd04574bce966cf7892ba0b"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/video_classification_frozen/modelcustom/vit_encoder_multiclip.py",
+      "size": 5777,
+      "sha256": "f2dac4dd878dc878dc0f2461dbbcb84b45645ede8f65832d89de98e4798bc24c"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/video_classification_frozen/modelcustom/vit_encoder_multiclip_multilevel.py",
+      "size": 5934,
+      "sha256": "b823a7900d1f428d63fe8be6d31d98d8d5cdfd4e1328a74f0f102b359c243e55"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/video_classification_frozen/models.py",
+      "size": 1287,
+      "sha256": "7f8b823061524c7b776b75a1163556570b62a190eb865e1f9b5e6b8be8a4a287"
+    },
+    {
+      "path": "navsim_v1/vjepa2/evals/video_classification_frozen/utils.py",
+      "size": 6396,
+      "sha256": "7d3b213eb0793c1fcb40588ba3c074ec1cd4a9b9c6370626f4ffdade117f68f8"
+    },
+    {
+      "path": "navsim_v1/vjepa2/hubconf.py",
+      "size": 429,
+      "sha256": "ff61e6a4b0510cc34758c39e5d575afda997428acec33f390457713c3a8c8919"
+    },
+    {
+      "path": "navsim_v1/vjepa2/notebooks/energy_landscape_example.ipynb",
+      "size": 9574,
+      "sha256": "af12aebd70c8b45a4550cd40eb3feaf8db2a34caef07b22f672678c16f403f87"
+    },
+    {
+      "path": "navsim_v1/vjepa2/notebooks/franka_example_traj.npz",
+      "size": 393794,
+      "sha256": "99e31cbd4734cbcaeeeb921af8caed7e7ce4a9b28b005b05cac589b88fe34911"
+    },
+    {
+      "path": "navsim_v1/vjepa2/notebooks/utils/mpc_utils.py",
+      "size": 7540,
+      "sha256": "79f4b753e0faf4ea5a7531dd1f2f1b2e160d8d6907c34b4c1914aeef09f28341"
+    },
+    {
+      "path": "navsim_v1/vjepa2/notebooks/utils/world_model_wrapper.py",
+      "size": 2344,
+      "sha256": "73d305a06bc916c34ca4aaf42e8b1c91122e00336110ba21cd6531df61372123"
+    },
+    {
+      "path": "navsim_v1/vjepa2/notebooks/vjepa2_demo.ipynb",
+      "size": 13361,
+      "sha256": "0386b325e6a97b7d7c01f0d7a5640046ac4680c1cdb1fa70d3f3b824a144df3d"
+    },
+    {
+      "path": "navsim_v1/vjepa2/notebooks/vjepa2_demo.py",
+      "size": 6984,
+      "sha256": "c8cac3d63bcec5385496c087736f4f6badb242ef1d7d2256c1a9cfbfe4a26f73"
+    },
+    {
+      "path": "navsim_v1/vjepa2/pyproject.toml",
+      "size": 77,
+      "sha256": "9a9ed85cb0adbe0c6d38a615bffd327b75f2879f75cc750dc19cb26fa137092d"
+    },
+    {
+      "path": "navsim_v1/vjepa2/requirements-test.txt",
+      "size": 76,
+      "sha256": "9f4475f20ef97012674c6c2a66fdec9c1d18138625eacb25b485289ca1da0b71"
+    },
+    {
+      "path": "navsim_v1/vjepa2/requirements.txt",
+      "size": 212,
+      "sha256": "86df4afafef209576d308aee6a6a2d13523805c1885f3e294f3a9541e6b2be23"
+    },
+    {
+      "path": "navsim_v1/vjepa2/setup.py",
+      "size": 689,
+      "sha256": "682288ebe0ec21907320781906bf249c5802ae836777bb17808cc0264159cc78"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/data_manager.py",
+      "size": 2624,
+      "sha256": "cd577bbf6ff4e79acebf5bc037ce58750a641bd201955911b56d0d95a43c9b39"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/imagenet1k.py",
+      "size": 4721,
+      "sha256": "83847282be83a0aaa6825bbf4d80407a5193f27992b81d0daf0ed5e3b1f9736c"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/utils/dataloader.py",
+      "size": 8510,
+      "sha256": "31b16f2a9839c2e076ba629d9b5ab2bf7ff96727ef52579e2114c5bcf98baf40"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/utils/utils.py",
+      "size": 618,
+      "sha256": "0619a6c32ecf0f320e074f98b312d51ca03cda2a8eb971d05a2b999110bf6208"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/utils/video/functional.py",
+      "size": 3923,
+      "sha256": "b7e7726cb784bc7e2a7614013258d9f90182259c9ba60945b5a3fead14781fad"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/utils/video/randaugment.py",
+      "size": 16955,
+      "sha256": "b0914ae5823aa6ced7b594a3156d2e2ee9a906ebf950b40d24c1a96f5da2acbd"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/utils/video/randerase.py",
+      "size": 6957,
+      "sha256": "81be3544ef18564e4c086daad9f596a1b6312bdd8eae15a0157e551eb08f3ab6"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/utils/video/transforms.py",
+      "size": 40898,
+      "sha256": "fe95fbfec87903d09a1dd3f5e89bbf3603c8e0e98ec02eb0d9d75101c0000567"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/utils/video/transforms_builder.py",
+      "size": 5708,
+      "sha256": "954aad3cc623854a01c51e769e9e43dfa7aadac78fea7382532ede0ebe13d21d"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/utils/video/volume_transforms.py",
+      "size": 5274,
+      "sha256": "2ac8efe2e91ed1d46436e2b0de43e181d7662f0b0d8bf7eebb4d044bdfe5f8c8"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/utils/weighted_sampler.py",
+      "size": 14834,
+      "sha256": "8b5a47768b550c5a6229975b9175b8f6773342f0339b03e694aaa412178c64db"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/utils/worker_init_fn.py",
+      "size": 3087,
+      "sha256": "5281775e7b564dbb6245176a43d7ac87a5fb7bf1ad90de43e89a29c18a05c53c"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/datasets/video_dataset.py",
+      "size": 13476,
+      "sha256": "e008e1f016bf7ed1cc80c4c74fdf6c9c9e893f9db9323e9919c0e5f4a58cc84f"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/hub/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/hub/backbones.py",
+      "size": 5457,
+      "sha256": "042a8bdbc96207b5027fa6bf0ff15d490b2b20470c5de8edf8697efa5aa78bf4"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/masks/default.py",
+      "size": 435,
+      "sha256": "5329acaf6eb8f72a0b2d285944824bc4d61c24598eb6c996cf3a5a62f3d243f9"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/masks/multiseq_multiblock3d.py",
+      "size": 9262,
+      "sha256": "17a27c016b0e92143806c61495d66c1bc705c5bc9f946f40c1781700969b9c95"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/masks/utils.py",
+      "size": 660,
+      "sha256": "833f111a0fa5ffdbd3a6412e2dace2517c3c178f49c14f8bb631d9f6a070dfd0"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/models/ac_predictor.py",
+      "size": 6972,
+      "sha256": "eeea0f97c106b8a7020826f190c3331b44dad0953477c4db79c0386215ecab5b"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/models/attentive_pooler.py",
+      "size": 4386,
+      "sha256": "1c3113ff47aef3aaada622aa454dc233171c749493d21df616a4c1cd219042a4"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/models/predictor.py",
+      "size": 9230,
+      "sha256": "a9a77d1d06e6c858329be169e881c07bcc238594ff63cd56dafdc13bfbb5c7fb"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/models/utils/modules.py",
+      "size": 22472,
+      "sha256": "bb82b27f5d39cbe2062fefc96734203454bc38338dc6ab66c91a0df3b909cadf"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/models/utils/patch_embed.py",
+      "size": 1343,
+      "sha256": "1823c40b34410e70eb313360e21678e18a0ee5465b5d47de9f3d967c074f5a9d"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/models/utils/pos_embs.py",
+      "size": 3553,
+      "sha256": "e6d3b3863ade47b3734a3b443f1bcc93eab02e39bf596ea199517f68ccab443e"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/models/vision_transformer.py",
+      "size": 14623,
+      "sha256": "f740a0d1f515688224ba65ad53108565b3499b1a8345f107ab8057d252d694b0"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/utils/checkpoint_loader.py",
+      "size": 1213,
+      "sha256": "bb795095f28f76bf3853c9e962e8441d7cd37f9f18b8a980805981fcf974cc11"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/utils/distributed.py",
+      "size": 3458,
+      "sha256": "d05cfcbe731ced9f59fc0b0c2228ed24dcd83433b6f79acda5aa5dddbbc63243"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/utils/logging.py",
+      "size": 2957,
+      "sha256": "0bf5298ecce7e59d90fcb3e4cc68eba988e3e8af4d4a08c91e94bdcd29f76b2e"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/utils/monitoring.py",
+      "size": 5858,
+      "sha256": "8fc1feb76396af17ed3753d3f9c4ad0b75d3908122a49b209537d6e3653427c5"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/utils/schedulers.py",
+      "size": 3207,
+      "sha256": "76c6fe2baaa8f430a417f6b9ec317f0595be4f9b16ac0f3dbc8569cc51a79ecb"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/utils/tensors.py",
+      "size": 1832,
+      "sha256": "782b58bd2af456e184750e5318ab773105108383f61b280fe4c7a90f46add2c8"
+    },
+    {
+      "path": "navsim_v1/vjepa2/src/utils/wrappers.py",
+      "size": 1365,
+      "sha256": "aa57f9e22b2530454cc2c72665b59f93237aee57cddfdb6790f8a5e0cd1c9ab5"
+    },
+    {
+      "path": "navsim_v1/vjepa2/tests/__init__.py",
+      "size": 284,
+      "sha256": "f5193302a8be95cb9b994e08305c521e0459a8400cea0a0f98cf32df036f2fd3"
+    },
+    {
+      "path": "navsim_v1/vjepa2/tests/datasets/__init__.py",
+      "size": 284,
+      "sha256": "f5193302a8be95cb9b994e08305c521e0459a8400cea0a0f98cf32df036f2fd3"
+    },
+    {
+      "path": "navsim_v1/vjepa2/tests/datasets/test_dataloader.py",
+      "size": 1240,
+      "sha256": "e021675866ed15ffc3ae00bf711e3aea9134902ef84c30cd66ef56a315fb7a05"
+    },
+    {
+      "path": "navsim_v1/vjepa2/tests/datasets/test_memory_efficient_sampler.py",
+      "size": 5158,
+      "sha256": "5beede8368dc61f3fbf2c88ab02331cec56566aadc786e78281b43156fa4aec4"
+    },
+    {
+      "path": "navsim_v1/vjepa2/tests/datasets/test_vjepa_transforms.py",
+      "size": 4004,
+      "sha256": "7e201ab64479e6778e4f0ec8000754bdb2d29914aa53d38b5b7d7d489d5106e3"
+    },
+    {
+      "path": "navsim_v1/vjepa2/tests/models/__init__.py",
+      "size": 284,
+      "sha256": "f5193302a8be95cb9b994e08305c521e0459a8400cea0a0f98cf32df036f2fd3"
+    },
+    {
+      "path": "navsim_v1/vjepa2/tests/models/test_models.py",
+      "size": 3835,
+      "sha256": "0fd37d6f73947cd3d9fe8d15bdca4fd2389649ba5068fd5bf53d8b4d5cc7d7af"
+    },
+    {
+      "path": "navsim_v1/vjepa2/tests/models/test_predictor.py",
+      "size": 2779,
+      "sha256": "1fc357dc19cbec48d9c0017064191963b9b37e24627e59ff50ad7218001a108c"
+    },
+    {
+      "path": "navsim_v1/vjepa2/tests/models/test_vision_transformer.py",
+      "size": 2778,
+      "sha256": "34102d7b32e529f6837d63adfd09d7cb8a9271a49b3826ec244a17cceab911fd"
+    },
+    {
+      "path": "navsim_v2/data/8192.npy",
+      "size": 3932288,
+      "sha256": "cc44a31e75a53406db59f026f0358de97931e726f10254542f98d2a87a38ad35"
+    },
+    {
+      "path": "navsim_v2/navsim/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/abstract_agent.py",
+      "size": 4220,
+      "sha256": "a6447a16654449fe34bdb662bae92dd6a63d2ddd125b8db0828d1b77d615ae42"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/constant_velocity_agent.py",
+      "size": 1541,
+      "sha256": "8fab416c081906631248ab91d2f139ccc6c32b6a42433debc7c848f6bf09e6c0"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/bev_feature_build.py",
+      "size": 3173,
+      "sha256": "c450bda28b0f4d5a050c97814917000f4b090d27a68c1700450fb544c5d93436"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/bev_refiner.py",
+      "size": 5235,
+      "sha256": "eff9fd20790810f7f92c9f93cb957542da5a2af3af7f7020d4555b5859e5bcd8"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/custom_base_transformer_layer.py",
+      "size": 11111,
+      "sha256": "c2e0c1d7ecac01efa795fa843da6f9cbb8871d385f5dabbf9eb74e33079e49b7"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/decoder.py",
+      "size": 13972,
+      "sha256": "5420e8968736e1df5148b2f4e6eddde8a9c12dc3ed04fb9361afe0ac06400c43"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/encoder.py",
+      "size": 19308,
+      "sha256": "07ae0ff7eacac7ff374fffbc3a8e03fcc84a3462e59570984aac14112e02cd9c"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/grid_mask.py",
+      "size": 4073,
+      "sha256": "d29eb57fbbccf75ef8eac527ca2566a28671e9e55b33e17d216bae50ab1688c7"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/image_encoder.py",
+      "size": 4905,
+      "sha256": "70253ff4cdc386357503d9071fb5c5af28b1c392f1d4f385b1a04b626024f549"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/multi_scale_deformable_attn_function.py",
+      "size": 5903,
+      "sha256": "03ad15be08b83fa2cb33defff6c22653b7eb1bab6fe33210cf677fabcc11781b"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/simple_image_encoder.py",
+      "size": 2637,
+      "sha256": "6fa90fdf6bc1b6ad7ae12cddb76d66f1fbc5f9cf730cfc95763dfddd7eb82a83"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/spatial_cross_attention.py",
+      "size": 18807,
+      "sha256": "a7417023f2631b60cdf458ce8ac9980eace41026f718b1ec0a96714a44e9df20"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/temporal_self_attention.py",
+      "size": 11825,
+      "sha256": "35211a33bd28f7764a5f6a24b6e7b124ec231b5ac11fe0011472d7e2c5579259"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/transform3d.py",
+      "size": 14795,
+      "sha256": "4f739d8d0d490efce9ea1e142bbe4f6c461ed3fca0aff256be6b1a8c123b6a0f"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/bevformer/transformer_decoder.py",
+      "size": 2484,
+      "sha256": "2ba11bb5936fdcbe9d133929b2e62cb0cac6c0d9abb55cf6e5d9ab30c78e2591"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/drive_jepa_agent.py",
+      "size": 14913,
+      "sha256": "cf925ecee1a7545aef606c0e2d4a6eb7774e7d0ed2ae803eba5a1231c3417b39"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/drive_jepa_config.py",
+      "size": 4390,
+      "sha256": "61892398ad0fa4e300cc46ca8cd1f9447d2c67354023fea5b878d6cdf8608d23"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/drive_jepa_features.py",
+      "size": 16144,
+      "sha256": "d7dce17a098903f91ade9af2e80c85837e2772d8c0943367844457f9d86615c5"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/drive_jepa_model.py",
+      "size": 6203,
+      "sha256": "dbcda6eef826c247e240702b34e0a23153a8c19547fa77ef5ff2a400ec955804"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/score_module/compute_navsim_score.py",
+      "size": 6697,
+      "sha256": "df2d84fb9021276561ddb10d02c0218d594dad42de3afd2c49c475616e472f36"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/score_module/map_head.py",
+      "size": 2239,
+      "sha256": "bf4eba2b3c58c4feef16376e6d07611b278f56e9a01460359b0a83c6c9c79eda"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/score_module/scorer.py",
+      "size": 2219,
+      "sha256": "d97eaae3d08765f776984d8456c0fb50f6062451d5fe5c99571252b91543b273"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/score_module/train_pdm_scorer.py",
+      "size": 34076,
+      "sha256": "f78280921784dd09d2937dcaf7242e66bd50a21ca1ca18524a3675e6f47330d8"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/drive_jepa_perception_based/traj_refiner.py",
+      "size": 962,
+      "sha256": "c0d8fbe3fecb1e6123f15aee1a286efb1961342017a515bc63d41487defe8ee2"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/ego_status_mlp_agent.py",
+      "size": 5275,
+      "sha256": "7bcd634e8655344aa99e7d5da4077112cb73d5471ff71cbdda2a9cd26b4c9147"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/human_agent.py",
+      "size": 1398,
+      "sha256": "d9c91272351243086ddf8deb7f8741103f0ed51640014835e35f578c8ca6888e"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/transfuser/transfuser_agent.py",
+      "size": 4142,
+      "sha256": "8ee5a8bd0593b8b7a37c4f6c3efe09bea8750e0f98a3e72da800192dd06d6f04"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/transfuser/transfuser_backbone.py",
+      "size": 19522,
+      "sha256": "ffbbaf2cdf038174cdd71d679864a508bce65b54b43ca6da6c26da957e9565fe"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/transfuser/transfuser_callback.py",
+      "size": 9769,
+      "sha256": "8c777c139c897c6a5d0301f74fd0f43320a315a988e6945d3ea4c211a5e77e9f"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/transfuser/transfuser_config.py",
+      "size": 3534,
+      "sha256": "14866ffa5ff2d8ad3cd2cafe359038220adf977f83b27b7da42f248671d40516"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/transfuser/transfuser_features.py",
+      "size": 17073,
+      "sha256": "1cf800e61d1e4cc78748f9672fd20e03c380b19e83e06b1b486dc8e5b44167d9"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/transfuser/transfuser_loss.py",
+      "size": 5554,
+      "sha256": "b870de5844ce86a08ef322e46e3695025cd4ded30c062fc66ac4ac4974e60b33"
+    },
+    {
+      "path": "navsim_v2/navsim/agents/transfuser/transfuser_model.py",
+      "size": 6893,
+      "sha256": "a5a2de0bf02af1d1b5394a3cb46c130ca3fc5ece31f7ede702f022b18f37f476"
+    },
+    {
+      "path": "navsim_v2/navsim/common/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/common/dataclasses.py",
+      "size": 29698,
+      "sha256": "151aa13abd044d0ccd1715c885c9a19ad75aabe0030f010e98baf87e919d6c90"
+    },
+    {
+      "path": "navsim_v2/navsim/common/dataloader.py",
+      "size": 12148,
+      "sha256": "e25bcf0c352edfc5e7af617607202f75bf81e077bbe1d87e06be127ba9092d65"
+    },
+    {
+      "path": "navsim_v2/navsim/common/enums.py",
+      "size": 3690,
+      "sha256": "05ac678d1b2afeef3345b47b37e107dcab7dad9af98ef039e4ea00d7895d0974"
+    },
+    {
+      "path": "navsim_v2/navsim/common/utils.py",
+      "size": 1015,
+      "sha256": "a2ae70a67411bf27f4c193bf54ce23d176fb8f8767c15d1c31a6e86c2b565733"
+    },
+    {
+      "path": "navsim_v2/navsim/evaluate/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/evaluate/pdm_score.py",
+      "size": 9875,
+      "sha256": "cdf42bca71c743e2a11bb41d98eb3f0013d8b85542f592edd28fbf66aeabcabd"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/metric_caching/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/metric_caching/caching.py",
+      "size": 8003,
+      "sha256": "b45bd427fbb538abe3a92c0ecb603a067883d12159b207d40aa4305467955f7b"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/metric_caching/metric_cache.py",
+      "size": 2103,
+      "sha256": "0ceafc65c0bedbce877b6ce77fa68be54363db0e17c0a1797939370912399922"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/metric_caching/metric_cache_processor.py",
+      "size": 17346,
+      "sha256": "723d52b8f072ab870138b6de8b4cef626b2e2df909629f3854f2cd590053e218"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/metric_caching/metric_caching_utils.py",
+      "size": 1867,
+      "sha256": "9c7131bb98bb3bb020598df43824f02419570da2c7f6cc4793ecbfe4b83288db"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/metric_caching/train_caching.py",
+      "size": 8009,
+      "sha256": "17d1ec67bf1bcebe484d1dbfd9e54055bad9024266156c9d936afcc71fec2aeb"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/metric_caching/train_metric_cache.py",
+      "size": 2230,
+      "sha256": "01e7cb6a97d6ea57491e953f58dfc9412e058963a0042cd822d23cfabe2262a3"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/metric_caching/train_metric_cache_processor.py",
+      "size": 19325,
+      "sha256": "35c536ac1673046022ecb22be14430462e899a4d1566a92c38ac4e60d1b312a3"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/scenario_builder/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/scenario_builder/navsim_scenario.py",
+      "size": 14651,
+      "sha256": "7e9bd229e298041c07651602961192be05ad13c6563d76870d2d59cc55af2089"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/scenario_builder/navsim_scenario_utils.py",
+      "size": 8157,
+      "sha256": "f69892934edc9fc25558a45813bfa89ff0d389280939f3038021463103fd55df"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/builders/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/builders/observation_builder.py",
+      "size": 644,
+      "sha256": "3aab34b73a095669d449426bf645e6cfaaa038411d16f168045395ba4763872c"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/builders/planner_builder.py",
+      "size": 1410,
+      "sha256": "8b65db8f67c3d06471d6d97764729921d112b88ee358ef4f67988fd0fb5ecc58"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/builders/simulation_builder.py",
+      "size": 5858,
+      "sha256": "7269fc955da0269e406c8764c1e3f2f8e18810e552e1e018e4256ef35ec51302"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/builders/worker_pool_builder.py",
+      "size": 1087,
+      "sha256": "b0bfa91ce470240d98f74f6d3f3308f8b5192d98e9a63b93bd36634cc4494814"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/agent/constant_velocity_agent.yaml",
+      "size": 258,
+      "sha256": "254f58f8e9ea5b6abe9677758d07c767099b3b06f31c8fd466c30dee597cbe9d"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/agent/drive_jepa_perception_based_agent.yaml",
+      "size": 445,
+      "sha256": "0d956c445ee246486c41f0e71d9c82bc1e852a6d2be1e7ca0fc5be1e93494c89"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/agent/ego_status_mlp_agent.yaml",
+      "size": 304,
+      "sha256": "2c0862ae5e9f7016eca0857576ab65c0981c95141943021edc24f5f918297848"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/agent/human_agent.yaml",
+      "size": 235,
+      "sha256": "97fa45d5128b5f1e6aef764905cb862d6fb67cd6ec3292b0a3b7befcae545872"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/agent/transfuser_agent.yaml",
+      "size": 410,
+      "sha256": "b2a38f3073cdb9ec281f2ff900589e658508ff72cbe72c6542e7d9bca7973b65"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/default_common.yaml",
+      "size": 1074,
+      "sha256": "365e06fdb75478f4c6018324674ba9b5c5719bc45dc6b9c74fed63abc79b0fa7"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/default_dataset_paths.yaml",
+      "size": 409,
+      "sha256": "cc9a4f8c00446d7ba3c60da8667404205d87b6f3dda4518591f921a8ee6e1296"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/default_evaluation.yaml",
+      "size": 319,
+      "sha256": "bbfcc956a26de8ab7d71543a9bebf9278813397ddb971c77ee8f9e7c71756042"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/traffic_agents_policy/constant_velocity_traffic_agents.yaml",
+      "size": 120,
+      "sha256": "900d0e070ee245ae36b808edac2823e827e30da58205b4e3c0444285be6cd3df"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/traffic_agents_policy/log_replay_traffic_agents.yaml",
+      "size": 105,
+      "sha256": "f33b2cc8bd8bc48e62250918f8bca2301789b97760442f088c325de1a5659d36"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/traffic_agents_policy/navsim_IDM_traffic_agents.yaml",
+      "size": 1262,
+      "sha256": "ea6c6845cbcceb5eddad624d7410e7c6c939dcbffd1b097317f398581adc7735"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/mini.yaml",
+      "size": 56,
+      "sha256": "1eab5cfe0bf3c6b718e6963beb170590d9fc836a795a4a5cfb70131c02b75730"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/navmini.yaml",
+      "size": 53,
+      "sha256": "77eb20e44d96a7d1a743c899407905fc1714329ebfe6bd02370256401d3515bf"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/navsafe_two_stage.yaml",
+      "size": 27163,
+      "sha256": "ada8fe8900b3e823e8c6fde0897b11e301cb24468776b5d7ebebfebd65009b2d"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/navtest.yaml",
+      "size": 53,
+      "sha256": "f72568e6282e413474c91b69acd889ecb9affc36f3571a25cf10a44c8d3d1804"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/navtest_two_stage.yaml",
+      "size": 63,
+      "sha256": "2bb82631645f4db118565bf6b09cea177bc5280cf31e29468711b82e8db8ab8b"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/navtrain.yaml",
+      "size": 58,
+      "sha256": "fcfc95704d532849c7fe1f1ac2bc9e158305fef93a1d5340637ad4b9f440c8cb"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/private_test_e2e.yaml",
+      "size": 74,
+      "sha256": "853c057e11478f1265416549ff4d65c3d73fddbda0c8d28f77b985c316e7a3e0"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/scene_filter/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/scene_filter/all_scenes.yaml",
+      "size": 781,
+      "sha256": "7b17f2e6b0a6698ef4a463338ff2f6b25084ea1cf1a377db7865b11b50481b87"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/scene_filter/competition_private_tokens.yaml",
+      "size": 3505,
+      "sha256": "4a81b66b72c03874d276a4ccdb7931badf75c73cb6b3975b3e1e2caca1fec4d4"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/scene_filter/navmini.yaml",
+      "size": 11686,
+      "sha256": "504fb80beec0f4aa7dac509574e44e9245aa44131d35741baab43ae1779e395f"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/scene_filter/navsafe_two_stage.yaml",
+      "size": 30281,
+      "sha256": "7edbd5af7efaaaaad6680cc55e8f389d121cc5d4e629769b4010835de1dbfebf"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/scene_filter/navtest.yaml",
+      "size": 285662,
+      "sha256": "61284edf5003c0291f843ce9817c822ba306609a62d54544223adae3fc7fc9cd"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/scene_filter/navtest_two_stage.yaml",
+      "size": 285662,
+      "sha256": "5c0a9f63c4eaedf3bf5d1fa5e1c59e6bb814dfee31183e7616ce1691ece4e758"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/scene_filter/navtrain.yaml",
+      "size": 2429445,
+      "sha256": "c37fea567a0cfdbc29076cca893d4f5dd32db59baec18ae214527206d6b64e6f"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/scene_filter/private_test_e2e.yaml",
+      "size": 46189,
+      "sha256": "1d7374a086ead55c0819e237a73cf86694811a881e7b20b4e2c3b91c7d362c57"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/scene_filter/warmup_navsafe_two_stage_extended.yaml",
+      "size": 31701,
+      "sha256": "6161d6e9888899b2ff69f70fdc78a54b2b1efff0ab3c8748904eb22972e90b83"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/scene_filter/warmup_test_e2e.yaml",
+      "size": 15930,
+      "sha256": "4d41f0bec7eb97e678a237d2d974f3173aa812ff01d983c4874a4d65e4ec03c1"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/test.yaml",
+      "size": 56,
+      "sha256": "097a86187d98269260e713bc7fb9dab3734f377c232856654779f822de7c0ef3"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/trainval.yaml",
+      "size": 60,
+      "sha256": "35a012523da70f30cfad18b94e7fd68876a9165875b439dd1fb4bdf7728286d2"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/warmup_navsafe_two_stage_extended.yaml",
+      "size": 80,
+      "sha256": "feccb9063ed0ac00954816db05c508089dc18aeb427ce5deed59ae813e32a70d"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/train_test_split/warmup_test_e2e.yaml",
+      "size": 61,
+      "sha256": "4cb069682fc35d6b4c08938471bda0f461d6522d2f1815dca21e13687ec10b71"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/worker/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/worker/ray_distributed.yaml",
+      "size": 632,
+      "sha256": "719ea826aa4db3bc231ffc6d2fa8c9bd3b8a85f34a5454d3eeef0c9cf4b0220b"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/worker/ray_distributed_no_torch.yaml",
+      "size": 648,
+      "sha256": "1d39d16d6c23b8ca8f2783aa5da2243dda4ce0c540893d7e97c7cbb4f6202b87"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/worker/sequential.yaml",
+      "size": 93,
+      "sha256": "0cfee6da66aa60af20f4745a6d601067e374ac436822bf28a3a50f1bd1b6044c"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/common/worker/single_machine_thread_pool.yaml",
+      "size": 333,
+      "sha256": "e3b0b355ca7a8c86abc2d3abd7fad57e71a834af7db653b6069e850c367ec9a5"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/metric_caching/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/metric_caching/default_metric_caching.yaml",
+      "size": 458,
+      "sha256": "58847453f5910bb847dd8fb6e435d472e4784229d6ed98f358b08819ea5d5484"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/pdm_scoring/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/pdm_scoring/default_run_create_submission_pickle.yaml",
+      "size": 679,
+      "sha256": "c1bed83b44e57b08fe2855bd36242f30f82917e514f3b36b040bd36fd7fae57a"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/pdm_scoring/default_run_merge_submission_pickles.yaml",
+      "size": 726,
+      "sha256": "f1e60f3d461363d5a81fec9d402ceaace1d3af771bf707ad0ddc9b5236fb9ed9"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/pdm_scoring/default_run_pdm_score.yaml",
+      "size": 646,
+      "sha256": "1048098dd949e44a5337e89f01f0ecee30c73a78cbe7a1e4de17e8bf1f179de0"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/pdm_scoring/default_run_pdm_score_from_submission.yaml",
+      "size": 618,
+      "sha256": "af6dc043c208e41635b9a2b7c5e1e2fd38a64fea18a28eb2788d1ab2c90de404"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/pdm_scoring/scorer/pdm_and_traffic_scorer.yaml",
+      "size": 980,
+      "sha256": "c1c42ad24f86aecae912838c2a2f7d9e3c1deb30552f3f95439e286019e5e7d9"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/pdm_scoring/scorer/pdm_scorer.yaml",
+      "size": 1211,
+      "sha256": "7047ff088ad32bb9c747bdff3248e54c21f29c5ec9b19015f0a602557fe60d1d"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/training/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/training/default_train_val_test_log_split.yaml",
+      "size": 684165,
+      "sha256": "3c2182f5ed60442710f34d8ce6bab5b4eae9a38ae5ac3f5615e470aa4c6cd150"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/config/training/default_training.yaml",
+      "size": 2005,
+      "sha256": "a9a06aece43e72638cd4e273e64a8b0ced991e2a556e53d0e6228ff952965176"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/retrieve_scenario_tags.py",
+      "size": 6956,
+      "sha256": "b826cf98e931bdb3cddc5c24da12464e1cc7362162447d8f4e12020ce7adc6c4"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_create_submission_pickle.py",
+      "size": 3117,
+      "sha256": "f05e9d62a16356cc859f33938cf3649886c13db74575fe836ebf2dcadfc55d4c"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_dataset_caching.py",
+      "size": 3402,
+      "sha256": "586e7e27f9b2b3088a322fd5e70ec696702ecd8ec49e6b2ce052b6eef8aaba4c"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_merge_submission_pickles.py",
+      "size": 2159,
+      "sha256": "fd10e988f71898aafd1d42a632032f16e41ec231992cddd8c22b32e697dad12e"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_metric_caching.py",
+      "size": 1019,
+      "sha256": "c6d67ccd7db0f65752dc54e76cec002b9ef78701e83d4c64ff3e6231a48cee52"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_pdm_score.py",
+      "size": 23790,
+      "sha256": "a5669fe36ad82b3689779349fed23c4339deadd4d994e751ddab3f371a7fffff"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_pdm_score_diversity.py",
+      "size": 29746,
+      "sha256": "c89ec01a76bbcd9d47335431a5a2028e5c9a19620c1c0cebb0751ae39e1a4584"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_pdm_score_from_submission.py",
+      "size": 3987,
+      "sha256": "ed907ca76f04bae44c71b8e71b9d3a15a9a27e30dcbbe23c11a13b7c0499593b"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_pdm_score_sequential.py",
+      "size": 24981,
+      "sha256": "30b2388cdf312fd4e72298c2dc07dbffa6981a05bdc97813ed0e7b4a0da0e6d0"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_test_cache.py",
+      "size": 5220,
+      "sha256": "c2b1e4601f865b635945fb07f8332e60de61a737e1956abcfe45a9be132e01cb"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_train_metric_caching.py",
+      "size": 1064,
+      "sha256": "5e8031c38f3332ae2d8f02193fb2fd731476cb7f4928d4863d02f5dc6050ef77"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_training.py",
+      "size": 6271,
+      "sha256": "c4da541311ee4537ef8d2e3324250c58621f2e25c2ffcec837a2a4c5734b5d39"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/run_training_no_log.py",
+      "size": 6399,
+      "sha256": "21385a210c8b3709c7c90d58a59da0824caff34554379db3f62552ab709ea77e"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/script/utils.py",
+      "size": 6354,
+      "sha256": "b3f82938dcccc35ca570947fa6fe284a58cd596b7ddaa1702c16fb55c75734ca"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/observation/navsim_idm/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/observation/navsim_idm/navsim_idm_agent_manager.py",
+      "size": 8088,
+      "sha256": "58427bdad8012f63a95ea6c00ce15bbc502fe8edd75ea6e79521e88c6bdf4c4f"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/observation/navsim_idm/navsim_idm_agents_builder.py",
+      "size": 5899,
+      "sha256": "95ff951df761044975e71823978f8cfa6bc03db2b497bdd3d44532dab0ce2f95"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/observation/navsim_idm_agents.py",
+      "size": 9217,
+      "sha256": "118ba7ae8335dc4d7ed323c00d5a363435d66452b4562791c7232850573eea15"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/abstract_pdm_closed_planner.py",
+      "size": 6526,
+      "sha256": "b1f921e9b616f5c4a320349bc85ccbfc216f939b2f2a4594a93f719f4bd034fa"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/abstract_pdm_planner.py",
+      "size": 7234,
+      "sha256": "40f5c849de0cb4bc21a8b9b2c249ebf69ab9aa5739faccc0b2c28bb3b3c13899"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/observation/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/observation/pdm_object_manager.py",
+      "size": 8397,
+      "sha256": "c8ef532af2082451694b67adf30eed31ace87f8fab5fdefe2740cc13ff47b780"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/observation/pdm_observation.py",
+      "size": 18576,
+      "sha256": "7d6f42f9148bfd1f0067f86de7a6d493f3f3f83f0be39f5137c000437e2c44e5"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/observation/pdm_occupancy_map.py",
+      "size": 10417,
+      "sha256": "83aeb24090abcb26e563153cac6a50e7e41894d8353091aa4d3dd04bc88cd702"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/pdm_closed_planner.py",
+      "size": 3077,
+      "sha256": "1c104315d2f6b10688de5f96f9c362875f6a85f53d91dc933ef16c9bacc51c8c"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/proposal/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/proposal/batch_idm_policy.py",
+      "size": 7053,
+      "sha256": "8c2456db3858c8ea44aa26a2e51e1921b3b2cd23aef52053842e86bd84a6f686"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/proposal/pdm_generator.py",
+      "size": 17926,
+      "sha256": "4ca46054e175b35b7b59cf88eefc07912f56e67d518be4cb9ab03b7800213bf5"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/proposal/pdm_proposal.py",
+      "size": 3106,
+      "sha256": "6eceae812bac770c9eec47c0d0099f4497b2095af5fd446675e0de8198f5d47f"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/scoring/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/scoring/pdm_and_traffic_scorer.py",
+      "size": 12768,
+      "sha256": "e44b88e1fae0c0e8a51be88cce73f5e8dfab7629875ac6af1855774ee701e8cf"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/scoring/pdm_comfort_metrics.py",
+      "size": 18616,
+      "sha256": "944a32f5051ecf84a39f0fe487109752ce234366da0f3d6e1935251cd777d694"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/scoring/pdm_scorer.py",
+      "size": 35492,
+      "sha256": "c3d4ab71716caac036e3ca440660da871f0e09439cde327febe4a10318756bd6"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/scoring/pdm_scorer_utils.py",
+      "size": 2323,
+      "sha256": "110b51aab2005318c0b262ce06a80926d5bdf9588f526ed47294ef8f5d6f30c6"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/simulation/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/simulation/batch_kinematic_bicycle.py",
+      "size": 7387,
+      "sha256": "253beb3c1e7005a8c18a2aa33f43cbf6181829bc6aeda57f74d7bbc91f081ee0"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/simulation/batch_lqr.py",
+      "size": 21576,
+      "sha256": "03c4d1b781edfba61dd2eee4f9308cc197e8db264de3df3936b6ff11e30238e7"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/simulation/batch_lqr_utils.py",
+      "size": 11654,
+      "sha256": "a140e4132c6ec6017041d5185ae6f2aad3dbbe2274fbaaea4fadd05168fa3718"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/simulation/pdm_simulator.py",
+      "size": 3376,
+      "sha256": "ae07b533ada10bc37e973e5685a46a7cafc51de8d922ed02add558452ff04807"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/simulation_v2/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/simulation_v2/batch_kinematic_bicycle.py",
+      "size": 7387,
+      "sha256": "253beb3c1e7005a8c18a2aa33f43cbf6181829bc6aeda57f74d7bbc91f081ee0"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/simulation_v2/batch_lqr.py",
+      "size": 21516,
+      "sha256": "cdc7375c018704e45b83419fb4a9b437cb26ff5978429b5e0eccaef05599682b"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/simulation_v2/batch_lqr_utils.py",
+      "size": 12112,
+      "sha256": "0b696b9886d7edb4c2c849fbce8978428831fb4ac07b18db7a71e45695c370dd"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/simulation_v2/pdm_simulator.py",
+      "size": 3382,
+      "sha256": "300b223b02f676d6fe49c3b9640d22074b6953d18845e65ece8b91389a67db07"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/utils/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/utils/graph_search/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/utils/graph_search/bfs_roadblock.py",
+      "size": 5335,
+      "sha256": "1004756971d4e203bbcebbcf9bc06e2ef7fbfba12a8bad31d63b87f0ea7816b2"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/utils/graph_search/dijkstra.py",
+      "size": 5978,
+      "sha256": "71a755882ff935bfa458050ad77b145209b80cbf64aa877e842279ac9fc402bf"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/utils/pdm_array_representation.py",
+      "size": 11469,
+      "sha256": "7b43958e85c259a2e2d9a1f62bcfb61745e3bb6ed4fff8b29316493c3c8516a4"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/utils/pdm_emergency_brake.py",
+      "size": 5440,
+      "sha256": "f4c2cca47303edad84043f6644e50f73482b944b875df8bb5eae2a2626f167ee"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/utils/pdm_enums.py",
+      "size": 3714,
+      "sha256": "019c93c0a2337c8bc3a8c36a35a1c48b0c63a78975cc2c3472443f01d8b1a038"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/utils/pdm_geometry_utils.py",
+      "size": 7475,
+      "sha256": "7a7ee642b4ab4bc9ce7b535f761c37da7c0744077de407c96a58545ae55d3e20"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/utils/pdm_path.py",
+      "size": 4041,
+      "sha256": "febeb11b0661b1a2eb2d8ddbc3346fdd8c2b57fe0e03e4dc0c8811c78e24c71c"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/simulation/planner/pdm_planner/utils/route_utils.py",
+      "size": 9426,
+      "sha256": "7045213d1beb743ce9d14ae53fa3d2da36001031742b00acc4c4e1678e5ae6da"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/training/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/training/abstract_feature_target_builder.py",
+      "size": 1423,
+      "sha256": "9eefbb84e66d050e68737cd58ead1b3f341905fed96b18245bec59594a947cad"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/training/agent_lightning_module.py",
+      "size": 4924,
+      "sha256": "07b4189bb46ac91eda06a89857c9a70670e3094f4f207fd331fb8000284fe5c3"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/training/callbacks/time_logging_callback.py",
+      "size": 1821,
+      "sha256": "008c603684661a0e0ea10978a6c8c91208940882d4e6ba71dd8b5a752aff2078"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/training/dataset.py",
+      "size": 11476,
+      "sha256": "38286af1366b7604ea65b224f9c52a48e1a476a85bb807e0cb68106727baf02e"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/utils/multithreading/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/planning/utils/multithreading/worker_ray_no_torch.py",
+      "size": 6754,
+      "sha256": "3cf0516adc1d7f3c24f40e3b6c742749f6cfc9ffcf9e22df50ac57037cf1b19f"
+    },
+    {
+      "path": "navsim_v2/navsim/test/test_score_proposals.py",
+      "size": 8878,
+      "sha256": "40e19f7023317c353965c1e12de2dfa55a315570ba5f1c01cb15bc5995bef2db"
+    },
+    {
+      "path": "navsim_v2/navsim/test/test_traj_transform.py",
+      "size": 8758,
+      "sha256": "18684685fbdf3162e23061d9474152469bb5058e268bf1a51f2ac641a49f1079"
+    },
+    {
+      "path": "navsim_v2/navsim/traffic_agents_policies/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/traffic_agents_policies/abstract_traffic_agents_policy.py",
+      "size": 8092,
+      "sha256": "feaf44f99ba409da2725717495aa2a876d6f79cd339abbf0ed8d615ebbe77076"
+    },
+    {
+      "path": "navsim_v2/navsim/traffic_agents_policies/constant_velocity_traffic_agents.py",
+      "size": 3182,
+      "sha256": "05a7f01edc8c88992c07c1c699d04566e45a9e180d1c965ea06cba381cedca47"
+    },
+    {
+      "path": "navsim_v2/navsim/traffic_agents_policies/log_replay_traffic_agents.py",
+      "size": 2851,
+      "sha256": "bb797f602b1fbcf447a245165c8c0115eef6f3c2ade4f9617fdff35836630a08"
+    },
+    {
+      "path": "navsim_v2/navsim/traffic_agents_policies/navsim_IDM_traffic_agents.py",
+      "size": 6095,
+      "sha256": "8f07e6f2605679ff020056b8e3ec5795030e5a55aa764425f02b763082cbe6bf"
+    },
+    {
+      "path": "navsim_v2/navsim/visualization/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/navsim/visualization/bev.py",
+      "size": 10639,
+      "sha256": "576761f84fb33a88383dda5dfd56797b5d9d9b30cff713b79c8657ca85001381"
+    },
+    {
+      "path": "navsim_v2/navsim/visualization/camera.py",
+      "size": 10872,
+      "sha256": "64bc8eb666a4ef2206a0dd294d42aea67fe43c44e80a5faae769da6def4321f3"
+    },
+    {
+      "path": "navsim_v2/navsim/visualization/config.py",
+      "size": 6992,
+      "sha256": "fa3b9597ba2dfe355a0a6904b47a3321fd7eeb09ae3e2c8517babb52cafcb99b"
+    },
+    {
+      "path": "navsim_v2/navsim/visualization/lidar.py",
+      "size": 2485,
+      "sha256": "9e064230e5ce8e31d12c095ec2f9c3f3edf2e4b6f985455d28dbc55ee0b0ac1a"
+    },
+    {
+      "path": "navsim_v2/navsim/visualization/plots.py",
+      "size": 9040,
+      "sha256": "4d7224ef9b0f73f756996b644715bc9e7b0ec23918338f05299a977e3f71ad63"
+    },
+    {
+      "path": "navsim_v2/scripts/evaluation/eval_drive_jepa_perception_based.sh",
+      "size": 975,
+      "sha256": "1d00579070e9b4822a835a3e5686cfe4c7387c2199a1f9120049cc440c5f0868"
+    },
+    {
+      "path": "navsim_v2/scripts/evaluation/run_cv_pdm_score_evaluation.sh",
+      "size": 156,
+      "sha256": "21843d221bd628eb863abeccc1d9052d7d3b516e3495ee4cb5bddaf10c3bb439"
+    },
+    {
+      "path": "navsim_v2/scripts/evaluation/run_ego_mlp_agent_pdm_score_evaluation.sh",
+      "size": 268,
+      "sha256": "cd6427bf97e4fed6775898d3cf40b06dd2673dc9b194a7891221fff64914e6c0"
+    },
+    {
+      "path": "navsim_v2/scripts/evaluation/run_human_agent_pdm_score_evaluation.sh",
+      "size": 389,
+      "sha256": "03eaf57205baa41a12f1dfe8e94e14b720710d1ffd0f13b5a03647973ec82e84"
+    },
+    {
+      "path": "navsim_v2/scripts/evaluation/run_metric_caching.sh",
+      "size": 208,
+      "sha256": "dd35d2a0520d5e80ee4807b677e253a670d4e5f5fad7be37b2ec0dffbf997cef"
+    },
+    {
+      "path": "navsim_v2/scripts/evaluation/run_train_metric_caching.sh",
+      "size": 317,
+      "sha256": "ae680ac380ea1168fcf150405ba305c7d1fac90418a3bc0b2d2eadedcdf49929"
+    },
+    {
+      "path": "navsim_v2/scripts/evaluation/run_transfuser.sh",
+      "size": 304,
+      "sha256": "e5e0692a35c5734367f12da7b06e982e4a903f6f80292da778d90e271ab28e42"
+    },
+    {
+      "path": "navsim_v2/scripts/misc/calc_anchors_scores.py",
+      "size": 2276,
+      "sha256": "579c0bc1128a8c0fd8405967e8841cd62271333b12614fcf6d8387daf66d9655"
+    },
+    {
+      "path": "navsim_v2/scripts/misc/convert_to_index.py",
+      "size": 1637,
+      "sha256": "a6fd2e65bf19c0e4cf664317b615e34782a5bf223b4e4a3f19d2962fbafe6177"
+    },
+    {
+      "path": "navsim_v2/scripts/misc/prune_metric_cache.py",
+      "size": 2898,
+      "sha256": "23b6bf2bc5dee8d6cf32faa014c4f3f51bd689f1e193bb80d5e9c68e1055fba8"
+    },
+    {
+      "path": "navsim_v2/scripts/training/run_drive_jepa_perception_based_cache.sh",
+      "size": 350,
+      "sha256": "bfdcd833c9c8b9c860fac4179d4634ed820b1c4095f2da39ddd1a52b2a4cba62"
+    },
+    {
+      "path": "navsim_v2/scripts/training/run_ego_mlp_agent_training.sh",
+      "size": 418,
+      "sha256": "568efd932dd4173e4256961ae7c5a77497fb4074987dd8ee1609fc4faad66da5"
+    },
+    {
+      "path": "navsim_v2/scripts/training/run_ltf_training.sh",
+      "size": 756,
+      "sha256": "b631e23f9ce14bc1913ba92398754526bd0202681fdcbbedb51907470b48329b"
+    },
+    {
+      "path": "navsim_v2/scripts/training/run_transfuser_training.sh",
+      "size": 200,
+      "sha256": "1c5e82ea3343f37d8c746262831f2c3dc1835fd0240f83205604a86b6a3ea186"
+    },
+    {
+      "path": "navsim_v2/scripts/training/train_drive_jepa_perception_based.sh",
+      "size": 653,
+      "sha256": "37941d7cdbc4dae6f1967731cc30a83fb18b729d00a22c1312a761e1fd2e0ae7"
+    },
+    {
+      "path": "navsim_v2/setup.py",
+      "size": 790,
+      "sha256": "49a3d277a60073f357d73997dc5377184ff8e252dbc398872eb20d4d328257b4"
+    },
+    {
+      "path": "navsim_v2/vjepa2/.flake8",
+      "size": 120,
+      "sha256": "6994c3570677a894b35fb662a4ba037fdaaff4cd79d009efa9ceabe9496d4298"
+    },
+    {
+      "path": "navsim_v2/vjepa2/.github/workflows/base_tests.yaml",
+      "size": 699,
+      "sha256": "4dcc82cb616a07a4fa7cc7b4dc3652f4a118384b0b1507014b3f3406af30cad0"
+    },
+    {
+      "path": "navsim_v2/vjepa2/.github/workflows/linters.yaml",
+      "size": 1067,
+      "sha256": "467a8d835ca6e7009de9cd876e3ad3a8b8b4259831a7ab614fdc3d0489ae2452"
+    },
+    {
+      "path": "navsim_v2/vjepa2/.gitignore",
+      "size": 499,
+      "sha256": "b62cd74962f049fcb320ea2e3eb468212e759f504c6b646e1227b87696356b76"
+    },
+    {
+      "path": "navsim_v2/vjepa2/APACHE-LICENSE",
+      "size": 11349,
+      "sha256": "a41e2fae9915ae56028f8dbd0bf27995f1907613cbcd2d81a61b010ad34e9fe9"
+    },
+    {
+      "path": "navsim_v2/vjepa2/CHANGELOG.md",
+      "size": 74,
+      "sha256": "c4f96cbb008a208acec089b06fd2faf3f7ed53635fee3e3db96ee20ce582eb13"
+    },
+    {
+      "path": "navsim_v2/vjepa2/CODE_OF_CONDUCT.md",
+      "size": 3535,
+      "sha256": "2bc1cbfe9b61779523e8863986f2b78a765cfa1ddc2ddd212de4204986211942"
+    },
+    {
+      "path": "navsim_v2/vjepa2/CONTRIBUTING.md",
+      "size": 1504,
+      "sha256": "0ab5e8db8b182a969643610fa4f915eb0598c3934b13d48a8854498ebc138e6e"
+    },
+    {
+      "path": "navsim_v2/vjepa2/LICENSE",
+      "size": 1087,
+      "sha256": "cf9b17822d1fcd4ff32ccbe14183386fb3adf6f2ff92dc184130823f7fc28173"
+    },
+    {
+      "path": "navsim_v2/vjepa2/README.md",
+      "size": 17245,
+      "sha256": "918d8b5e284648cc4e24eda5f34737907b5006cbb4c6af1c27dcd1ec181a7634"
+    },
+    {
+      "path": "navsim_v2/vjepa2/app/main.py",
+      "size": 2554,
+      "sha256": "9b10e22441060453f6754dc0e64bd91ae9b3c19a3c8714492bd0b4e5b3c96ed6"
+    },
+    {
+      "path": "navsim_v2/vjepa2/app/main_distributed.py",
+      "size": 8823,
+      "sha256": "23987595f343d14473387dca7f22f16cdd94352215da51282d7a480b124a72f0"
+    },
+    {
+      "path": "navsim_v2/vjepa2/app/scaffold.py",
+      "size": 515,
+      "sha256": "a962e73f7dcc70e9c07286c71ffc908189dd96e294d272e3d1adda26050ab8be"
+    },
+    {
+      "path": "navsim_v2/vjepa2/app/vjepa/train.py",
+      "size": 18886,
+      "sha256": "6524e8efcf0483086f93cc213edea784012e53d57c7d7a1faf6fb14a0384d8c2"
+    },
+    {
+      "path": "navsim_v2/vjepa2/app/vjepa/transforms.py",
+      "size": 5220,
+      "sha256": "0b991236a649991a0a44534ca83b98d72e8124ab7c924899ad50624027895f81"
+    },
+    {
+      "path": "navsim_v2/vjepa2/app/vjepa/utils.py",
+      "size": 8008,
+      "sha256": "26021ea1be639188cdaa7c0919e868a77c4ad385c951def096cbb98e6a075a29"
+    },
+    {
+      "path": "navsim_v2/vjepa2/app/vjepa_droid/droid.py",
+      "size": 7790,
+      "sha256": "25f3fe88d6d29af0460155f5e0f2b2d05e005f6201a2090bf351fc3daee1d549"
+    },
+    {
+      "path": "navsim_v2/vjepa2/app/vjepa_droid/train.py",
+      "size": 19263,
+      "sha256": "7fe3fcd71e1953314c35c728939bddd964a952b28d962b156a4cce26e1389147"
+    },
+    {
+      "path": "navsim_v2/vjepa2/app/vjepa_droid/transforms.py",
+      "size": 5231,
+      "sha256": "777f217aedf2171194dc89f875ec6549fc48dbd5a4e15c617006f5aac35aecf9"
+    },
+    {
+      "path": "navsim_v2/vjepa2/app/vjepa_droid/utils.py",
+      "size": 7871,
+      "sha256": "84009c0f9565f38288d5fcd91e9861bc322f75f5bc33922ae01ec1755b1415c7"
+    },
+    {
+      "path": "navsim_v2/vjepa2/assets/flowchart.png",
+      "size": 141578,
+      "sha256": "4ccdc6940de06998cd4a692eb683d306d4e68b97be6f7576e6c142ec85cb232d"
+    },
+    {
+      "path": "navsim_v2/vjepa2/assets/vjepa2-abstract-new.png",
+      "size": 27862,
+      "sha256": "9d092de5fd7e2bab74e2b531cfe80424d3d69f1c1606652ffec61196673cdb82"
+    },
+    {
+      "path": "navsim_v2/vjepa2/assets/vjepa2-ac-abstract-new.png",
+      "size": 25180,
+      "sha256": "30b48d9bab36759ba0d708c0812e439bed07de255c7bf6c74f3a29a0880dafb7"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitg-384/coin.yaml",
+      "size": 3737,
+      "sha256": "e09259d8d916f51d5c431249f560942c6fd3cf2ca2c250f196125315514053ec"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitg-384/diving48.yaml",
+      "size": 1600,
+      "sha256": "239d2895d8a6ceb2be357c5c8e0bfdf3fbcd9729a84b265fbf3508ce17d76f0a"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitg-384/ek100.yaml",
+      "size": 4628,
+      "sha256": "81277c4dfaba5520c09be6a6a293b9cedf3e45b52d844cf5633b92f71e8fa68e"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitg-384/in1k.yaml",
+      "size": 3738,
+      "sha256": "88cd768c48e9cb5489aa1142c4e18dc73776166d879471d3f9230faba231d089"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitg-384/jester.yaml",
+      "size": 1594,
+      "sha256": "69b66af058532daec895826a53535b8977e711e4242d7035f6fb5374265c6ac0"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitg-384/k400.yaml",
+      "size": 3752,
+      "sha256": "daaf40c51f595efdd3988c38e90e657f68bcbc81c9459b76ccf6a3d6f6730c22"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitg-384/ssv2.yaml",
+      "size": 3748,
+      "sha256": "6bf7b5c5c37d437170690a78ee1bc79d690c06b48bccfc948fda6332f36db7e7"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitl/coin.yaml",
+      "size": 3719,
+      "sha256": "72639ce47724ecd68204a15296bf965bd44180e6a1958bcce5c7ebec186187ff"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitl/diving48.yaml",
+      "size": 1579,
+      "sha256": "91264152edc8cc45cdc6d22f03c86360e3a4bb4c73fb1895783746cdfcc5815a"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitl/ek100.yaml",
+      "size": 4607,
+      "sha256": "b7f2128340b472493c3674aed5391469e51c9e36c8429bbcef8621b26f07c667"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitl/in1k.yaml",
+      "size": 3762,
+      "sha256": "4b687c0fa3419cd433b78cf3e5accb3af0c2de114e700f78cea7792a1e549234"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitl/jester.yaml",
+      "size": 1573,
+      "sha256": "98e57a1bcf6302ed5060a3352d66c35548faf5f04a0ee71a2f2da9713d3cb2c9"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitl/k400.yaml",
+      "size": 3730,
+      "sha256": "ebe5de86e34775300539634fca6b8e63a60478fa6d1cc6f06c8925fffd224581"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/eval/vitl/ssv2.yaml",
+      "size": 3730,
+      "sha256": "3b55f6346dd9474d13ce9101bc9d4195e0dd4ea49acc87fd29468816691b7e0d"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/inference/vitg-384/diving48.yaml",
+      "size": 1326,
+      "sha256": "bbe783c9af140ea365fbed4b5727e6a206b98b8a824955d2c6537817ccd40279"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/inference/vitg-384/ek100.yaml",
+      "size": 1842,
+      "sha256": "fc1eb8ca868527990f917b548819c870158716a10490b52f68e142dd6b03925c"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/inference/vitg-384/ssv2.yaml",
+      "size": 1263,
+      "sha256": "292ebdeac1e36a4ac45b3dacdd46a3f4960b626551605eedd3e98720dfc5ffbd"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/inference/vitl/diving48.yaml",
+      "size": 1305,
+      "sha256": "adf01ba8926be3c1e8674be36f732365ebde1e836be69e46c9f92fb0c388ae32"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/inference/vitl/ek100.yaml",
+      "size": 1821,
+      "sha256": "3b32fb3c1bb03d8ed6ad1b8b5b761736146404160abaf272cd432f66917eebb1"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/inference/vitl/ssv2.yaml",
+      "size": 1245,
+      "sha256": "f9de6aab964167ba520a9e8e3888000a4e0e6aea080c1d78ccdb87b521cb4dc4"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/train/vitg16/cooldown-256px-64f.yaml",
+      "size": 1737,
+      "sha256": "95466ad448ef9b192768b765703ff67a0ee22416874d670733b37f47a192f014"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/train/vitg16/cooldown-384px-64f.yaml",
+      "size": 1739,
+      "sha256": "fa2f184d0c89e92a5041256d23496185cd8d4c6d0f995d0f093b60fd612c711a"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/train/vitg16/droid-256px-8f.yaml",
+      "size": 1310,
+      "sha256": "d3b70052d1b431b4a74822b31735103f70e9c06b9398e06dbf71a5b4d8689918"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/train/vitg16/pretrain-256px-16f.yaml",
+      "size": 1638,
+      "sha256": "70e70e3d454c3995676b6e3e9246d97e3f0038f4841c776df4ed8f9674ca6807"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/train/vith16/cooldown-256px-64f.yaml",
+      "size": 1730,
+      "sha256": "93483067cc30c48abb39342280233fffef567d7adc908d43fd78ebf5ae3c2c11"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/train/vith16/pretrain-256px-16f.yaml",
+      "size": 1627,
+      "sha256": "19813ae3b8af260e4bde69849707fa6f626d82340d7b0d45d4218f97fdcf7036"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/train/vitl16/cooldown-256px-64f.yaml",
+      "size": 1731,
+      "sha256": "2fd99a75504990c3bd48b510991e5e5d4772210e5fd917ac8f8708a0b71c86f1"
+    },
+    {
+      "path": "navsim_v2/vjepa2/configs/train/vitl16/pretrain-256px-16f.yaml",
+      "size": 1628,
+      "sha256": "45d3528ae0e0b08a2da40a54958eff4ecd86321f58cde26d93d84faf9799b48b"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/action_anticipation_frozen/dataloader.py",
+      "size": 6954,
+      "sha256": "84bf76fe2b4c8e4389796f45614a8b08441701ab09a4bcf406dfe16ea85d7b95"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/action_anticipation_frozen/epickitchens.py",
+      "size": 10279,
+      "sha256": "9f232719e8046f0b9830de18df44c2178ffd3b194ea8fcde6d6a1ffee504e4ce"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/action_anticipation_frozen/eval.py",
+      "size": 28347,
+      "sha256": "76a2e58bd976b6b58d81d7d47eebdb382571e44847c99d8adef5b7073e5ca068"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/action_anticipation_frozen/losses.py",
+      "size": 1421,
+      "sha256": "0989c2b76b115e3dbde6f68c5b0f1ef86bd1b0b692cceba80f4c52edd24fa545"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/action_anticipation_frozen/metrics.py",
+      "size": 2035,
+      "sha256": "69c6891c45c66526112f5ed6cbb48b259683643d6126325e96df767c2e5ed4c2"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/action_anticipation_frozen/modelcustom/vit_encoder_predictor_concat_ar.py",
+      "size": 7424,
+      "sha256": "e192295dd6dca9ab6b130c1d3994dc83eda2744ae97d0c9655889c1eed358b0c"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/action_anticipation_frozen/models.py",
+      "size": 4126,
+      "sha256": "bbadbc0eb8890d2f207eb107c3e939b0538ac932dfe8335b86eaba8fabbf8a9b"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/action_anticipation_frozen/utils.py",
+      "size": 3175,
+      "sha256": "cb0156f0dd1ba94499b6e17558d3471fd3f8e989cc5481132987a201bb32d382"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/hub/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/hub/preprocessor.py",
+      "size": 510,
+      "sha256": "1f0776605ef69689a99ac79527b391712680e96c0d95735035355ae0e0aea58b"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/image_classification_frozen/eval.py",
+      "size": 15755,
+      "sha256": "7497519d6c52f7b1278ff4b5cab72deba7d953362c7d204bd6406ca879fe8f02"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/image_classification_frozen/modelcustom/vit_encoder.py",
+      "size": 3195,
+      "sha256": "326db83c0293230fe0b8cad270ebee14091f4a50d8de515bed39db342cdb49a4"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/image_classification_frozen/models.py",
+      "size": 1221,
+      "sha256": "7ffa9bbf0f320c75d88ac54820590d923a3d1d63d6d28af42843e2f45c681117"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/main.py",
+      "size": 3668,
+      "sha256": "87fc782564de170a7f1e55fea8f7c4d6295f8ccef658bbda45c11866feb63b0d"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/main_distributed.py",
+      "size": 7462,
+      "sha256": "230c3c992755711ee0669840b2fdefc591bff99a7a6cd053ba7d06110a35e6d5"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/scaffold.py",
+      "size": 634,
+      "sha256": "30576671b09447ef91348c59e5c91170a7230b0174660b62d34c1b8af7205d19"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/video_classification_frozen/eval.py",
+      "size": 18485,
+      "sha256": "07b226b0ba936317e5bfb69408238c055fcca423ebd04574bce966cf7892ba0b"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/video_classification_frozen/modelcustom/vit_encoder_multiclip.py",
+      "size": 5777,
+      "sha256": "f2dac4dd878dc878dc0f2461dbbcb84b45645ede8f65832d89de98e4798bc24c"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/video_classification_frozen/modelcustom/vit_encoder_multiclip_multilevel.py",
+      "size": 5934,
+      "sha256": "b823a7900d1f428d63fe8be6d31d98d8d5cdfd4e1328a74f0f102b359c243e55"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/video_classification_frozen/models.py",
+      "size": 1287,
+      "sha256": "7f8b823061524c7b776b75a1163556570b62a190eb865e1f9b5e6b8be8a4a287"
+    },
+    {
+      "path": "navsim_v2/vjepa2/evals/video_classification_frozen/utils.py",
+      "size": 6396,
+      "sha256": "7d3b213eb0793c1fcb40588ba3c074ec1cd4a9b9c6370626f4ffdade117f68f8"
+    },
+    {
+      "path": "navsim_v2/vjepa2/hubconf.py",
+      "size": 429,
+      "sha256": "ff61e6a4b0510cc34758c39e5d575afda997428acec33f390457713c3a8c8919"
+    },
+    {
+      "path": "navsim_v2/vjepa2/notebooks/energy_landscape_example.ipynb",
+      "size": 9574,
+      "sha256": "af12aebd70c8b45a4550cd40eb3feaf8db2a34caef07b22f672678c16f403f87"
+    },
+    {
+      "path": "navsim_v2/vjepa2/notebooks/franka_example_traj.npz",
+      "size": 393794,
+      "sha256": "99e31cbd4734cbcaeeeb921af8caed7e7ce4a9b28b005b05cac589b88fe34911"
+    },
+    {
+      "path": "navsim_v2/vjepa2/notebooks/utils/mpc_utils.py",
+      "size": 7540,
+      "sha256": "79f4b753e0faf4ea5a7531dd1f2f1b2e160d8d6907c34b4c1914aeef09f28341"
+    },
+    {
+      "path": "navsim_v2/vjepa2/notebooks/utils/world_model_wrapper.py",
+      "size": 2344,
+      "sha256": "73d305a06bc916c34ca4aaf42e8b1c91122e00336110ba21cd6531df61372123"
+    },
+    {
+      "path": "navsim_v2/vjepa2/notebooks/vjepa2_demo.ipynb",
+      "size": 13361,
+      "sha256": "0386b325e6a97b7d7c01f0d7a5640046ac4680c1cdb1fa70d3f3b824a144df3d"
+    },
+    {
+      "path": "navsim_v2/vjepa2/notebooks/vjepa2_demo.py",
+      "size": 6984,
+      "sha256": "c8cac3d63bcec5385496c087736f4f6badb242ef1d7d2256c1a9cfbfe4a26f73"
+    },
+    {
+      "path": "navsim_v2/vjepa2/pyproject.toml",
+      "size": 77,
+      "sha256": "9a9ed85cb0adbe0c6d38a615bffd327b75f2879f75cc750dc19cb26fa137092d"
+    },
+    {
+      "path": "navsim_v2/vjepa2/requirements-test.txt",
+      "size": 76,
+      "sha256": "9f4475f20ef97012674c6c2a66fdec9c1d18138625eacb25b485289ca1da0b71"
+    },
+    {
+      "path": "navsim_v2/vjepa2/requirements.txt",
+      "size": 212,
+      "sha256": "86df4afafef209576d308aee6a6a2d13523805c1885f3e294f3a9541e6b2be23"
+    },
+    {
+      "path": "navsim_v2/vjepa2/setup.py",
+      "size": 689,
+      "sha256": "682288ebe0ec21907320781906bf249c5802ae836777bb17808cc0264159cc78"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/data_manager.py",
+      "size": 2624,
+      "sha256": "cd577bbf6ff4e79acebf5bc037ce58750a641bd201955911b56d0d95a43c9b39"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/imagenet1k.py",
+      "size": 4721,
+      "sha256": "83847282be83a0aaa6825bbf4d80407a5193f27992b81d0daf0ed5e3b1f9736c"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/utils/dataloader.py",
+      "size": 8510,
+      "sha256": "31b16f2a9839c2e076ba629d9b5ab2bf7ff96727ef52579e2114c5bcf98baf40"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/utils/utils.py",
+      "size": 618,
+      "sha256": "0619a6c32ecf0f320e074f98b312d51ca03cda2a8eb971d05a2b999110bf6208"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/utils/video/functional.py",
+      "size": 3923,
+      "sha256": "b7e7726cb784bc7e2a7614013258d9f90182259c9ba60945b5a3fead14781fad"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/utils/video/randaugment.py",
+      "size": 16955,
+      "sha256": "b0914ae5823aa6ced7b594a3156d2e2ee9a906ebf950b40d24c1a96f5da2acbd"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/utils/video/randerase.py",
+      "size": 6957,
+      "sha256": "81be3544ef18564e4c086daad9f596a1b6312bdd8eae15a0157e551eb08f3ab6"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/utils/video/transforms.py",
+      "size": 40898,
+      "sha256": "fe95fbfec87903d09a1dd3f5e89bbf3603c8e0e98ec02eb0d9d75101c0000567"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/utils/video/transforms_builder.py",
+      "size": 5708,
+      "sha256": "954aad3cc623854a01c51e769e9e43dfa7aadac78fea7382532ede0ebe13d21d"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/utils/video/volume_transforms.py",
+      "size": 5274,
+      "sha256": "2ac8efe2e91ed1d46436e2b0de43e181d7662f0b0d8bf7eebb4d044bdfe5f8c8"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/utils/weighted_sampler.py",
+      "size": 14834,
+      "sha256": "8b5a47768b550c5a6229975b9175b8f6773342f0339b03e694aaa412178c64db"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/utils/worker_init_fn.py",
+      "size": 3087,
+      "sha256": "5281775e7b564dbb6245176a43d7ac87a5fb7bf1ad90de43e89a29c18a05c53c"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/datasets/video_dataset.py",
+      "size": 13476,
+      "sha256": "e008e1f016bf7ed1cc80c4c74fdf6c9c9e893f9db9323e9919c0e5f4a58cc84f"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/hub/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/hub/backbones.py",
+      "size": 5457,
+      "sha256": "042a8bdbc96207b5027fa6bf0ff15d490b2b20470c5de8edf8697efa5aa78bf4"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/masks/default.py",
+      "size": 435,
+      "sha256": "5329acaf6eb8f72a0b2d285944824bc4d61c24598eb6c996cf3a5a62f3d243f9"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/masks/multiseq_multiblock3d.py",
+      "size": 9262,
+      "sha256": "17a27c016b0e92143806c61495d66c1bc705c5bc9f946f40c1781700969b9c95"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/masks/utils.py",
+      "size": 660,
+      "sha256": "833f111a0fa5ffdbd3a6412e2dace2517c3c178f49c14f8bb631d9f6a070dfd0"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/models/ac_predictor.py",
+      "size": 6972,
+      "sha256": "eeea0f97c106b8a7020826f190c3331b44dad0953477c4db79c0386215ecab5b"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/models/attentive_pooler.py",
+      "size": 4386,
+      "sha256": "1c3113ff47aef3aaada622aa454dc233171c749493d21df616a4c1cd219042a4"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/models/predictor.py",
+      "size": 9230,
+      "sha256": "a9a77d1d06e6c858329be169e881c07bcc238594ff63cd56dafdc13bfbb5c7fb"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/models/utils/modules.py",
+      "size": 22472,
+      "sha256": "bb82b27f5d39cbe2062fefc96734203454bc38338dc6ab66c91a0df3b909cadf"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/models/utils/patch_embed.py",
+      "size": 1343,
+      "sha256": "1823c40b34410e70eb313360e21678e18a0ee5465b5d47de9f3d967c074f5a9d"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/models/utils/pos_embs.py",
+      "size": 3553,
+      "sha256": "e6d3b3863ade47b3734a3b443f1bcc93eab02e39bf596ea199517f68ccab443e"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/models/vision_transformer.py",
+      "size": 14623,
+      "sha256": "f740a0d1f515688224ba65ad53108565b3499b1a8345f107ab8057d252d694b0"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/utils/checkpoint_loader.py",
+      "size": 1213,
+      "sha256": "bb795095f28f76bf3853c9e962e8441d7cd37f9f18b8a980805981fcf974cc11"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/utils/distributed.py",
+      "size": 3458,
+      "sha256": "d05cfcbe731ced9f59fc0b0c2228ed24dcd83433b6f79acda5aa5dddbbc63243"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/utils/logging.py",
+      "size": 2957,
+      "sha256": "0bf5298ecce7e59d90fcb3e4cc68eba988e3e8af4d4a08c91e94bdcd29f76b2e"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/utils/monitoring.py",
+      "size": 5858,
+      "sha256": "8fc1feb76396af17ed3753d3f9c4ad0b75d3908122a49b209537d6e3653427c5"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/utils/schedulers.py",
+      "size": 3207,
+      "sha256": "76c6fe2baaa8f430a417f6b9ec317f0595be4f9b16ac0f3dbc8569cc51a79ecb"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/utils/tensors.py",
+      "size": 1832,
+      "sha256": "782b58bd2af456e184750e5318ab773105108383f61b280fe4c7a90f46add2c8"
+    },
+    {
+      "path": "navsim_v2/vjepa2/src/utils/wrappers.py",
+      "size": 1365,
+      "sha256": "aa57f9e22b2530454cc2c72665b59f93237aee57cddfdb6790f8a5e0cd1c9ab5"
+    },
+    {
+      "path": "navsim_v2/vjepa2/tests/__init__.py",
+      "size": 284,
+      "sha256": "f5193302a8be95cb9b994e08305c521e0459a8400cea0a0f98cf32df036f2fd3"
+    },
+    {
+      "path": "navsim_v2/vjepa2/tests/datasets/__init__.py",
+      "size": 284,
+      "sha256": "f5193302a8be95cb9b994e08305c521e0459a8400cea0a0f98cf32df036f2fd3"
+    },
+    {
+      "path": "navsim_v2/vjepa2/tests/datasets/test_dataloader.py",
+      "size": 1240,
+      "sha256": "e021675866ed15ffc3ae00bf711e3aea9134902ef84c30cd66ef56a315fb7a05"
+    },
+    {
+      "path": "navsim_v2/vjepa2/tests/datasets/test_memory_efficient_sampler.py",
+      "size": 5158,
+      "sha256": "5beede8368dc61f3fbf2c88ab02331cec56566aadc786e78281b43156fa4aec4"
+    },
+    {
+      "path": "navsim_v2/vjepa2/tests/datasets/test_vjepa_transforms.py",
+      "size": 4004,
+      "sha256": "7e201ab64479e6778e4f0ec8000754bdb2d29914aa53d38b5b7d7d489d5106e3"
+    },
+    {
+      "path": "navsim_v2/vjepa2/tests/models/__init__.py",
+      "size": 284,
+      "sha256": "f5193302a8be95cb9b994e08305c521e0459a8400cea0a0f98cf32df036f2fd3"
+    },
+    {
+      "path": "navsim_v2/vjepa2/tests/models/test_models.py",
+      "size": 3835,
+      "sha256": "0fd37d6f73947cd3d9fe8d15bdca4fd2389649ba5068fd5bf53d8b4d5cc7d7af"
+    },
+    {
+      "path": "navsim_v2/vjepa2/tests/models/test_predictor.py",
+      "size": 2779,
+      "sha256": "1fc357dc19cbec48d9c0017064191963b9b37e24627e59ff50ad7218001a108c"
+    },
+    {
+      "path": "navsim_v2/vjepa2/tests/models/test_vision_transformer.py",
+      "size": 2778,
+      "sha256": "34102d7b32e529f6837d63adfd09d7cb8a9271a49b3826ec244a17cceab911fd"
+    },
+    {
+      "path": "requirements.txt",
+      "size": 1533,
+      "sha256": "8a0d0e6386de00acd711b1ee342e721d3b34ab07d2f0695fa7496c945b664821"
+    }
+  ],
+  "git_status_porcelain": [
+    " M navsim_v1/navsim/agents/drive_jepa_perception_based/drive_jepa_agent.py",
+    " M navsim_v1/navsim/agents/drive_jepa_perception_based/drive_jepa_config.py",
+    " M navsim_v1/navsim/agents/drive_jepa_perception_based/score_module/compute_navsim_score.py",
+    " M navsim_v2/navsim/common/dataclasses.py",
+    " M navsim_v2/navsim/common/dataloader.py",
+    " M navsim_v2/scripts/evaluation/eval_drive_jepa_perception_based.sh",
+    "?? .agents/",
+    "?? .aris/",
+    "?? .claude/",
+    "?? .mcp.json",
+    "?? .vscode/",
+    "?? AGENTS.md",
+    "?? AMC-Drive/",
+    "?? AMC-RTT_v1.0/",
+    "?? CLAIMS_FROM_RESULTS.md",
+    "?? CLAUDE.md",
+    "?? EXPERIMENT_AUDIT.json",
+    "?? EXPERIMENT_AUDIT.md",
+    "?? MANIFEST.md",
+    "?? PAPER_PLAN.md",
+    "?? PAPER_PLAN_20260914_091926.md",
+    "?? docs/",
+    "?? findings.md",
+    "?? idea-stage/",
+    "?? navsim_v1/navsim/agents/amc_drive/",
+    "?? navsim_v1/navsim/agents/branch_drive/",
+    "?? navsim_v1/navsim/agents/drive_jepa_perception_based/analyze_r31d2_dual_channel_pilot.py",
+    "?? navsim_v1/navsim/agents/drive_jepa_perception_based/consequence_dedup_loss.py",
+    "?? navsim_v1/navsim/agents/drive_jepa_perception_based/dual_channel_redundancy_loss.py",
+    "?? navsim_v1/navsim/agents/drive_jepa_perception_based/run_dedup_controlled.py",
+    "?? navsim_v1/navsim/agents/drive_jepa_perception_based/run_dedup_controlled_r30.py",
+    "?? navsim_v1/navsim/agents/drive_jepa_perception_based/run_dedup_lambda_scan.py",
+    "?? navsim_v1/navsim/agents/drive_jepa_perception_based/run_dedup_pilot.py",
+    "?? navsim_v1/navsim/agents/drive_jepa_perception_based/run_r31d2_dual_channel_pilot.py",
+    "?? navsim_v1/navsim/planning/script/config/common/agent/amc_drive_agent.yaml",
+    "?? navsim_v1/navsim/planning/script/run_create_amc_drive_submission_pickle.py",
+    "?? navsim_v1/navsim/planning/script/run_drive_jepa_stage0_baseline.py",
+    "?? navsim_v1/scripts/evaluation/run_stage0_drive_jepa_baseline.sh",
+    "?? navsim_v2/scripts/local/",
+    "?? refine-logs/",
+    "?? scripts/",
+    "?? tests/"
+  ]
+}
