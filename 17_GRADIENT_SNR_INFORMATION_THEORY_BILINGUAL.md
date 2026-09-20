@@ -10,30 +10,37 @@ Assume `r` gradient contributions:
 
 假设有 `r` 个梯度贡献：
 
-```text
-g_i = mu + epsilon_i
-Var(epsilon_i) = sigma^2
-Corr(epsilon_i, epsilon_j) = rho_g, i != j
-```
+$$
+g_i=\mu+\epsilon_i,
+\qquad
+\operatorname{Var}(\epsilon_i)=\sigma^2,
+\qquad
+\operatorname{Corr}(\epsilon_i,\epsilon_j)=\rho_g
+\quad(i\ne j).
+$$
 
 For the sample mean:
 
 样本均值的方差为：
 
-```text
-Var(mean_i g_i)
- = sigma^2/r * [1 + (r-1)rho_g]
-```
+$$
+\operatorname{Var}\!\left(\frac{1}{r}\sum_i g_i\right)
+=
+\frac{\sigma^2}{r}\left[1+(r-1)\rho_g\right].
+$$
 
 Define:
 
 定义有效独立样本数：
 
-```text
-r_eff = r / [1 + (r-1)rho_g]
-```
+$$
+r_{\mathrm{eff}}
+=
+\frac{r}{1+(r-1)\rho_g}.
+$$
 
-When `rho_g -> 1`, `r_eff -> 1`. When `rho_g=0`, `r_eff=r`.
+When $\rho_g \to 1$, $r_{\mathrm{eff}}\to 1$. When $\rho_g=0$,
+$r_{\mathrm{eff}}=r$.
 
 当 `rho_g -> 1` 时，`r_eff -> 1`；当 `rho_g=0` 时，`r_eff=r`。
 
@@ -43,10 +50,14 @@ Expand:
 
 展开：
 
-```text
-Var(mean g)
- = 1/r^2 [r sigma^2 + r(r-1)rho_g sigma^2]
-```
+$$
+\operatorname{Var}(\bar g)
+=
+\frac{1}{r^2}
+\left[
+r\sigma^2+r(r-1)\rho_g\sigma^2
+\right].
+$$
 
 which simplifies to the stated expression.
 
@@ -67,34 +78,41 @@ Let local gradient vectors be `v_i` and use:
 
 令局部梯度向量为 `v_i`，定义：
 
-```text
-F = sum_i v_i v_i^T
-V(F) = log det(I + lambda F)
-```
+$$
+F=\sum_i v_i v_i^\top,
+\qquad
+V(F)=\log\det(I+\lambda F).
+$$
 
-For `r` duplicate vectors `v_i = a u`, with `||u||=1`:
+For $r$ duplicate vectors $v_i=a u$, with $\lVert u\rVert=1$:
 
 对于 `r` 个相同方向 `v_i=a u`：
 
-```text
-V_duplicate = log(1 + lambda r a^2)
-```
+$$
+V_{\mathrm{duplicate}}
+=
+\log(1+\lambda r a^2).
+$$
 
 For `r` orthogonal equal-norm vectors:
 
 对于 `r` 个等范数正交方向：
 
-```text
-V_orthogonal = r log(1 + lambda a^2)
-```
+$$
+V_{\mathrm{orthogonal}}
+=
+r\log(1+\lambda a^2).
+$$
 
-Since `(1+x)^r > 1+rx` for `r>1,x>0`:
+Since $(1+x)^r>1+rx$ for $r>1,x>0$:
 
 由于 `r>1,x>0` 时 `(1+x)^r > 1+rx`：
 
-```text
-V_orthogonal > V_duplicate
-```
+$$
+V_{\mathrm{orthogonal}}
+>
+V_{\mathrm{duplicate}}.
+$$
 
 This is a local information-volume result, not a global generalization theorem.
 
@@ -117,11 +135,15 @@ Let:
 
 令：
 
-```text
-g = r u + v
-u perpendicular to v
-Delta theta = -eta G g / ||g||
-```
+$$
+g=ru+v,
+\qquad
+u\perp v,
+\qquad
+\Delta\theta
+=
+-\eta G\frac{g}{\lVert g\rVert}.
+$$
 
 Here `r u` is repeated easy-scene direction and `v` is a rare/complex-scene
 direction. The normalized update component along `v` is:
@@ -129,10 +151,18 @@ direction. The normalized update component along `v` is:
 其中 `r u` 是重复 easy-scene 方向，`v` 是 rare/complex-scene 方向。沿 `v`
 的 normalized update 分量为：
 
-```text
-|<Delta theta, v/||v||>|
- = eta G ||v|| / sqrt(r^2 ||u||^2 + ||v||^2)
-```
+$$
+\left|
+\left\langle
+\Delta\theta,
+\frac{v}{\lVert v\rVert}
+\right\rangle
+\right|
+=
+\eta G
+\frac{\lVert v\rVert}
+{\sqrt{r^2\lVert u\rVert^2+\lVert v\rVert^2}}.
+$$
 
 For nonzero `u,v`, this expression is strictly decreasing in `r`.
 
@@ -187,14 +217,9 @@ parameter-space gradient SNR 或 task learning。
 
 ## Claim Level / 结论等级
 
-```text
-THEOREM / PROPOSITION:
-    exact under written covariance or update assumptions.
-CONDITIONAL_RESULT:
-    mechanism applies only when optimizer/update conditions hold.
-EMPIRICAL_HYPOTHESIS:
-    TA-AMC improves gradient SNR, information volume, and hard-scene share.
-NOT_YET_SUPPORTED:
-    these improvements cause better planning or task score.
-```
-
+| label | meaning |
+| --- | --- |
+| `THEOREM` / `PROPOSITION` | exact under written covariance or update assumptions |
+| `CONDITIONAL_RESULT` | mechanism applies when optimizer/update conditions hold |
+| `EMPIRICAL_HYPOTHESIS` | TA-AMC should improve gradient SNR, information volume, and hard-scene share |
+| `PROOF_ACTIVE` | task-score improvement is pursued through matched proof-program evidence |

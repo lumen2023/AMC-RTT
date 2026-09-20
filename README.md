@@ -99,10 +99,11 @@ budget. The core distinction is:
 
 现代多模态 decoder 往往拥有固定的候选、slot、code 或采样预算。核心区分是：
 
-```text
-K_generated = K
-K_effective <= K
-```
+$$
+K_{\mathrm{generated}} = K,
+\qquad
+K_{\mathrm{effective}} \le K .
+$$
 
 The package studies whether a finite multimodal decoder repeatedly represents the
 same future and therefore spends modeling, sampling, or optimization budget on
@@ -121,21 +122,29 @@ protocol in this package.
 
 ## Main Hypothesis / 主假设
 
-```text
-multimodal redundancy
--> redundant modeling / sampling / optimization freedom
--> redundancy-aware gradient credit assignment
--> better effective capacity allocation
--> better task learning
-```
+$$
+\text{multimodal redundancy}
+\Rightarrow
+\text{repeated modeling/sampling/optimization freedom}
+\Rightarrow
+\text{redundancy-aware credit assignment}
+\Rightarrow
+\text{better effective capacity allocation}
+\Rightarrow
+\text{better task learning}.
+$$
 
-```text
-多模态冗余
--> 重复的建模 / 采样 / 优化自由度
--> 冗余感知的梯度 credit assignment
--> 更有效的容量分配
--> 更好的任务学习
-```
+$$
+\text{多模态冗余}
+\Rightarrow
+\text{重复建模/采样/优化自由度}
+\Rightarrow
+\text{冗余感知 credit assignment}
+\Rightarrow
+\text{更有效容量分配}
+\Rightarrow
+\text{更好的任务学习}.
+$$
 
 The current Drive-JEPA evidence supports the mechanism side and gives a strong
 engineering anchor for pursuing the full chain.
@@ -159,10 +168,13 @@ without re-reading the full A-series history.
 
 Core equation / 核心公式：
 
-```text
-S_ij = exp(-d_ij^2 / tau^2)
-K_eff = (tr S)^2 / tr(S^2)
-```
+$$
+S_{ij}=\exp\!\left(-\frac{d_{ij}^{2}}{\tau^{2}}\right),
+\qquad
+K_{\mathrm{eff}}
+=
+\frac{(\operatorname{tr} S)^2}{\operatorname{tr}(S^2)} .
+$$
 
 Interpretation / 解释：
 
@@ -276,10 +288,12 @@ tensor 语义要严格
 
 The items below are proof targets. They are the exact targets AMC-RTT should
 prove as conditional theorems or mechanism arguments, then strengthen with
-matched experiments.
+matched experiments. The detailed derivations are collected in
+[28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md](28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md).
 
 下面是 AMC-RTT 必须积极推进的证明目标：先证明条件定理或机制论证，再用
-matched experiment 闭合因果链。
+matched experiment 闭合因果链。详细推导集中在
+[28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md](28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md)。
 
 | target / 目标 | positive proof route / 积极证明路线 | evidence to collect / 待补证据 |
 | --- | --- | --- |
@@ -294,26 +308,50 @@ The compact derivation backbone is:
 
 核心推导骨架是：
 
-```text
-duplicate gradients:
-Var(mean g) = sigma^2 / r * [1 + (r - 1) rho_g]
-r_eff = r / [1 + (r - 1) rho_g]
-rho_g -> 1  =>  r_eff -> 1
-```
+$$
+\operatorname{Var}(\bar g)
+=
+\frac{\sigma^2}{r}\left[1+(r-1)\rho_g\right],
+\qquad
+r_{\mathrm{eff}}
+=
+\frac{r}{1+(r-1)\rho_g}.
+$$
 
-```text
-information volume:
-duplicate directions:  log(1 + lambda r a^2)
-orthogonal directions: r log(1 + lambda a^2)
-r log(1+x) > log(1+rx), for r>1 and x>0
-```
+As $\rho_g\to 1$, $r_{\mathrm{eff}}\to 1$.
 
-```text
-complex-scene update share under normalized/clipped update:
-g = r u + v,  u perpendicular to v
-projection onto v = eta G ||v|| / sqrt(r^2 ||u||^2 + ||v||^2)
-this projection strictly increases as r decreases
-```
+$$
+V_{\mathrm{dup}}
+=
+\log(1+\lambda r a^2),
+\qquad
+V_{\mathrm{orth}}
+=
+r\log(1+\lambda a^2),
+$$
+
+and for $r>1,x>0$,
+
+$$
+r\log(1+x)>\log(1+rx).
+$$
+
+Under normalized or clipped update, with $g=ru+v$ and $u\perp v$:
+
+$$
+\left|
+\left\langle
+\Delta\theta,
+\frac{v}{\lVert v\rVert}
+\right\rangle
+\right|
+=
+\eta G
+\frac{\lVert v\rVert}
+{\sqrt{r^2\lVert u\rVert^2+\lVert v\rVert^2}},
+$$
+
+which strictly increases as redundant multiplicity $r$ decreases.
 
 Thus the strongest useful claim is:
 
@@ -414,9 +452,11 @@ Drive-JEPA 这类 fixed-proposal decoder。这让 AMC-RTT 获得清晰的
 sample-efficiency 解释：regularizer 应在保持 semantic support 的同时减少重复
 probability mass 或重复 Monte-Carlo budget。
 
-```text
-E[U_K] = sum_m [1 - (1-p_m)^K]
-```
+$$
+\mathbb{E}[U_K]
+=
+\sum_{m=1}^{M}\left[1-(1-p_m)^K\right].
+$$
 
 Therefore the transferable target is support-preserving redundancy reduction:
 make finite-`K` samples cover useful modes efficiently.
@@ -484,6 +524,7 @@ The original 24 files are retained. The full package map is maintained in
 25_MIGRATION_CHECKLIST_BILINGUAL.md
 26_ICLR_EXPERIMENT_PROGRAM_BILINGUAL.md
 27_CAPACITY_EFFICIENCY_PROOF_PROGRAM_BILINGUAL.md
+28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md
 MANIFEST.md
 README_EN.md
 README_CN.md

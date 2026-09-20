@@ -24,10 +24,11 @@ NAVSIM v1 PDMS = 0.939443730121 ~= 93.944 ~= 93.95
 
 现代多模态 decoder 往往暴露一个固定预算：
 
-```text
-K_generated = K
-K_effective <= K
-```
+$$
+K_{\mathrm{generated}} = K,
+\qquad
+K_{\mathrm{effective}} \le K .
+$$
 
 目标是把“生成出来的多模态”转化为“真正有效的多模态”：减少重复 hypotheses，
 同时保持有用 semantic support。
@@ -36,23 +37,34 @@ K_effective <= K
 
 ## 核心机制
 
-```text
-多模态冗余
--> 重复的建模 / 采样 / 优化自由度
--> 冗余感知的梯度 credit assignment
--> 更有效的容量分配
--> 更好的任务学习
-```
+$$
+\text{多模态冗余}
+\Rightarrow
+\text{重复建模/采样/优化自由度}
+\Rightarrow
+\text{冗余感知 credit assignment}
+\Rightarrow
+\text{更有效容量分配}
+\Rightarrow
+\text{更好的任务学习}.
+$$
 
 最强证明路线需要同时出现：
 
-```text
-gradient redundancy down
-AND gradient effective rank or logdet up
-AND hard-scene update share up
-AND task score up
-=> CAPACITY_EFFICIENCY_SUPPORTED
-```
+$$
+\text{gradient redundancy}\downarrow
+\quad\land\quad
+\operatorname{erank}(G_{\mathrm{grad}})\uparrow
+\ \text{或}\
+\log\det(I+\lambda F)\uparrow
+\quad\land\quad
+\text{hard-scene update share}\uparrow
+\quad\land\quad
+\text{task score}\uparrow .
+$$
+
+详细推导与权威文献锚点见
+[28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md](28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md)。
 
 ## Decoder 迁移
 
@@ -92,6 +104,8 @@ support-preserving、sample-efficiency-aware 的 regularizer。
   decoder-agnostic API。
 - [27_CAPACITY_EFFICIENCY_PROOF_PROGRAM_BILINGUAL.md](27_CAPACITY_EFFICIENCY_PROOF_PROGRAM_BILINGUAL.md)：
   capacity efficiency 与 task improvement 的证明程序。
+- [28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md](28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md)：
+  可渲染数学推导与权威文献锚点。
 
 ## 当前状态
 

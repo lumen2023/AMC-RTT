@@ -11,8 +11,8 @@ label applies only under the assumptions written beside it.
 
 ### THEOREM 1 / 定理 1
 
-Assume a condition has `M` semantic modes with probabilities
-`p_1,...,p_M`, and `K` samples are IID semantic labels.
+Assume a condition has $M$ semantic modes with probabilities
+$p_1,\ldots,p_M$, and $K$ samples are IID semantic labels.
 
 假设一个 condition 有 `M` 个 semantic modes，概率为 `p_1,...,p_M`，并且
 `K` 个样本的 semantic labels IID。
@@ -21,11 +21,21 @@ Let `U_K` be the number of unique modes observed:
 
 令 `U_K` 表示实际覆盖到的 unique modes 数量：
 
-```text
-E[U_K] = sum_m [1 - (1-p_m)^K]
-E[R_K] = K - E[U_K]
-P(mode m is missed) = (1-p_m)^K
-```
+$$
+\mathbb{E}[U_K]
+=
+\sum_{m=1}^{M}\left[1-(1-p_m)^K\right],
+\qquad
+\mathbb{E}[R_K]
+=
+K-\mathbb{E}[U_K],
+$$
+
+$$
+\Pr[\text{mode }m\text{ is missed}]
+=
+(1-p_m)^K.
+$$
 
 ### Derivation / 推导
 
@@ -33,11 +43,15 @@ Let `I_m` indicate that mode `m` appears at least once. Then:
 
 令 `I_m` 表示 mode `m` 至少出现一次，则：
 
-```text
-U_K = sum_m I_m
-E[I_m] = 1 - P(no sample has mode m)
-       = 1 - (1-p_m)^K
-```
+$$
+U_K=\sum_m I_m,
+\qquad
+\mathbb{E}[I_m]
+=
+1-\Pr[\text{no sample has mode }m]
+=
+1-(1-p_m)^K.
+$$
 
 Linearity of expectation gives the result without requiring independence between
 the indicators.
@@ -50,10 +64,14 @@ For `K >= 2`:
 
 当 `K >= 2`：
 
-```text
-f(p) = 1 - (1-p)^K
-f''(p) = -K(K-1)(1-p)^(K-2) <= 0
-```
+$$
+f(p)=1-(1-p)^K,
+\qquad
+f''(p)
+=
+-K(K-1)(1-p)^{K-2}
+\le 0.
+$$
 
 Thus `sum_m f(p_m)` is symmetric concave, hence Schur-concave on the probability
 simplex. More concentrated mode mass lowers expected unique coverage at fixed
@@ -90,26 +108,37 @@ This theorem does not apply if:
 
 ### PROPOSITION 2 / 命题 2
 
-Assume mode `m` is represented by `r_m` hypotheses, `sum_m r_m = K`, and each
-hypothesis has expected shared-parameter gradient `mu_m`. If the loss averages
+Assume mode $m$ is represented by $r_m$ hypotheses, $\sum_m r_m = K$, and each
+hypothesis has expected shared-parameter gradient $\mu_m$. If the loss averages
 slot/sample contributions equally:
 
 假设 mode `m` 被 `r_m` 个 hypotheses 表示，`sum_m r_m=K`，且每个 hypothesis
 对共享参数的期望梯度是 `mu_m`。如果 loss 对 slot/sample 等权平均：
 
-```text
-E[g] = sum_m (r_m / K) mu_m
-```
+$$
+\mathbb{E}[g]
+=
+\sum_m \frac{r_m}{K}\mu_m.
+$$
 
-For a desired semantic weighting `pi_m`:
+For a desired semantic weighting $\pi_m$:
 
 若理想 semantic weighting 是 `pi_m`：
 
-```text
-g* = sum_m pi_m mu_m
-b  = E[g] - g*
-   = sum_m (r_m/K - pi_m) mu_m
-```
+$$
+g^\star
+=
+\sum_m \pi_m\mu_m,
+\qquad
+b
+=
+\mathbb{E}[g]-g^\star
+=
+\sum_m
+\left(
+\frac{r_m}{K}-\pi_m
+\right)\mu_m.
+$$
 
 ### Assumptions / 假设
 
@@ -120,8 +149,8 @@ b  = E[g] - g*
 - `mu_m` is stable over the local update;
 - 局部更新内 `mu_m` 稳定。
 
-If the `mu_m` are linearly independent, `b=0` requires
-`r_m/K = pi_m` for every mode.
+If the $\mu_m$ are linearly independent, $b=0$ requires
+$r_m/K = \pi_m$ for every mode.
 
 如果 `mu_m` 线性独立，则 `b=0` 要求每个 mode 都满足
 `r_m/K = pi_m`。
@@ -151,10 +180,19 @@ For a fixed-slot decoder with outputs `y_k(theta)`, define:
 
 对于 fixed-slot decoder 的输出 `y_k(theta)`，定义：
 
-```text
-J_k = d y_k / d theta
-J = [J_1; ...; J_K]
-```
+$$
+J_k
+=
+\frac{\partial y_k}{\partial \theta},
+\qquad
+J
+=
+\begin{bmatrix}
+J_1\\
+\vdots\\
+J_K
+\end{bmatrix}.
+$$
 
 If several slot Jacobians are identical, the row-space of `J` contains fewer
 independent output directions than `K` distinct Jacobians. A spectral effective
@@ -192,4 +230,3 @@ causal chain to task improvement. That requires the experiment program in
 这些理论在明确假设下建立机制，但没有建立到 task improvement 的因果链。后者需要
 [27_CAPACITY_EFFICIENCY_PROOF_PROGRAM_BILINGUAL.md](27_CAPACITY_EFFICIENCY_PROOF_PROGRAM_BILINGUAL.md)
 中的实验程序。
-

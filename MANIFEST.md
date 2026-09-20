@@ -24,7 +24,7 @@ This manifest records purpose, claim level, evidence source, and migration role.
 | `10_diffusion_decoder_adapter.md` | diffusion interface / diffusion 接口 | transfer hypothesis | diffusion path | diffusion |
 | `11_flow_matching_decoder_adapter.md` | FM interface / FM 接口 | transfer hypothesis | ODE path | flow matching |
 | `12_transfer_validation_protocol.md` | Level 0-4 gates / Level 0-4 门控 | required protocol | package policy | all |
-| `13_failure_modes_and_negative_results.md` | negative-result guard / 负结果护栏 | claim safety | A2.8, A3.6, A15-A20 | all |
+| `13_failure_modes_and_negative_results.md` | legacy diagnostic guard / 旧版诊断护栏 | claim safety | A2.8, A3.6, A15-A20 | all |
 | `14_drive_jepa_evidence_map.md` | original evidence map / 原证据图 | evidence index | A2-A20 | Drive-JEPA |
 | `15_MAINLINE_AND_ICLR_STORY_BILINGUAL.md` | main narrative / 主线故事 | synthesis | A2-A20 | paper framing |
 | `16_REDUNDANCY_CAPACITY_THEORY_BILINGUAL.md` | finite-K, bias, Jacobian theory | theorem/proposition | explicit assumptions | all |
@@ -39,6 +39,7 @@ This manifest records purpose, claim level, evidence source, and migration role.
 | `25_MIGRATION_CHECKLIST_BILINGUAL.md` | pre-authorization questions | authorization gate | API + theory | all |
 | `26_ICLR_EXPERIMENT_PROGRAM_BILINGUAL.md` | staged experiment plan | no training authorization | protocol design | all |
 | `27_CAPACITY_EFFICIENCY_PROOF_PROGRAM_BILINGUAL.md` | H1-H5 causal program | future proof obligation | theory + A18-A20 | all |
+| `28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md` | positive derivation companion and literature anchors / 正面推导与文献锚点 | theorem/proposition/literature | derivations + primary papers | all |
 | `interfaces/redundancy_api.py` | hardened standalone API | implementation scaffold | canonical contracts | all |
 | `figures/fig1_high_score_anchor.svg` | Drive-JEPA-based 93.95 achievement anchor | engineering evidence visualization | AMC-Drive score summary, NAVSIM main results | motivation |
 | `figures/fig2_keff_intuition.svg` | `K_generated` vs `K_eff` intuition | mathematical visualization | `S`, `K_eff` equations | all |
@@ -68,5 +69,5 @@ verdict 为准。
 ## Package Verdict / 包裁决
 
 ```text
-MECHANISM_SUPPORTED__TASK_GAIN_NOT_YET_SUPPORTED
+MECHANISM_SUPPORTED__CAPACITY_EFFICIENCY_PROOF_ACTIVE
 ```

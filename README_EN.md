@@ -25,10 +25,11 @@ This is a local single-RTX-3090 / fixcache fine-tuning lineage. See
 
 Modern multimodal decoders often expose a fixed budget:
 
-```text
-K_generated = K
-K_effective <= K
-```
+$$
+K_{\mathrm{generated}} = K,
+\qquad
+K_{\mathrm{effective}} \le K .
+$$
 
 The goal is to convert generated multimodality into effective multimodality by
 reducing repeated hypotheses while preserving useful semantic support.
@@ -37,23 +38,34 @@ reducing repeated hypotheses while preserving useful semantic support.
 
 ## Core Mechanism
 
-```text
-multimodal redundancy
--> redundant modeling / sampling / optimization freedom
--> redundancy-aware gradient credit assignment
--> better effective capacity allocation
--> better task learning
-```
+$$
+\text{multimodal redundancy}
+\Rightarrow
+\text{repeated modeling/sampling/optimization freedom}
+\Rightarrow
+\text{redundancy-aware credit assignment}
+\Rightarrow
+\text{better effective capacity allocation}
+\Rightarrow
+\text{better task learning}.
+$$
 
 The strongest proof route combines:
 
-```text
-gradient redundancy down
-AND gradient effective rank or logdet up
-AND hard-scene update share up
-AND task score up
-=> CAPACITY_EFFICIENCY_SUPPORTED
-```
+$$
+\text{gradient redundancy}\downarrow
+\quad\land\quad
+\operatorname{erank}(G_{\mathrm{grad}})\uparrow
+\ \text{or}\
+\log\det(I+\lambda F)\uparrow
+\quad\land\quad
+\text{hard-scene update share}\uparrow
+\quad\land\quad
+\text{task score}\uparrow .
+$$
+
+Detailed derivations and literature anchors are in
+[28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md](28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md).
 
 ## Decoder Transfer
 
@@ -94,6 +106,8 @@ The editable FigureSpec sources are in [figures/specs](figures/specs).
   decoder-agnostic API.
 - [27_CAPACITY_EFFICIENCY_PROOF_PROGRAM_BILINGUAL.md](27_CAPACITY_EFFICIENCY_PROOF_PROGRAM_BILINGUAL.md):
   proof program for capacity efficiency and task improvement.
+- [28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md](28_POSITIVE_MATH_PROOF_AND_LITERATURE_BILINGUAL.md):
+  rendered derivations and authoritative literature anchors.
 
 ## Current Status
 
